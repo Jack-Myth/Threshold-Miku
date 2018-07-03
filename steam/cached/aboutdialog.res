@@ -154,7 +154,7 @@
 	{
 		CAboutDialog
 	  {
-	  	minimum-height=535
+	  	minimum-height=480
 	  	render_bg
 	  	{
 	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\About)"

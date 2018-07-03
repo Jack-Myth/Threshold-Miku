@@ -4,8 +4,9 @@
 	styles{
 		CSteamLoginDialog
 		{
-			minimum-height=530
-			maximum-height=530
+			minimum-height=610
+			maximum-height=610
+			height=610
 			render_bg
 			{
 				0=image(x0,y0,x1,y1,graphics/JackMyth/LoginBG)
@@ -50,8 +51,8 @@
 	layout
 	{
 		region { name=hidden width=0 height=0 }
-		region { name=body width=max height=max margin-top=150 margin-right=71 margin-left=71}
-		
+		region { name=body width=max height=max margin-top=240 margin-right=71 margin-left=71}
+
 		place{ control=ImagePanelLogo align=top-center y=60 width=max height=0}
 		place{ control=UserNameLabel,UserNameEdit dir=down spacing=0 region=body height=30}
 		place{ control=PasswordLabel,PasswordEdit start=UserNameEdit dir=down spacing=0 margin-top=10 region=body height=30}
@@ -76,7 +77,7 @@
 		"xpos"		"590"
 		"ypos"		"435"
 		"wide"		"480"
-		"tall"		"530"
+		"tall"		"640"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
 		"visible"		"1"

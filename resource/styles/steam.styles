@@ -137,7 +137,7 @@ steam.styles
 	//These are all in accent specific ini now
 	//TitleBar="8 8 8 255"
 	//TitleBar.Focus="8 8 8 255" //For loss of focus
-	//Notification.Back="31 31 31 255"
+	Notification.Back="202 202 202 255"
 	
 	TitleBar.Hover="70 70 70 100" //for buttons on titlebar
 	TitleBar.Active="70 70 70 200"
@@ -179,8 +179,8 @@ steam.styles
 	//Games that are installed/running use "Installed.Text"
 	//Games that are uninstalled use "Uninstalled.Text"
 	//Games that are updating/have updates use "Updating.Text"
-	Uninstalled.Text="55 55 55 255"
-	Uninstalled.Hover.Text="70 70 70 255"
+	Uninstalled.Text="105 105 105 255"
+	Uninstalled.Hover.Text="120 120 120 255"
 	//Uninstalled.Hover.Text="80 80 80 255"
 	Installed.Text=DefaultText
 	Installed.Hover.Text="230 230 230 255"

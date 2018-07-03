@@ -242,9 +242,9 @@
   
     ChatDialog.URLColor       "text"
     //ChatOwnTextColor        "Label"
-    ChatOwnTextColor        "200 200 255 255"
+    ChatOwnTextColor        "0 25 128 255"
 	//ChatDialog.HistoryColor	"124 124 124 255"
-	ChatDialog.HistoryColor	"200 200 200 200 255"
+	ChatDialog.HistoryColor	"100 100 100 255"
     ChatGradientTop         "39 39 39 255"
     ChatGradientBottom        "104 104 104 255"
     

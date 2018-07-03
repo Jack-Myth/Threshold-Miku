@@ -72,7 +72,7 @@ jackmyth.styles
 	  //InstallAppWizard
 	  CInstallAppWizard
 	  {
-	  	minimum-height=592
+	  	minimum-height=673
 	  	render_bg
 	  	{
 	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\InstallAppWizard)"
@@ -168,7 +168,7 @@ jackmyth.styles
 	  //CSystemInfoDialog
 	  CSystemInfoDialog
 	  {
-	  	minimum-height=630
+	  	minimum-height=622
 		  minimum-width=440
 		  render_bg
 		  {
@@ -309,10 +309,28 @@ jackmyth.styles
 	  	}
 	  }
 	  
-	  "OfflineModDialog Label"
-	  {
-	  	textcolor="0 0 0 255"
-	  }
+	  // Notification Overrides
+	  // Seems doesn't work
+    CAchievmentNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+    BroadcastApproveNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastInviteNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastPublicStateNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CBroadcastRecorderNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastUploadErrorNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastViewerNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CChatInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CChatMsgNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CClanEventNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CClanInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendInGameNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendOnlineNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CGameInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		GiftReceivedNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		ItemReceivedNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		NewTurnsNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		TradInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CVoiceChatInviteNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
   }
   
   //"layout"

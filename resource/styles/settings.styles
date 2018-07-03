@@ -22,11 +22,11 @@
 
     Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
     Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
-    Notifications.SlideDirection    "Horizontal"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+    Notifications.SlideDirection    "Vertical"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
     Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
     Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
     Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
-    Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+    Notifications.StackSize       "10"     // Controls how many panels we will stack before background queuing
     
     ListPanel.PerPixelScrolling     1
     ListPanel.PostSectionLeading	10
