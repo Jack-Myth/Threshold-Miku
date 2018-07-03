@@ -2,17 +2,17 @@ jackmyth.styles
 {
   colors
   {
-  	JackMyth.Translucent = "0 0 0 0"
-  	JackMyth.LittleTranslucent = "0 0 0 20"
-  	JackMyth.HalfTranslucent = "0 0 0 100"
-  	JackMyth.HalfOpacity = "0 0 0 150"
-  	JackMyth.Opacity = "0 0 0 200"
-  	JackMyth.LittleTranslucent180="0 0 0 180"
-  	JackMyth.LittleTranslucentWhite = "255 255 255 20"
-  	JackMyth.HalfTranslucentWhite = "255 255 255 100"
-  	JackMyth.HalfOpacityWhite = "255 255 255 150"
-  	JackMyth.OpacityWhite = "255 255 255 200"
-  	JackMyth.LittleTranslucent180White="255 255 255 180"
+  	JackMyth.Translucent = "255 255 255 0"
+  	JackMyth.LittleTranslucent = "255 255 255 20"
+  	JackMyth.HalfTranslucent = "255 255 255 100"
+  	JackMyth.HalfOpacity = "255 255 255 150"
+  	JackMyth.Opacity = "255 255 255 200"
+  	JackMyth.LittleTranslucent180="255 255 255 180"
+  	JackMyth.LittleTranslucentInverse = "0 0 0 020"
+  	JackMyth.HalfTranslucentInverse = "0 0 0 100"
+  	JackMyth.HalfOpacityInverse = "0 0 0 150"
+  	JackMyth.OpacityInverse = "0 0 0 200"
+  	JackMyth.LittleTranslucent180Inverse="0 0 0 180"
   }
   styles
   {

@@ -16,16 +16,21 @@ steam.styles
 	//Standard Element/Text colors ********
 	//TODO: Some of these colors arent actually used, fix or remove
 	
-	Dark =  "14 14 14 255"
-	Neutral = "31 31 31 255"
-	Light = "43 43 43 255"
+	Dark =  "241 241 241 255"   
+	Neutral = "224 224 224 255" 
+	Light = "202 202 202 255"   
+
+	
+	//Dark =  "14 14 14 255"
+	//Neutral = "31 31 31 255"
+	//Light = "43 43 43 255"
 	
 	DefaultBackground=Neutral
 
 	//DefaultText=white
-	DefaultText=white
-	DefaultText.Hover="153 153 153 255"
-	DefaultText.Disabled="102 102 102 255"
+	DefaultText=black
+	DefaultText.Hover="102 102 102 255"
+	DefaultText.Disabled="55 55 55 255"
 	DefaultText.Selected=Accent.Text
 	DefaultText.Back=Accent //For highlighted text
 	DefaultCursor=white
@@ -119,13 +124,13 @@ steam.styles
 	TextBox.Outline=ComboBox.Outline
 	TextBox.Outline.Hover=white
 	//TextBox.Active=white
-	TextBox.Active=JackMyth.HalfTranslucentWhite
+	TextBox.Active=JackMyth.HalfTranslucentInverse
 	TextBox.Outline.Active=Accent
 	TextBox.Text=TextBox.Outline
 	TextBox.Hover.Text=DefaultText
-	TextBox.Active.Text=black
+	TextBox.Active.Text=white
 	TextBox.Disabled.Text=DefaultText.Disabled
-	TextBox.Active.Cursor=black
+	TextBox.Active.Cursor=white
 	
 	//Specific Element colors *********
 	
@@ -146,11 +151,13 @@ steam.styles
 	Root.LeftCol = Light //Left Column
 	Root.LeftCol.Header= DefaultBackground
 	Root.LeftCol.Bottom = DefaultBackground
-	Root.Back = Dark
+	//Root.Back = Dark
+	Root.Back=Light
 	Root.RightCol= JackMyth.HalfTranslucent
 	//Root.RightCol = DefaultBackground //Right column (When needed)
 	Root.Div = Menu.Div
-	Root.BackTransparent="14 14 14 170" //For details header/grid chrome
+	Root.BackTransparent=JackMyth.LittleTranslucent180
+	//Root.BackTransparent="14 14 14 170" //For details header/grid chrome
 	
 	Root.LeftCol.Text="0 0 0 255"
 	Root.LeftCol.Hover  = "255 255 255 255"
