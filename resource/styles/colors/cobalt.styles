@@ -2,7 +2,7 @@
 {
 	colors
 	{
-		Accent="0 120 215 255"
+		Accent="0 120 255 255"
 		Accent.Hover="0 90 158 255"
 		Accent.Selected="25 106 167 255"
 		Accent.Text="255 255 255 255" //Color of text on Accent color, usually white or black

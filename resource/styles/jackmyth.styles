@@ -297,6 +297,27 @@ jackmyth.styles
 	  		0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
 	  	}
 	  }
+	  
+	  // Use Offline Background
+	  CUseOfflineModeDialog
+	  {
+		  textcolor="0 0 0 255"
+		  minimum-height=344
+	  	render_bg
+	  	{
+	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\UseOffline)"
+	  	}
+	  }
+	  
+	  "OfflineModDialog Label"
+	  {
+	  	textcolor="0 0 0 255"
+	  }
   }
+  
+  //"layout"
+  //{
+  //	place{ controls="OKButton, CancelButton"}
+  //}
   
 }

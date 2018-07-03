@@ -471,7 +471,7 @@
 		
 		CUINavButton:hover
 		{
-			textcolor=Root.LeftCol.Text
+			textcolor=Root.LeftCol.Hover
 			bgcolor=Menu.Hover
 			render_bg 
 			{
@@ -486,7 +486,7 @@
 
 		CUINavButton:selected
 		{
-			textcolor=Root.LeftCol.Text
+			textcolor=Root.LeftCol.Selected
 			bgcolor=Accent.Hover
 			render_bg 
 			{

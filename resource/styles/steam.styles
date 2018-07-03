@@ -22,6 +22,7 @@ steam.styles
 	
 	DefaultBackground=Neutral
 
+	//DefaultText=white
 	DefaultText=white
 	DefaultText.Hover="153 153 153 255"
 	DefaultText.Disabled="102 102 102 255"
@@ -151,16 +152,18 @@ steam.styles
 	Root.Div = Menu.Div
 	Root.BackTransparent="14 14 14 170" //For details header/grid chrome
 	
-	Root.LeftCol.Text=DefaultText
+	Root.LeftCol.Text="0 0 0 255"
+	Root.LeftCol.Hover  = "255 255 255 255"
+	Root.LeftCol.Selected = "255 255 255 255"
 	Root.Label.Text=DefaultText
 	Root.Label.Hover.Text="180 180 180 255"
 	Root.SubLabel.Text="180 180 180 255"
 	Root.LeftCol.Disabled=DefaultText.Disabled
 	
-	Search.Back=Scroll.Back
+	Search.Back="255 255 255 20"
 	Search.Text="130 130 130 255"
-	Search.Hover.Text="180 180 180 255"
-	Search.Active.Text=DefaultText
+	Search.Hover.Text="100 100 100 255"
+	Search.Active.Text=black
 	
 	Chat.Back = Root.Back
 	Chat.Popup = DefaultBackground
