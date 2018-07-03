@@ -163,8 +163,8 @@ steam.styles
 	Root.LeftCol.Hover  = "255 255 255 255"
 	Root.LeftCol.Selected = "255 255 255 255"
 	Root.Label.Text=DefaultText
-	Root.Label.Hover.Text="180 180 180 255"
-	Root.SubLabel.Text="180 180 180 255"
+	Root.Label.Hover.Text="75 75 75 255"
+	Root.SubLabel.Text="75 75 75 255"
 	Root.LeftCol.Disabled=DefaultText.Disabled
 	
 	Search.Back="255 255 255 20"

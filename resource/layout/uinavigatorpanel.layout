@@ -288,7 +288,7 @@
 
 		ViewDetailButton
 		{
-			bgcolor=DefaultText
+			bgcolor=none
 			inset="0 0 0 0"
 			padding-left=0
 			padding-right=0
@@ -300,7 +300,7 @@
 		
 		ViewDetailButton:hover
 		{
-			bgcolor=DefaultText
+			bgcolor=none
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
 			}
@@ -331,7 +331,8 @@
 		
 		ViewGridButton
 		{
-			bgcolor=DefaultText
+			//bgcolor=DefaultText
+			bgcolor=none
 			inset="1 0 0 0"
 			//image="graphics/icon_button_grid"
 			padding-left=0
@@ -344,7 +345,8 @@
 		
 		ViewGridButton:hover
 		{
-			bgcolor=DefaultText
+			//bgcolor=DefaultText
+			bgcolor=none
 			render{
 				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
 			}
@@ -375,7 +377,7 @@
 		
 		ViewListButton
 		{
-			bgcolor=DefaultText
+			bgcolor=none
 			inset="1 0 0 0"
 			padding-left=0
 			padding-right=0
