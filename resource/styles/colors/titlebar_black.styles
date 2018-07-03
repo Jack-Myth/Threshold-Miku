@@ -1,0 +1,9 @@
+"titlebar_black.styles"
+{
+	colors
+	{
+		TitleBar="8 8 8 255"
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		Notification.Back="31 31 31 255" //fun fact: on windows 10 this is slightly transparent, so the actual color varies!
+	}
+}

@@ -1,0 +1,240 @@
+"resource/layout/musiclibrarypanel.layout"
+{
+	controls
+	{	
+		MusicPage_Details_Content { controlname="CMusicPage_Details_Content" } 
+		
+		library_search	   { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
+		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
+		library_music_menu { ControlName=MenuButton labelText="#Music_Nav_Menu_Artists" style="NavLabel2" showDownArrow=0 align=left group=music }
+		library_music_add_button {	ControlName=Button labelText=""	tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=true }
+		library_music_player_icon { ControlName=Button labelText="" tooltiptext="#music_tooltip_view_player" style="MusicPlayerIcon" align=right group=music }
+		
+		frame_title
+		{
+			ControlName=Label
+	
+			style="ClientTitle"
+			"textAlignment"   "west"
+			"textAlignment"   "center" [$OSX]
+		}
+		
+		"subnavgroup_library"
+		{
+			"ControlName"		"imagepanel"
+			style="grouper"
+
+			zpos="-2"
+		}
+	}
+
+	colors
+	{
+	
+		dialogbgtrans="38 38 38 100"
+	}
+
+	styles
+	{
+		CMusicLibraryPanel	
+		{
+			minimum-width = 296
+			minimum-height = 300
+			render_bg{
+				0="fill( x0, y0, x1, y0+72, Root.Header)"
+			}
+		}		
+		
+		ClientTitle
+		{
+			font-family=basefont
+			inset="5 1 0 0"
+			padding-left="0"
+			padding-right="64"
+			font-size=12 [$LINUX]
+			font-size=14
+			font-weight=400
+			textcolor=Frame.Text
+			bgcolor="none"
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, TitleBar.Focus)"
+			}
+		}
+
+		
+		ClientTitle:framefocus
+		{
+			textcolor=Frame.Focus.Text
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, TitleBar)"
+			}
+		}
+			
+		LibrarySearch
+		{
+			padding-left=-4
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			textcolor=Search.Active.Text
+			shadowtextcolor=DefaultCursor
+			bgcolor=Search.Back
+			render_bg{
+			}
+			render{}
+			
+		}
+		
+		LibrarySearch:empty
+		{
+			font-style=normal
+			textcolor=Search.Text
+			
+		}
+		
+		LibrarySearch:hover
+		{	
+			textcolor=Search.Active.Text
+		}
+		
+		LibrarySearch:empty:hover
+		{
+			font-style=normal
+			textcolor=Search.Hover.Text
+			
+		}
+			
+		LibrarySearch:disabled
+		{
+			font-style=DefaultText.Disabled
+			textcolor="None"
+			
+		}
+			
+		LibrarySearchIcon
+		{
+			bgcolor=Search.Back
+			inset="15 2 0 0"
+			image="graphics/Threshold/icons/search"
+			padding-left=0
+			padding-right=0
+			padding-top=0
+			render_bg{
+			}
+		
+		}
+		
+		LibrarySearchIcon:disabled
+		{
+			image="none"
+		}
+
+		MusicAddButton
+		{
+			inset="5 0 0 0"
+			font-size=13 [$LINUX]
+			font-size=15
+			font-family=basefont
+			textcolor="labelfocus"
+			font-style=uppercase
+			image="graphics/Threshold/icons/plus"
+			render_bg
+			{
+			}
+		}
+		
+		MusicAddButton:hover
+		{
+			textcolor="white"
+			image="graphics/Threshold/icons/plus_hover"
+			render_bg
+			{
+
+			}
+		}			
+		
+		MusicPlayerIcon
+		{
+			bgcolor="none"
+			inset="-14 0 0 0" //Not sure why this offset is so much larger...
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		MusicPlayerIcon:hover
+		{
+			bgcolor=Menu.Button.Hover
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		MusicPlayerIcon:selected
+		{
+			bgcolor=Menu.Button.Active
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		NavLabel2
+		{
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+			textcolor=Root.Label.Text
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
+			}
+		}
+		
+		NavLabel2:hover
+		{
+			textcolor=Root.Label.Hover.Text
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down_hover)"
+			}
+		}	
+		
+		NavLabel2:selected
+		{
+			textcolor=Root.Label.Text
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+18,x1,y1,graphics/Threshold/icons/down)"
+			}
+		}
+				
+		grouper
+		{
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0 + 2, y0 + 1, x1 - 10, y1 - 1, dialogbgtrans )"
+			}
+			
+		}
+	}
+	
+	
+	layout
+	{
+		region { name=searchrow x=0 y=32 height=40}
+		region { name=details y=72 width=max }
+		region { name=hidden width=0 height=0}
+		
+		place { control="subnavgroup_library" region=hidden }
+		place { control=library_music_add_button region=hidden }
+		
+		place { control=label_search_icon align=left height=40 region=searchrow width=35 }
+		place { control=library_search start=label_search_icon height=40 width=240 dir=right region=searchrow }
+	
+		place { control=library_music_menu region=searchrow x=275 height=40 }
+		place { control="library_music_player_icon"  region=searchrow align=right y=0 height=40 width=40}
+		place {	control="MusicPage_Details_Content"	region=details x=0 y=0 width=max height=max}
+	}
+	
+}

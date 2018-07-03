@@ -1,0 +1,11 @@
+¡°backupwizard.layout¡±
+{
+	styles
+	{
+		minimum-height=455
+		render_bg
+	  {
+	  	0="image_scale(x0,y0,x1,y1,graphics\JackMyth\BackupWizard)"
+	  }
+	}
+}

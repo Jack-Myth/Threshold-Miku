@@ -1,0 +1,66 @@
+"settings.styles"
+{
+  colors
+  {
+	
+	AchievementPopup.TitleColor   DefaultText
+    AchievementPopup.DescriptionColor DefaultText.Hover
+    
+    GiftOnlyInfo.ImagePanelColor  DefaultBackground 
+	
+	//Settings    
+    Frame.ClientInsetX       10
+    Frame.ClientInsetY       35
+    Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
+    Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
+    Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+    Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
+    Frame.AutoSnapRange         "6"
+    Frame.UsesAlphaBlending       1
+    FrameSystemButton.Icon        ""
+    FrameSystemButton.DisabledIcon    ""
+
+    Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+    Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+    Notifications.SlideDirection    "Horizontal"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+    Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
+    Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
+    Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
+    Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+    
+    ListPanel.PerPixelScrolling     1
+    ListPanel.PostSectionLeading	10
+
+	// Default tooltip delay pops fast, but lets the mouse pass through without popping
+	// Anchor=Cursor makes it stick to initial pop location like windows implementation.
+	// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside the parent panel (useful for icon sized items)
+	Tooltip.Delay=75
+	Tooltip.Anchor=Cursor
+	
+    Menu.TextInset          "10"
+    
+    PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
+    PropertySheet.TabGap        0
+   
+    RichText.InsetX         8
+    RichText.InsetY         7
+
+    ScrollBar.Wide          15
+    
+    SectionedListPanel.CollapserWidth   15
+    
+    HTML.SearchInsetY 5
+    HTML.SearchInsetX 10
+    HTML.SearchWide 400
+    HTML.SearchTall 52
+    HTML.SearchAnimationTime 0.25
+
+    HTML.IMEInsetY 5
+    HTML.IMEInsetX 10
+    HTML.IMEWide 400
+    HTML.IMETall 52
+    HTML.IMEAnimationTime 0.25
+
+    MessageBox.ButtonHeight		32
+  }
+}

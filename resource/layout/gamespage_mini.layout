@@ -1,0 +1,227 @@
+"resource/layout/gamespage_mini.layout"
+{
+	controls
+	{
+		GamesList { controlname=Panel style="DetailsBorderPanel" tabposition=1 }
+		CGamesPage_Mini	{ title="#Steam_Root_Title" }
+		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=0 group=filters }
+		library_search	   { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
+		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=filters }
+		
+		
+		"subnavgroup_library"
+		{
+			"ControlName"		"imagepanel"
+			style="grouper"
+			group="library"
+			zpos="-4"
+		}
+		
+	}
+
+	styles
+	{
+		downarrow
+		{
+			image=none 
+		}
+
+		downarrow:hover
+		{
+			image=none
+		}
+		
+		"CGamesPage_Mini ListPanelColumnSelectButton" // the games list column chooser
+			{
+				bgcolor=none
+				inset="0 0 0 0"
+				render
+				{
+					// background fill
+					2="image( x0 + 5, y0 + 3, x1, y1, graphics/Threshold/icons/plus_hover )"
+				}   
+				render_bg{}
+			    
+			}
+			
+		"CGamesPage_Mini ListPanelColumnSelectButton:hover" // the games list column chooser
+			{
+				bgcolor=none
+				inset="0 0 0 0"
+				render
+				{
+					// background fill
+					2="image( x0 + 5, y0 + 3, x1, y1, graphics/Threshold/icons/plus )"
+				}   
+				render_bg{}
+			    
+			}
+	
+		"CGamesPage_Mini ListPanel"
+			{
+				padding-left=15
+			}
+	
+		"CGamesPage_Mini ListPanelInterior"
+			{     
+			inset="0 0 0 0"
+			bgcolor=none
+			render
+			{
+			}
+			render_bg {}
+			}
+	
+		"CGamesPage_Mini ListPanelInterior:scrollbar"
+			{     
+			inset="0 0 0 0"
+			bgcolor=none
+			render_bg {
+			
+			}
+			}
+		
+		ListPanelSectionHeader
+			{     
+				render_bg
+				{
+					//0="fill( x0 - 1, y0, x1, y1, List.Header)"
+					0="fill( x0 - 1, y0, x1, y1, JackMyth.HalfOpacity)"
+				}    
+			} 
+		
+		grouper
+		{
+			bgcolor=none
+			render_bg
+			{
+			}
+			
+		}
+		
+		CGamesPage_Mini 
+		{
+			//bgcolor="DefaultBackground"
+			render_bg{
+				0="fill( x0, y0, x1, y0+96, Root.TabBar)"
+				1="fill( x0, y0+96, x1, y1, Root.Back)"
+			}
+		}	
+
+		 
+		
+	    LibrarySearch
+		{
+			padding-left=0
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20	
+			font-weight=400	
+			textcolor=Search.Active.Text
+			shadowtextcolor=DefaultCursor
+			render{}
+			render_bg
+			{ 
+				//0="fill(x0,y0,x1,y1,Search.Back)"
+				0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
+			}  			
+		}
+		
+		LibrarySearch:empty
+		{
+			font-style=none
+			textcolor=Search.Text
+		}
+			
+		LibrarySearch:hover
+		{	
+			textcolor=Search.Active.Text		
+		}
+		
+		LibrarySearch:empty:hover
+		{
+			font-style=none
+			textcolor=Search.Hover.Text
+			
+		}
+		LibrarySearchIcon
+		{
+			//bgcolor=Search.Back
+			0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
+			inset="4 2 0 0"
+			image="graphics/Threshold/icons/search"
+			padding-left=10
+			padding-right=0
+			render_bg{ 
+				0="fill(x0,y0,x1,y1,Search.Back)"
+			}
+		}
+		
+		NavLabel2
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400
+			textcolor=Root.Label.Text
+			padding-right=5
+			padding-left=5
+			render{}
+			render_bg{}
+		}
+		
+		NavLabel2:hover
+		{
+			textcolor=Root.Label.Text
+			render{}
+			render_bg{
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
+		}	
+		
+		NavLabel2:selected
+		{
+			textcolor=Root.Label.Text
+			render{}
+		}
+
+		ListPanelColumnheader
+		{
+			render {}
+			bgcolor=none
+			render_bg {}	
+		}
+		
+		"CGamesPage_Mini CGameFilterMenuButton"
+		{
+			inset="3 0 0 0"
+			padding-left="-3"
+		}
+		
+		DetailsBorderPanel
+		{
+			inset="-1 0 0 0"
+			bgcolor=none
+			render_bg 
+			{
+
+			}
+		}
+		
+	}
+
+ 	layout
+ 	{
+		place { control="frame_captiongrip" margin=2 width=max height=38 }
+		place { control="MenuBar" margin-left=0 height=32 width=50}
+		
+		place { control="subnavgroup_library" align=top-center y=38 height=26 width=max margin-right=9 margin-left=9 }
+		
+		place { control="gameslist" align=left margin-left=0 margin-right=0 margin-top=96 margin-bottom=0 width=max height=max }
+		
+		place { control="library_search"  width=max}
+		place { control="label_search_icon,library_search" align=left y=32 height=40 spacing=0 x=0}
+		
+		place { control="library_filters" align=left margin-top=72 height=24 }
+ 	}
+}

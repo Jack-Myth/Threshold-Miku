@@ -1,0 +1,283 @@
+"resource/layout/downloadsummarypanel.layout"
+{
+	controls
+	{
+		"downloadsummarypanel"
+		{
+			style=CDownloadSummaryPanel
+			tall="130"
+		}
+		
+		"header"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_downloads_networkusage"
+			style=bigtext
+		}
+
+		"download_rate"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "#steam_downloads_downloadrate"
+			style=bigtextlabel		  
+	    }
+	
+	    "download_rate_value"
+	    {
+			"ControlName"	    "Label"
+			"labelText"	    "%CurrentDLRate%"
+			style=bigtext
+	    }
+	
+		"peak_download_rate"
+		{
+			"ControlName"	 "Label"
+			"labelText"		 "#steam_downloads_peakdownloadrate"
+			style="bigtextlabel"
+		}
+	
+		"peak_download_rate_value"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "%PeakDLRate%"
+			style="bigtext"
+		}
+	
+		"total_downloaded"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "#steam_downloads_totaldownloaded"
+			style="bigtextlabel"
+		}
+		"total_downloaded_value"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "%TotalDownloaded%"
+			style="bigtext"
+		}
+		
+		"disk_status_value"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "%DiskUsage%"
+			style="bigtext"
+		}
+		
+		"disk_status_label"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "#steam_downloads_diskusage"
+			style="bigtextlabel"
+		}
+		
+		"pauseresumeallbutton"
+		{
+			"ControlName"	    "Button"
+			style=PauseButton
+		}
+	    
+		"throttling_label"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "#steam_downloads_throttling"
+			style="throttleLabel"
+			group = "ShowWhenThrottled"
+	    }
+	
+		"throttling_value"
+		{
+			"ControlName"	    "URLLabel"
+			"URLText"		"steam://settings/downloads"
+			"labelText"	    "%throttle_value%"
+			style="throttleValue"
+			group = "ShowWhenThrottled"
+		}		
+		
+		"blackout_label"
+		{
+			"ControlName"	    "Label"
+			"labelText"	    "#steam_downloads_autoupdate_window_label"
+			style="throttleLabel"
+			group = "ShowWhenAutoUpdateWindow"
+	    }
+	
+		"blackout_value"
+		{
+			"ControlName"	    "URLLabel"
+			"URLText"		"steam://settings/downloads"
+			"labelText"	    "#steam_downloads_autoupdate_window_value"
+			style="throttleValue"
+			group = "ShowWhenAutoUpdateWindow"
+		}			
+	    
+		net_graphpanel { controlname="GraphPanel" style="NetGraphPanel" group="HideOnCompletion"  zpos="-2" }
+		disc_graphpanel { controlname="GraphPanel" style="DiscGraphPanel" group="HideOnCompletion"  zpos="-1" }		 
+		
+		"disk_legend_label" { ControlName="Label" labelText="#steam_downloads_legenddisk" style="throttleLabel" }
+		"net_legend_label" { ControlName="Label" labelText="#steam_downloads_legendnet" style="throttleLabel" }
+		"disk_legend_panel" { ControlName="Panel" style="diskLegendPanel" }
+		"net_legend_panel" { ControlName="Panel" style="netLegendPanel" }
+	}
+  
+	styles
+	{
+		CDownloadSummaryPanel
+		{
+			inset="0 0 0 0"
+			render_bg
+			{
+				//0="fill(x0, y0, x1, y0+48, Search.Back)"
+				//1="fill(x0, y0+48, x1, y1, Root.Header)"
+				0="image_scale( x0, y0, x1, y1, graphics/JackMyth/FadeLR)"
+				//1="fill(x0, y0+48, x1, y1, JackMyth.LittleTranslucent)"
+			}
+	  	}
+	   
+		throttleLabel
+		{
+			font-size=12 [$LINUX]
+			font-size=15
+			textcolor   Root.Label.Text
+			padding-top	"0"
+			//font-style="uppercase"
+	    }
+		
+		throttleValue
+		{
+			font-size=12 [$LINUX]
+			font-size=15
+			textcolor   Root.Label.Text
+			padding-top	"0"
+			font-style="normal"
+		}
+		
+		throttleValue:Hover
+		{
+			textcolor=Root.SubLabel.Text
+		}
+		
+		container
+		{
+			bgcolor="none"
+	   	}
+	
+		Label
+		//bigtext Seems to not work, overload with Label
+		{
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=18
+			textcolor=Root.Label.Text
+		}
+		
+		bigtextlabel 
+		{
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=18
+			textcolor=Root.SubLabel.Text
+		}
+		
+		bigtextHeader 
+		{
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=18
+		}
+	
+		bigTextNumbers 
+		{
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=18
+		}
+		
+		PauseButton
+		{
+			inset="0 0 0 0"
+			font-family=basefont
+			font-weight=400
+			//font-style=uppercase
+		}
+			
+		ResumeButton
+		{
+			inset="0 0 0 0"
+			font-family=basefont
+			font-weight=400
+			//font-style=uppercase
+		}
+
+		NetGraphPanel
+		{
+			bgcolor   "none"	
+			textcolor Accent
+		}
+		
+		DiscGraphPanel
+		{
+			bgcolor   "none"	
+			textcolor="AccentInv"
+		}
+		
+		DiskLegendPanel
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1,y1, AccentInv )"
+			}
+		}
+		
+		NetLegendPanel
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1,y1, Accent )"
+			}
+		}
+	}
+	
+	layout
+	{
+		
+		//set aside some room for the	header section
+		region {name=hidden width=0 height=0}
+		region {name=head height=48 width=max}
+
+		region {name=graph align=bottom width=1262 height=170 }	
+		region {name=legend align=bottom margin-left=15 height=80 width=max}
+		
+		region { name=left_column x=15 y=58 width=max height=max margin-bottom=170}
+
+		// graph
+		place { control="net_graphpanel" region=graph y=0 width="max" height="max" }				   
+		place { control="disc_graphpanel" region=graph y=0 width="max" height="max" }
+
+		// graph legend
+		place { control="net_legend_panel" region=legend y=4 x=0 width=9 height=9 }
+		place { control="net_legend_label" region=legend y=0 x=12 }
+		
+		place { control="disk_legend_panel" region=legend y=18 x=0  width=9 height=9 }
+		place { control="disk_legend_label" region=legend y=14 x=12 }
+
+		// throttling info
+		place { region=legend controls="blackout_label" start=disk_legend_panel dir=down margin-top=15 }
+		place { region=legend controls="blackout_value" start=blackout_label dir=right margin-left=4 }
+		place { region=legend control="throttling_label" start=blackout_label dir=down margin-top=4 }
+		place { region=legend control="throttling_value" start=throttling_label dir=right margin-left=4 }
+		
+		// put NETWORK USAGE in the top left
+		place { control="header" x=15 region=head height=48}
+		
+		// top right
+		place { control="pauseresumeallbutton" region=head align=right margin-right=10 margin-top=8 height=32}
+		
+		// three rows of network usage underneath the header
+		place { region=left_column  control="download_rate_value,download_rate" spacing=6 dir=right}
+		place { region=left_column  control="peak_download_rate_value, peak_download_rate" spacing=6 y=22 dir=right}
+		place { region=left_column  control="total_downloaded_value, total_downloaded" spacing=6 y=44 dir=right}
+		place { region=left_column  control="disk_status_value, disk_status_label" spacing=6 y=66 dir=right}
+	}
+}

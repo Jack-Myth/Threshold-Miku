@@ -1,0 +1,125 @@
+"resource/layout/musicpage_detail_content.layout"
+{
+	controls
+	{
+		AlbumList { tabposition=1 }
+		ArtistList { tabposition=1 }
+		PlaylistList { tabposition=1 }
+		DetailsBorder { controlname=EditablePanel style="DetailsBorderPanel" zpos="-5" }
+		EmptyDatabaseText { controlname="RichText" text="#Music_NoLibrary" style="EmptyDatabaseText" }
+		CrawlingText { controlname="RichText" style="CrawlingText" }
+		
+		// Background image, plus overlays 
+		BackgroundImageA { controlname="ImagePanel" style="HeaderImage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
+		BackgroundImageB { controlname="ImagePanel" style="HeaderImage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
+		BackgroundImageMask { controlname="ImagePanel" style="HeaderImage" zpos="-3" visible=1 scaling="none" horizontal-align=left vertical-align=top }
+
+	}
+
+	styles
+	{
+		DetailsBorderPanel
+		{ 
+			font-family=basefont
+			font-weight=400
+			render_bg{	
+				0="fill(x0, y0, x1, y1, Root.Back)"
+			}
+		}
+		
+		"ListPanel RichText" //empty 
+		{
+			textcolor=DefaultText
+		}
+		
+		AlbumOrArtistListStyle
+		{
+		}
+		
+		EmptyDatabaseText
+		{
+			textcolor=DefaultText
+			selectedtextcolor=DefaultText
+			render_bg{}
+		}
+		
+		CrawlingText
+		{
+			textcolor=DefaultText
+			selectedtextcolor=DefaultText
+			render_bg{}
+		}
+		
+		CMusicPage_Details_Content
+		{
+			inset="0 0 0 1"
+			render
+			{
+			}
+		}
+		
+
+		// Some overrides for our listpanel
+		"MusicPage_Details_Content ListPanel"
+		{
+			padding-left=15
+			bgcolor=Root.Back
+			render_bg{}
+			
+		}		
+		"MusicPage_Details_Content ListPanelInterior"
+		{
+			textcolor="DefaultText"
+			inset="1 1 0 0"
+			bgcolor=Root.Back
+			render_bg{}
+			
+		}
+		
+		"MusicPage_Details_Content ListPanelInterior:scrollbar"
+		{     
+			inset="1 1 -2 0"
+			bgcolor=Root.Back
+			render_bg{}
+		}
+
+		"AlbumOrArtistListStyle ListPanelColumnSelectButton"   
+		{
+       		inset="-3 3 0 0"
+        	render {
+          		5="image( x0 + 3, y0 + 3, x1, y1, graphics/Threshold/icons/plus )"
+        	}   
+		}
+		
+		DetailsBorderPanel
+		{
+		}	
+
+		BackgroundImage { bgcolor="0 0 0 0" }
+	}
+
+	layout
+	{
+		region {name=hidden width=0 height=0}
+		region { name="background" x=0 y=0 width=1024 height=1024 }
+		region	{ name="list" y=0 x=0 width=275 height=max margin-bottom=0 }
+		region	{ name="details" y=0 x=275 width=max height=max overflow=scroll-vertical dir=down }
+		
+		place	{ control=EmptyDatabaseText x=0 y=0 width=max height=max margin=10 region=list}
+		place	{ control=CrawlingText x=0 y=0 width=max height=max margin=10 region=list}
+		
+		place { control=DetailsBorder y=0 x=0 width=max height=max }
+
+		place { control=AlbumList region=list width=275 height=max margin=0}
+		place { control=ArtistList region=list width=275 height=max margin=0}
+		place { control=PlaylistList region=list width=275 height=max margin=0}
+		
+		place { control=*MusicPageDetailsAlbum region=details width=max dir=down spacing=33 margin=15}
+		place { control=*MusicPageDetailsPlaylist region=details width=max dir=down spacing=33 margin=15}
+		
+		place 	{ control=BackgroundImageA region=hidden width=1024 height=1024 x=0 y=0 } //because we really need another picture of the album art
+		place 	{ control=BackgroundImageB region=hidden width=1024 height=1024 x=0 y=0 }
+		place 	{ control=BackgroundImageMask region=hidden width=1024 height=1024 x=0 y=0}
+	}
+
+}

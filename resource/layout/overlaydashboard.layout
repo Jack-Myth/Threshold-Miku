@@ -1,0 +1,149 @@
+"resource/layout/overlaydashboard.layout"
+{
+	controls
+	{
+		BaseDashboardPanel 
+		{ 
+			controlname="EditablePanel" 
+			style="overlaymain"	
+		}
+		TaskbarPanel	
+		{ 
+			controlname="EditablePanel" 
+		}
+		TopFadePanel
+		{
+			controlname="EditablePanel"
+			style=topfade
+			zpos=-1
+			mouseinputenabled=0
+		}
+		BottomFadePanel
+		{
+			controlname="EditablePanel"
+			style=bottomfade
+			zpos=-1
+		}		
+		
+		GameName
+		{
+			controlname="Label"
+			labeltext="%gamename%"
+			style=topbar
+			textalignment=east
+		}
+		PowerMeterDim
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_dim"
+		}
+		PowerMeterBright
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_bright"
+		}		
+		
+		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" style="OverlayURLLabel"}
+		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style="hotkey" }	
+		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 style="LabelOverlay"}
+	}
+	
+	colors
+	{
+	
+
+  
+	}
+	
+	styles
+	{
+		hotkey
+		{
+			font-size=14
+			font-style=uppercase
+			textcolor=DefaultText
+		}
+		topfade //Main Background element
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1-80,y0+80,Overlay.Header)"
+				1="fill(x0,y0+80,x1-80,y1-80,Overlay.Back)"
+				2="fill(x0,y1-80,x1-80,y1,Overlay.Footer)"
+				
+				3="fill(x1-80,y0,x1,y1,Overlay.Sidebar)"
+			}
+			render
+			{
+				0="image(x1-80,y0,x1,y1,graphics/Threshold/overlay/fullscreen)"
+				1="image(x1-80,y1-240,x1,y1,graphics/Threshold/overlay/web)"
+				2="image(x1-80,y1-160,x1,y1,graphics/Threshold/overlay/music)"
+				3="image(x1-80,y1-80,x1,y1,graphics/Threshold/overlay/settings)"
+			}
+		}
+		bottomfade //Right column background element
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,Overlay.Sidebar)"
+			}
+		}	
+		overlaymain
+		{
+			bgcolor = "0 0 0 0"
+			//Doesnt support render_bg because sad panda
+		}	
+		
+		topbar
+		{
+			font-size=48
+			font-family=light
+			textcolor=DefaultText
+		}
+		detailsboxtitle
+		{
+			textcolor=Accent
+		}
+		
+		OverlayURLLabel
+		{
+			textcolor=none
+		}
+		
+		OverlayURLLabel:Hover
+		{
+			textcolor=none
+			render_bg{
+				0="fill(x0,y0,x1,y1,Overlay.Sidebar.Hover)"
+			}
+		}
+		
+		LabelOverlay
+		{
+			font-size=14
+			textcolor=DefaultText
+		}		
+	}
+	
+	layout
+	{
+		region { name=hidden width=0 height=0}
+	
+		region	 { name="main" width=530 height=max align=left}
+		region	 { name="sidebar" width=80 height=max align=left x=450}
+		region	 { name="right" width=125 height=40 align=right }
+		
+		place { control="TopFadePanel" region=main width=max height=max }
+		place { control="BottomFadePanel" region=right width=max height=max }
+		
+		place { control="CloseButton" region=sidebar align=top width=80 height=80 }
+		place { control="HotkeyLabel,HotkeyExplain" region=hidden }
+		
+		place { control="gamename" region=main align=left margin-left=20 margin-right=100 height=80 }
+		
+		place { control="PowerMeterDim" region=right align=right y=40 margin-right=20 }
+		
+		place { control="TaskbarPanel" region=sidebar height=max width=max margin-top=80}
+	}
+	
+}

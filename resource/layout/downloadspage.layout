@@ -1,0 +1,89 @@
+"resource/layout/downloadspage.layout"
+{
+	controls
+	{
+		// the container
+		"DownloadsPage"
+		{
+			"ControlName"		"CDownloadsPage"
+			Style=DownloadsPageStyle
+		}
+		
+		"downloadsummarypanel"
+		{
+			"ControlName"	"DownloadSummaryPanel"
+		}
+	
+		"panel_list"
+		{
+			"ControlName"	"SectionedListPanel"
+			Style=ListPanelStyle
+		}
+				
+	}
+	
+	styles
+	{
+		SectionedListPanelCollapser
+		{
+			inset = "0 0 0 0"
+			minimum-height=26
+			bgcolor=none
+			render_bg
+			{	
+				//0="fill( x0, y0, x1+2, y1, List.Header)"
+				0="fill( x0, y0, x1+2, y1, JackMyth.HalfOpacity)"
+			}
+			render{}
+		}
+		SectionHeaderStyle
+		{
+			inset = "0 4 0 0"
+			minimum-height=26
+			render_bg
+			{
+				//0="fill( x0, y0, x1-10, y1, Root.TabBar)"
+				0="fill( x0, y0, x1-10, y1, JackMyth.HalfOpacity)"
+			}
+			render{}
+		}
+		SectionHeaderStyleLabel
+		{
+			inset = "0 0 0 0"
+		}
+		DownloadsPageStyle
+		{
+
+			bgcolor=none
+			render_bg
+			{
+				//0="fill( x0+275, y0, x1, y0+48, Root.Header)"
+				//0="fill( x0+275, y0, x1, y0+48, JackMyth.Translucent)"
+				0="fill( x0+275, y0, x1, y1, JackMyth.LittleTranslucent180)"
+				//1="fill( x0+275, y0+48, x1, y1, JackMyth.LittleTranslucent180)"
+				//1="fill( x0+275, y0+48, x1, y1, graphics/JackMyth/DownloadBG)"
+			}
+		}
+		ListPanelStyle
+		{
+			inset = "0 0 0 0"
+			bgcolor=none
+			font-family=basefont
+			font-size=12 [$LINUX]
+			font-size=14
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor=DefaultText
+			selectedbgcolor=DefaultText
+			shadowtextcolor=DefaultText	// the color of disabled line items
+		}	
+	}
+
+	layout
+	{
+		region { name=status x=0 y=0 margin=0}
+		region { name=main x=275 y=0 margin-top=48}
+		place { control="downloadsummarypanel" region=status width=275 height=max}
+		place { control="panel_list" region=main x=10 width=max height=max margin=0 spacing=10 }
+	}
+}

@@ -1,0 +1,104 @@
+"resource/layout/overlaydashboard_lores.layout"
+{
+	controls
+	{
+		BaseDashboardPanel 
+		{ 
+			controlname="EditablePanel" 
+			style="overlaymain"	
+		}
+		TaskbarPanel	
+		{ 
+			controlname="EditablePanel" 
+		}
+		TopFadePanel
+		{
+			controlname="EditablePanel"
+			style=topfade
+			zpos=-1
+		}
+		BottomFadePanel
+		{
+			controlname="EditablePanel"
+			style=bottomfade
+			zpos=-1
+		}
+
+		GameName
+		{
+			controlname="Label"
+			labeltext="%gamename%"
+			style=topbar
+			textalignment=east
+		}
+		PowerMeterDim
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_dim"
+		}
+		PowerMeterBright
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_bright"
+		}		
+		
+		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" }
+		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style=hotkey }	
+		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }	
+	}
+	
+	styles
+	{
+		hotkey
+		{
+			//font-size=18
+			//font-style=uppercase
+			textcolor=DefaultText
+		}
+		topfade
+		{
+			render
+			{
+				1="image(x0,y1-240,x1,y1,graphics/Threshold/overlay/web)"
+				2="image(x0,y1-160,x1,y1,graphics/Threshold/overlay/music)"
+				3="image(x0,y1-80,x1,y1,graphics/Threshold/overlay/settings)"
+			}
+		}
+		bottomfade
+		{
+			render_bg
+			{
+				//0="gradient( x0, y0, x1, y1, none, backgroundstartopaque )"
+			}
+		}	
+		overlaymain
+		{
+			bgcolor = Overlay.Sidebar
+		}	
+				
+		topbar
+		{
+			font-size=48
+			textcolor=DefaultText
+		}
+	}
+	
+	layout
+	{
+		region { name=hidden width=0 height=0}
+		region { name=right width=80 height=max align=right} //Taskbar
+		
+		place { control="BottomFadePanel" region=hidden width=max height=130 }
+		
+		place { control="gamename" align=left margin-left=20 margin-right=100 height=80 }
+
+		place { control="PowerMeterDim" align=bottom margin-bottom=20 margin-right=20}
+		
+		place { control="TopFadePanel" region=right width=max height=max }
+		place { control="TaskbarPanel" region=right height=max width=max }
+		
+		place { control="CloseButton" region=hidden}
+		place { control="HotkeyLabel,HotkeyExplain" region=hidden}
+	}
+	
+}

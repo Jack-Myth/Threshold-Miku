@@ -1,0 +1,8 @@
+"titlebar_black.styles"
+{
+	colors
+	{
+		Frame.Outline="0 0 0 0"
+		Frame.Outline.Focus="0 0 0 0"
+	}
+}

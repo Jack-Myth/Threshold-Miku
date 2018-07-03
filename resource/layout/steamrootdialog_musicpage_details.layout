@@ -1,0 +1,30 @@
+"resource/layout/steamrootdialog_musicpage_details.layout"
+{
+	controls
+	{
+		CMusicPage_Details_Content { controlname="CMusicPage_Details_Content" }
+	}
+
+	styles
+	{
+		CMusicPage_Details
+		{
+			inset="0 0 0 0"
+			render
+			{
+			}
+			render_bg
+			{
+				 //0="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
+			}
+		}
+
+	}
+
+	layout
+	{
+		region	{ name="content" y=0 x=0 width=max height=max }
+		place	{ control=CMusicPage_Details_Content region=content x=0 y=0 width=max height=max }
+	}
+
+}

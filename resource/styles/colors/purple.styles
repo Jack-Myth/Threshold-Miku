@@ -1,0 +1,23 @@
+"cobalt.styles"
+{
+	colors
+	{
+		Accent="136 23 152 255"
+		Accent.Hover="98 17 110 255"
+		Accent.Selected="113 40 124 255"
+		Accent.Text="225 255 255 255" //Color of text on Accent color, usually white or black
+
+		AccentInv="255 185 0 255" //Complimentary color for disk usage
+		
+		//These are for the Colored Titlebar Option
+		TitleBar=Accent //TitleBar background
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		TitleBar.Accent=Accent.Hover //Colored buttons on/close to Titlebar
+		TitleBar.Accent.Hover=Accent.Selected //Hover states for colored buttons
+		Notification.Back="31 31 31 255"
+
+		//These are for the Window Border Option
+		Frame.Outline=Accent
+		Frame.Outline.Focus="125 125 125 255"
+	}
+}

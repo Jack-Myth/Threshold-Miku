@@ -1,0 +1,196 @@
+"resource/layout/musicpage_details_album.layout"
+{
+	controls
+	{
+		AlbumTitleLabel { controlname="Label" style="AlbumTitleStyle" }
+		ArtistLabel { controlname="Label" style="ArtistStyle" }
+		TracksInfoLabel { controlname="Label" style="TracksInfoStyle" }
+		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
+		
+		PlayTracksButton { 
+			controlname="Button" 
+			labeltext="#Music_Album_Details_PlayTracks" 
+			style="ActionButtonStyle"
+			command="AlbumPlayTracksAction"
+		}
+		
+
+		AddTracksToQueueButton
+		{
+			controlname="Button" 
+			labelText="#Music_Album_Details_AddTracksToQueue" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumAddTracksToQueueAction"
+		}	
+
+		AddTracksToPlaylistButton
+		{
+			controlname="Button" 
+			labelText="#Music_Album_Details_AddTracksToPlaylist" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumAddTracksToPlaylistAction"
+		}
+		
+		ShowAlbumButton { 
+			controlname="Button" 
+			labeltext="#Music_Album_Details_ShowAlbum" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumShowAction"
+		}
+		
+		PlayAlbumButton { 
+			controlname="Button" 
+			labeltext="#Music_Album_Details_Play" 
+			style="ActionButtonStyle"
+			command="AlbumPlayAction"
+		}
+		
+		AddAlbumToQueueButton
+		{
+			controlname="Button" 
+			labelText="#Music_Album_Details_AddToQueue" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumAddToQueueAction"
+		}
+		
+		AddAlbumToPlaylistButton
+		{
+			controlname="Button" 
+			labelText="#Music_Album_Details_AddToPlaylist" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumAddToPlaylistAction"
+		}
+		
+		ShowAlbumInSystemButton
+		{
+			controlname="Button" 
+			labelText="#Music_Album_Details_ShowAlbumInSystem" 
+			style="AdditionalActionButtonStyle"
+			command="AlbumShowAlbumInSystemAction"
+		}	
+		
+		
+	}
+
+	styles
+	{
+		CMusicPage_Details_Album
+		{
+			bgcolor=none
+			render
+			{				
+
+			}
+			render_bg 
+			{				
+				0="fill( x0, y0, x1, y1+18, Root.RightCol )"
+			}
+		}
+		
+		AlbumTitleStyle
+		{
+			font-size=46
+			textcolor=DefaultText
+			font-family=light
+			padding-bottom=2
+		}
+
+		ArtistStyle
+		{
+			font-size=24
+			textcolor=DefaultText
+			font-family=semilight 
+			bgcolor=none
+		}
+		
+		TracksInfoStyle
+		{
+			font-size=18
+			textcolor=DefaultText.Hover
+			font-family=basefont
+			font-weight=400 
+			bgcolor=none
+		}
+		
+		TrackStyle
+		{
+			padding-bottom=10
+			padding-top=0
+			textcolor=DefaultText
+			font-family=basefont
+			font-weight=400 
+			bgcolor=none
+			render_bg{
+			}
+		}
+		
+		TrackStyle:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+		
+		CoverStyle
+		{
+
+		}
+		
+		AdditionalActionButtonStyle
+		{
+			font-family=basefont
+			textcolor=DefaultText
+			render_bg	{}
+		}
+		
+		AdditionalActionButtonStyle:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+		
+		
+		ActionButtonStyle
+		{   
+			inset="18 0 0 0"
+			font-family=basefont
+			textcolor=DefaultText
+			render_bg	{}
+
+			render
+			{
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
+			}
+		}
+		ActionButtonStyle:hover
+		{
+			textcolor=DefaultText.Hover
+			render
+			{
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play_hover )"
+			}
+		}
+		
+		ActionButtonStyle:active
+		{
+			textcolor=DefaultText
+			render
+			{
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/music/play )"
+			}
+		}
+	}
+
+	layout
+	{
+		region { name=bodyregion margin=18 margin-bottom=0 overflow=allow-vertical}		
+		//region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
+		//region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
+		//region { name=trackcolumn width=max overflow=scroll-vertical }
+		
+		place { control="CoverImage" align=top width=200 height=200 region=bodyregion x=0 y=0}
+		
+		place { control="AlbumTitleLabel" region=bodyregion start=CoverImage dir=right x=20 y=0 }
+		place { control="ArtistLabel,TracksInfoLabel" region=bodyregion start=AlbumTitleLabel dir=down}
+		place { control="PlayTracksButton" region=bodyregion y=5 start=TracksInfoLabel dir=down}
+		place { control="AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton" margin-left=5 region=bodyregion dir=right start=PlayTracksButton spacing=5  }
+		place { control=*MusicPageDetailsTrack dir=down y=220 x=0 width=max region=bodyregion}
+	}
+}

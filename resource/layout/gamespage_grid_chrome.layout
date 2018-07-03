@@ -1,0 +1,160 @@
+"resource/layout/gamespage_grid_chrome.layout"
+{
+	controls
+	{
+		"chromeborder"
+		{
+			ControlName					Panel
+			style						ChromeBorderItem
+			mouseinputenabled			0
+		}
+		
+		
+		"launch"
+		{
+			zpos="1"
+			// this control's text and command will be clobbered by code based on the installation state
+			ControlName					URLLabel
+			labelText					"#steam_launch"
+			style						CUILaunchButton
+			command						launch
+		}
+		
+				
+		"divider"
+		{
+			zpos="1"
+			// 
+			ControlName					Label
+			labelText					"|"
+			style						GridNavDivider
+
+		}
+		
+		"details"
+		{
+			zpos="1"
+			ControlName					URLLabel
+			labelText					"#steam_details"
+			style						CUIDetailsButton
+			command						details
+		}
+	}
+
+	styles
+	{
+		ChromeBorderItem
+		{
+			
+			render
+			{
+				// bgfill
+				
+				0="fill( x0 , y0, x1, y1, Root.BackTransparent )"		
+
+
+     		 }			
+		}	
+
+
+		GridNavDivider
+		{
+			textcolor=DefaultText
+			bgcolor="none"
+			font-family=basefont
+			inset="1 1 0 0 "
+			font-size=15 [$LINUX]
+			font-size=20
+		}
+		
+		CUILaunchButton
+		{   
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+			textcolor=DefaultText
+			font-style=none
+			bgcolor=none   
+			padding-left=23
+			padding-top=1
+			render
+			{
+				1="image( x0+4, y0+4, x1, y1, graphics/Threshold/icons/play )"
+			}
+		}
+		
+		CUILaunchButton:Hover
+		{   
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+			textcolor=DefaultText.Hover
+			font-style=none
+			padding-top=1
+			bgcolor=none   
+
+			render
+			{
+				1="image( x0+4, y0+4, x1, y1, graphics/Threshold/icons/play_hover )"
+			}
+		}
+	
+		CUIDetailsButton
+		{   
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+			textcolor=DefaultText
+			font-style=none
+			bgcolor=none   
+			padding-left=22
+			padding-top=1
+
+			render
+			{
+				1="image( x0, y0+4, x1, y1, graphics/Threshold/icons/search_hover )"
+			}
+		}
+		
+		CUIDetailsButton:Hover
+		{   
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20	
+			font-weight=400
+			textcolor=DefaultText.Hover
+			font-style=none
+			bgcolor=none   
+			padding-top=1
+			render
+			{
+				1="image( x0, y0+4, x1, y1, graphics/Threshold/icons/search )"
+			}
+		}
+	
+
+		"GameItem_Updating CUINavButton:hover"
+		{
+			textcolor=DefaultText
+		}
+	}
+
+	
+	layout
+	{
+		region { name="actions" align=bottom width=max height=50 x=0 y=200 margin-bottom=0}
+		
+		place
+		{
+			control=chromeborder	region=actions			x=0 y=0 width=max height=max
+		}
+
+		place
+		{
+			control="launch,divider,details"	region="actions"		align=top-center spacing=8 margin-bottom=18 margin-left=0 margin-top=8
+		}
+	}
+}

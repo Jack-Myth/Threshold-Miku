@@ -1,0 +1,67 @@
+"resource/layout/settingssubstreaming_pin.layout"
+{
+	controls
+	{
+		StreamingPINDialog { controlname="Frame" title="#Steam_Settings_Streaming_PIN_Title" style="StreamingPINDialog" }
+
+		Description { controlname="Label" style="Description" wrap=1 labelText="#Steam_Settings_Streaming_PIN_Text" }
+
+		PIN1 { controlname="TextEntry" style="Password" tabposition=1 }
+		PIN2 { controlname="TextEntry" style="Password" tabposition=2 }
+		
+		KeyImage { controlname="Label" style="Key" zpos=-4 }
+		
+		OK { controlname="Button" fieldName="OK" tabposition=3 command="Save" labeltext="#PropertyDialog_OK" default=1 }
+		Cancel { controlname="Button" tabposition=4 command="Close" labeltext="#PropertyDialog_Cancel" }
+	}
+	
+	styles
+	{
+		StreamingPINDialog
+		{
+			minimum-width = 400
+			minimum-height = 260
+		}
+
+		Password
+		{
+			minimum-height=50
+			font-size=40
+		}
+		
+		Description
+		{
+
+		}
+
+		Key
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/keybg"
+			inset="20 20 0 0"
+		}
+
+	}
+	
+	layout
+	{
+		region { name="top" width=max height=260 margin=20 margin-top=40}
+
+		region { name="bottom" width=max align=bottom height=45 align="bottom" }
+
+		place { control="KeyImage" region="top" align=left x=150 y=0 width=max height=max margin-top=-20 margin-right=0}
+
+		place { control="Description" region="top" width=max }
+
+		place { control="PIN1,PIN2" start=Description dir=down region="top" margin-top=15 spacing=10 width=165 }
+		
+		// bottom: OK/cancel
+		place { control="OK,Cancel" region="bottom"
+						width=92 align=right
+						margin-right=10 margin-top=0
+						margin-bottom=10 spacing=10 }
+	}
+
+}
+

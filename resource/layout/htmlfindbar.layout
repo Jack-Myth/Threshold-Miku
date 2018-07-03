@@ -1,0 +1,56 @@
+"resource/layout/htmlfindbar.layout"
+{
+	controls
+	{
+		FindEntry { controlname=TextEntry default=1 unicode=1 tabposition=1 style="FindEntry" }
+		FindCount { controlname=Label labeltext="#vgui_HTMLSearchMatch" }
+		Close { controlname=Button command="Close" style="CloseButtonSm" }
+		Next { controlname=Button command="next" style="NextButtonSm" }
+		Previous { controlname=Button command="previous" style="PrevButtonSm" }
+		SearchThisPage { controlname=Label labeltext="#vgui_HTMLSearchThisPage" style="" }
+	}
+
+	styles
+	{
+		
+		FindEntry:focus
+		{
+			textcolor=TextBox.Hover.Text
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, TextBox.Back)"
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, TextBox.Outline.Active )"  // top
+				2="fill( x0, y1 - 1, x1, y1, TextBox.Outline.Active )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, TextBox.Outline.Active )"  // left
+				4="fill( x1 - 1, y0, x1, y1, TextBox.Outline.Active )"  // right
+			} 
+		}
+		CloseButtonSm
+		{
+			inset="1 0 0 0"
+			minimum-width=32
+			image="graphics/Threshold/icons/close"
+		}
+		NextButtonSm
+		{
+			inset="0 0 0 0"
+			minimum-width=32
+			image="graphics/Threshold/icons/down"
+		}
+		PrevButtonSm
+		{
+			inset="0 0 0 0"
+			minimum-width=32
+			image="graphics/Threshold/icons/up"
+		}
+	}
+		
+	layout
+	{
+		place { control="FindEntry" width=max align=left y=10 margin-left=8 margin-right=126 }
+		place { control="FindCount,Next,Previous,Close" height=32 align=right margin-right=8 margin-top=10 spacing=8 }
+		place { control="SearchThisPage" width=0 height=0}
+
+	}
+}

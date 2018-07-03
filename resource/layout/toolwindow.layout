@@ -1,0 +1,117 @@
+"resource/layout/toolwindow.layout"
+{
+	controls
+	{
+		// the container
+		ToolWindowSheet	{	controlname="PropertySheet" }
+	} 
+	
+		
+	styles
+	{
+		Frame
+		{
+			minimum-height=460
+			minimum-width=460
+		}
+		ToolWindow
+		{
+			bgcolor=DefaultBackground
+			render_bg
+			{
+				//Has no frametitle, need to draw one
+				0="fill(x0,y0,x1,y0+32,TitleBar.Focus)"
+				1="fill(x0,y0+32,x1,y1,Root.TabBar)"
+			}
+		}
+		
+		ToolWindow:frameFocus
+		{			
+			minimum-height=460
+			minimum-width=460
+			bgcolor=DefaultBackground
+			render_bg
+			{
+				//Has no frametitle, need to draw one
+				0="fill(x0,y0,x1,y0+32,TitleBar)"
+				1="fill(x0,y0+32,x1,y1,Root.TabBar)"
+			}
+		}
+		
+		
+		Button //New tab button
+		{     
+			textcolor="0 0 0 0" // don't render the + as text
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1 - 1, y1 - 8, DefaultBackground )"
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"	
+			}
+		}
+		  
+		Button:hover
+		{     
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1 - 1, y1 - 8, Menu.Button.Hover )"	
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/Threshold/icons/plus_sm)"				
+			}
+		}
+
+		  
+		MenuButton // Show tabs button
+		{ 
+			padding-left=5
+			padding-right=5
+			inset="-3 4 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0 - 1, y0, x1, y1 + 3, DefaultBackground )"
+			}
+		}
+		
+		MenuButton:hover
+		{ 
+			render_bg
+			{
+				// background fill
+				0="fill( x0 - 1, y0, x1, y1 + 3, Menu.Button.Hover )"
+			}	
+		}
+		
+		MenuButton:selected
+		{ 
+			render_bg
+			{
+				// background fill
+				0="fill( x0 - 1, y0, x1, y1 + 3, Accent )"
+			}
+		}
+		  
+		TabMenuButtonFlash
+		{ 
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Accent )"
+			}
+		}
+	  
+		TabMenuItemFlash
+		{
+			textcolor="Accent"
+		}
+    
+	}
+
+	layout
+	{
+		place { control="frame_minimize, frame_maximize, frame_close" align=right margin-top=0 margin-right=0 width=46 height=32 spacing=0 }
+		place { control="ToolWindowSheet" x=0 y=28 height=max width=max margin-right=0 }
+	}
+}

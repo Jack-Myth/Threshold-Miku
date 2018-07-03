@@ -1,0 +1,10 @@
+The default Accent options, "Accent", "Accent.Hover", and "Accent.Selected" are all relative shades of the main Accent color, corresponding to button states. "AccentInv" is an inverted color to the Accent, currently only used for the Downloads section Disk Usage graph.
+
+The UWP Documentation states that text on Accent colored backgrounds needs to be either white or black, depending on the Accent color. The "Accent.Text" color is responsible for all text on accent backgrounds. Note: Images on Accent colored elements are currently all white, so black text is not 100% supported.
+
+"TitleBar", "TitleBar.Focus", "TitleBar.Accent", and "TitleBar.Accent.Hover" are all specific colors for the Accented Title Bar option. All are likely just previous colors, but these are seperate entities in case you want to specify a different color.
+These options (with the exception of "TitleBar.Accent" and "TitleBar.Accent.Hover") are overwritten if the Accented Title Bar option is disabled.
+
+"Frame.Outline" and "Frame.Outline.Focus" are colors for the optional Window Outlines feature. Note that "Frame.Outline.Focus" is actually the color the border will be when the window is OUT of focus.
+
+"Notification.Back" is the background color of notifications. Be cautious changing this, as it could make icons/text difficult to read.

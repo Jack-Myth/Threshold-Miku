@@ -1,0 +1,77 @@
+"resource/layout/overlay_achievementsdetails.layout"
+{
+	controls
+	{
+		AchievementsDetailPanel 
+		{ 
+			controlname="COverlay_Details_Acheivements" 
+			style=detailsbox
+		}
+		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
+		
+		ViewAchievementsButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewAchievements"
+		}
+		
+		progressbackground { controlname="ImagePanel" style="progressbackground" }
+		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+		
+		
+		ProgressTextEarned { controlname=label style=highlight labeltext="#Overlay_Achievement_Progress" }
+
+	}
+	
+	colors
+	{
+
+	}
+	
+	styles
+	{
+		
+		highlight
+		{
+			inset="0 2 0 0"
+			textcolor=DefaultText.Hover
+		}
+		progressbackground
+		{
+			bgcolor=none
+			render_bg
+			{
+			// lines around
+				1="fill( x0, y0, x1, y1, Progress.Back )"
+	
+			}
+		}
+
+		progressbarimage
+		{
+			bgcolor=Accent
+			render
+			{
+				0="fill( x0, y0, x1+1, y1, Accent )" //Progressbar is 1px off
+			}
+		}
+		
+		
+	}
+	
+	layout
+	{
+		region { name=box margin-top=10 margin-bottom=10 margin-left=20 margin-right=20 width=max height=max }
+		
+		place { control="TitleText,ProgressTextEarned" region=box dir=right spacing=20 height=28}
+		
+		place { control=*achievement region=box y=40 x=0 width=200 height=max margin-bottom=50 }
+
+		
+		place { control=progressbackground region=box align=bottom width=max height=10 margin-bottom=40}
+		place { control=progressbarimage region=box align=bottom height=10 margin-bottom=40}
+
+		place { controls=ViewAchievementsButton region=box align=bottom }
+		
+	}
+}

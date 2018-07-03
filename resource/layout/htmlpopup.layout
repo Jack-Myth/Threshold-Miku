@@ -1,0 +1,141 @@
+"resource/layout/htmlpopup.layout"
+{
+	controls
+	{
+		HTMLPopup { controlname="HTMLPopup" frametitle="" }
+		htmlpopupchild	{ controlname="HTML" zpos=1 }
+		URLBar		{ controlname="TextEntry" style="TextEntryURL" enabled=false }
+		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
+		StatusText { controlname="Label" }
+		
+		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
+		StopButton	{ controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
+		ReloadButton	{ controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
+		ForwardButton	{ controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
+		BackButton	{ controlname="Button" command="WebBack" style="BackButtonSm" }
+		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
+	}
+	
+	styles
+	{
+		BackButtonSm
+		{
+			bgcolor=none
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/back"
+		}
+		BackButtonSm:hover
+		{
+			bgcolor=Menu.Button.Hover
+			image="graphics/Threshold/back"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
+		}
+		BackButtonSm:active
+		{
+			bgcolor=Accent
+			image="graphics/Threshold/back"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Accent)"
+			}
+		}
+		BackButtonSm:disabled
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/Threshold/back_dis"
+		}
+		ForwardButtonSm
+		{
+			bgcolor=none
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/forward"
+		}
+		
+		ForwardButtonSm:hover
+		{
+			bgcolor=Menu.Button.Hover
+			image="graphics/Threshold/forward"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
+			}
+		}
+		ForwardButtonSm:active
+		{
+			bgcolor=Accent
+			image="graphics/Threshold/forward"
+			render_bg={
+				0="fill(x0,y0,x1,y1,Menu.Button.Accent)"
+			}
+		}
+		ForwardButtonSm:disabled
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/Threshold/forward_dis"
+		}
+		
+			
+		LabelEVCert
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			textcolor="DefaultBackground"
+			font-weight=400
+			bgcolor="html.secureurl"
+			inset-left=4
+			inset-right=4
+			inset-top=-1		
+		}
+		
+		URLStatusImage
+		{
+			bgcolor=none
+			inset="0 0 0 0"	
+		}
+
+		TextEntryURL
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			inset="5 0 0 0"
+			render_bg { }
+			render { }			
+		}
+
+		TextEntryURL:Hover
+		{
+			render_bg { }
+			render { }	
+		
+		}
+	
+		URLBarSecure
+		{
+		textcolor="html.secureurl"
+		}
+
+		URLBarBrokenSecure
+		{
+		textcolor="html.insecureurl"
+		}
+	}
+	
+	layout
+	{
+		region { name=hidden width=0 height=0}
+		place { control="htmlpopupchild"  	width=max height=max margin-top=72 margin-left=0 margin-right=0 margin-bottom=26 }
+		place { control="StatusText" align=bottom height=24 margin-left=9 margin-bottom=1 }
+		place { control="PageLoadThrobber" align=right y=32 margin-right=10 width=20 height=40 }	
+	
+		place { control="BackButton,ForwardButton,ReloadButton,StopButton,URLStatusImage" y=32 x=0 width=40 spacing=0 height=40}
+		place { control="URLBar" start=URLStatusImage dir=right height=40 width=max margin-right=40}
+		place { control="EVCert" region=hidden} //I dont think we need 3 seperate elements confirming a secure transaction, but maybe im crazy
+	}
+	
+}
+

@@ -1,0 +1,96 @@
+"resource/layout/gamespage_details_achievements_most_recent.layout"
+{
+	controls
+	{
+		mostrecent_area { controlname="CAchievementsMostRecentPanel" style="mostrecent" }
+
+		mostrecent_label { controlname="Label" style="mostrecent_label" labeltext="#steam_achievement_mostrecent" } 
+		mostrecent_background { controlname="Label" style=achievementimagebg zpos="0" labeltext="" mouseinputenabled=0 }
+		mostrecent_image { controlname="ImagePanel" zpos=-1 style="mostrecent_image" }
+		mostrecent_name { controlname="Label" style="mostrecent_name" labeltext="" }
+		mostrecent_unlockedsofar { controlname="Label" style="mostrecent_unlockedsofar" labeltext="#steam_achievement_unlockedsofar" }
+
+		progressbackground { controlname="ImagePanel" style="progressbackground" }
+		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+
+	}
+	colors
+	{
+		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
+		GameDetailsAchievements.ProgressBarMargins "0"
+		
+		Tooltip.Anchor=Parent
+	}
+	styles
+	{
+		mostrecent
+		{
+			minimum-height="110"
+		}
+
+		achievementimagebg
+		{
+			bgcolor=none
+			inset="0 0 0 0"
+      		image="graphics/achievementbg_recent"    
+     		
+		}
+
+		mostrecent_label
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400
+		}
+		
+		mostrecent_name
+		{
+			font-size=16 [$LINUX]
+			font-size=24
+			font-family=semilight
+		}
+
+		mostrecent_unlockedsofar
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			font-family=semibold
+			textcolor=Root.SubLabel.Text
+		}
+
+		progressbackground
+		{
+			bgcolor=none
+			render_bg
+			{
+			// lines around
+				1="fill( x0, y0, x1, y1, Progress.Back )"
+	
+			}
+		}
+
+		progressbarimage
+		{
+			bgcolor=Accent
+			render
+			{
+				0="fill( x0, y0, x1+1, y1, Accent )" //Progressbar is 1px off
+			}
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=0 width=max height=max }
+
+		place { region=body control=mostrecent_label x=82 y=9 width=max }
+		place { region=body control=mostrecent_name x=82 y=27 width=max }
+		place { region=body control=mostrecent_unlockedsofar x=82 y=54 width=max }
+
+		place { region=body control=mostrecent_background x=2 y=2 width=80 height=80 }
+		place { region=body control=mostrecent_image x=5 y=10 width=64 height=64 }
+
+		place { region=body control=progressbackground y=92 width=max height=10}
+		place { region=body control=progressbarimage y=92 height=10}
+	}
+}

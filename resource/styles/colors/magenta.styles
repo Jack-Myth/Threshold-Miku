@@ -1,0 +1,23 @@
+"magenta.styles"
+{
+	colors
+	{
+		Accent="234 0 94 255"
+		Accent.Hover="153 0 94 255"
+		Accent.Selected="191 0 117 255"
+		Accent.Text="255 255 255 255" //Color of text on Accent color, usually white or black
+
+		AccentInv="0 255 255 255" //Complimentary color for disk usage
+		
+		//These are for the Colored Titlebar Option
+		TitleBar=Accent //TitleBar background
+		TitleBar.Focus="8 8 8 255" //For loss of focus
+		TitleBar.Accent=Accent.Hover //Colored buttons on/close to Titlebar
+		TitleBar.Accent.Hover=Accent.Selected //Hover states for colored buttons
+		Notification.Back="31 31 31 255"
+
+		//These are for the Window Border Option
+		Frame.Outline=Accent
+		Frame.Outline.Focus="125 125 125 255"
+	}
+}

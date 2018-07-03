@@ -1,0 +1,128 @@
+"resource/layout/musicplayerpanel.layout"
+{
+	controls
+	{	
+		CurrentAlbumImage { controlname=ImagePanel style="CurrentAlbumImageStyle" scaling=fit}
+
+		CurrentStatusLabel { controlname=Label style="StatusStyleDim" labeltext="NOW PLAYING" }
+		CurrentTrackLabel	{	controlname=Label	style="StatusStyle"	labeltext=""	}
+		CurrentArtistLabel { controlname=Label style="statusStyle" labeltext="" }
+		
+		RepeatButton { controlname=ToggleButton labeltext="" tooltiptext="#music_tooltip_repeat" command="ToggleRepeat" style="RepeatButtonStyle" }
+		ShuffleButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_shuffle" command="ToggleShuffle" style="ShuffleButtonStyle" }
+		PreviousButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_previous" command="PreviousTrack" style="PreviousButtonStyle" }
+		NextButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_next" command="NextTrack" style="NextButtonStyle" }
+		PlayPauseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_playpause" command="TogglePlayPause" style="PlayButtonStyle" }
+		VolumeButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_volume" command="Volume" style="VolumeButtonStyle" }
+		BrowseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_browse" command="BrowseMusic" style="BrowseButtonStyle" }
+		
+		TrackList { controlname=ListPanel style="MusicListPanelInterior" }
+		NoTracksLabel { controlname=Label style="NoTracksLabelStyle" labeltext="" zpos="-1" }
+		InfoLabel { controlname=Label style="InfoLabelStyle" labeltext="1 OF 10"  zpos="-1" textalignment=center }
+		
+		SeekBar { ControlName="Slider" style="SeekBarStyle" showticks="0" showbar="1"}
+
+		frame_title
+		{
+			ControlName=Label
+	
+			style="ClientTitle"
+			"textAlignment"   "west"
+			"textAlignment"   "center" [$OSX]
+		}
+	}
+
+	colors
+	{
+	}
+
+	styles
+	{
+		CMusicPlayerPanel	
+		{
+			bgcolor=none
+			
+			minimum-width = 440
+			minimum-height = 108
+			
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, DefaultBackground )"
+				0="fill( x0, y1-76, x1, y1, Accent.Hover )"
+			}
+		}		
+		
+		MusicListPanelInterior
+		{     
+			inset="0 -3 0 0"
+			padding-left=15
+			font-size=15
+			textcolor=DefaultText
+			bgcolor="none"
+			render_bg {}
+    	}
+
+		CurrentAlbumImageStyle	{	}
+		RepeatButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep	inset="3 0 0 0" padding="0" }
+		RepeatButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_hover	}
+		RepeatButtonStyle:selected	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_sel inset="-4 0 0 0" }
+		RepeatButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_sel_hover inset="-4 0 0 0"}
+		RepeatOnceButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_once	inset="3 0 0 0" padding="0" }
+		RepeatOnceButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_once_hover	 }
+		RepeatOnceButtonStyle:selected	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_once_sel inset="-4 0 0 0"}
+		RepeatOnceButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_once_sel_hover inset="-4 0 0 0"}
+		ShuffleButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf	inset="3 0 0 0"}
+		ShuffleButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_hover	}
+		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel inset="0 0 0 0"}
+		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel_hover inset="0 0 0 0"}
+		PreviousButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/prev	inset="3 0 0 0"}
+		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/prev_hover }
+		NextButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/next	inset="3 0 0 0"}
+		NextButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/next_hover	}
+		PlayButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/play inset="3 0 0 0"}
+		PlayButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/play_hover }
+		PauseButtonStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/pause inset="3 0 0 0"}
+		PauseButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/pause_hover }
+		VolumeButtonStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/vol	inset="3 0 0 0"}
+		VolumeButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/vol_hover }
+		VolumeButtonActiveStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/vol	inset="3 0 0 0"}
+		VolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/vol_hover }				
+		MuteVolumeButtonStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/mute	inset="3 0 0 0"}
+		MuteVolumeButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/mute_hover }
+		MuteVolumeButtonActiveStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/mute	inset="3 0 0 0"}
+		MuteVolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/mute_hover}
+		
+		BrowseButtonStyle {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/browse inset="3 0 0 0"}
+		BrowseButtonStyle:hover {	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/browse_hover	}
+		
+		StatusStyle	{ render_bg={} font-family=basefont textcolor="DefaultText" font-size=15 }
+		StatusStyleDim	{ render_bg={} font-family=basefont textcolor="DefaultText.Hover" font-size=15}
+		InfoLabelStyle	{ render_bg={} font-family=basefont font-size=15 textcolor="DefaultText.Disabled" }
+		TrackListStyle { }
+		NoTracksLabelStyle	{	bgcolor=none render_bg={} }
+		SeekBarStyle	{ bgcolor=none font-family=basefont font-size=16 textcolor="DefaultText"}
+		
+	}
+	
+	
+	layout
+	{
+		region { name=hidden y=0 x=0 width=0 height=0}
+		place { control="CurrentStatusLabel" region=hidden x=64 y=4 width=max } //why valve. why does this exist
+		place { control="InfoLabel" region=hidden align=bottom x=10 y=94 width=max margin-right=10 margin-bottom=8 }
+		
+		region { name=currenttrack x=10 width=max align=bottom height=76 margin-right=290 }
+		place {	control="CurrentAlbumImage"	region=currenttrack x=0 y=10 width=56 height=56	}
+		place { control="CurrentTrackLabel" region=currenttrack x=64 y=20 width=max}
+		place { control="CurrentArtistLabel" region=currenttrack x=64 y=36 width=max }
+		
+		region { name=transport width=280 height=76 align=bottom-right}
+		place { control="PreviousButton,PlayPauseButton,NextButton,VolumeButton,ShuffleButton,RepeatButton,BrowseButton" region=transport x=0 y=0 spacing=0 margin=0 height=40 width=40}
+		place { control=SeekBar region=transport x=10 y=44 height=20 width=260 }
+
+		place { control="TrackList" y=32 width=max height=max margin-bottom=76 }
+		place { control="NoTracksLabel" y=42 margin-bottom=76 align="top-center" }
+		
+	}
+	
+}

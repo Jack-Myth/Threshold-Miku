@@ -1,0 +1,116 @@
+"resource/layout/settingssubmusic.layout"
+{
+	controls
+	{
+			LibraryHeader { controlname="Label" labelText="#Music_Settings_Library_Header" style="HeaderText" }			
+			LibraryList { controlname=ListPanel tabposition=1 style="LibraryListStyle" }
+			
+			AddLibraryButton {
+				controlname="Button" 
+				labeltext="#Music_Settings_Library_Add" 
+				style="ActionButtonStyle"
+				command="AddEntryToLibraryAction"
+			}
+			RemoveLibraryButton {
+				controlname="Button" 
+				labeltext="#Music_Settings_Library_Remove" 
+				style="ActionButtonStyle"
+				command="RemoveSelectedEntryFromLibraryAction"
+			}
+			StartCrawlingButton {
+				controlname="Button" 
+				labeltext="#Music_Settings_Library_StartCrawling" 
+				style="ActionButtonStyle"
+				command="StartCrawlingAction"
+			}		
+					
+			
+			LibraryDivider { ControlName="divider" }
+			
+			DatabaseHeader { controlname="Label" labelText="#Music_Settings_Database_Header" style="HeaderText" }
+			DatabaseCrawlAtStartup { ControlName="CheckButton" labelText="#Music_Settings_Database_CrawlAtStartup" }
+			DatabaseCrawlSteamInstallFolders { ControlName="CheckButton" labelText="#Music_Settings_CrawlSteamInstallFolders" }						
+			DatabaseInfoLabel  { controlname="Label" labelText="#Music_Settings_Database_XAlbumsWithYTracks" style="DescriptionLabel" }
+			ResetDatabaseButton {
+				controlname="Button" 
+				labeltext="#Music_Settings_Database_ResetDatabase" 
+				style="ActionButtonStyle"
+				command="ResetDatabaseAction"
+			}
+			DatabaseDivider { ControlName="divider" }
+			
+			VolumeHeader { ControlName="Label" labelText="#Music_Settings_Volume_Header" style="HeaderText" }		
+			VolumeSlider { ControlName="Slider" style="VolumeSliderStyle" }
+			VolumeDivider { ControlName="divider" }
+			
+			PauseMusicHeader { ControlName="Label" labelText="#Music_Settings_PauseMusic_Header" style="HeaderText" }
+			PauseMusicWhenStartingApplicationCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenStartingApplication" }
+			PauseMusicWhenVoiceChatCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenVoiceChat" }
+
+			NotificationHeader { ControlName="Label" labelText="#Music_Settings_Notification_Header" style="HeaderText" }
+			NotificationPlaylistNowPlayingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_NotificationPlaylistNowPlaying" }
+			EnableMediaKeysCheckbox { ControlName="CheckButton" labelText="#Music_Settings_EnableMediaKeys" }
+			
+			LoggingHeader { ControlName="Label" labelText="#Music_Settings_Logging_Header" style="HeaderText" }
+			LoggingCrawlingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_LoggingCrawling" }
+	}
+	
+	styles
+	{
+		DescriptionLabel
+		{	
+			
+		}
+		
+		LibraryListStyle
+		{
+			bgcolor=List.Back
+			font-size=13 [$LINUX]
+			font-size=15
+		}
+		
+		HeaderText
+		{
+			textcolor=DefaultText
+			font-size=18 [$LINUX]
+			font-size=24
+		}
+		
+		
+		VolumeSliderStyle	{ bgcolor=none font-family=basefont font-size=16	}
+	}
+	
+	layout
+	{
+		region { name=content height=max width=max margin-left=20 margin-right=20 margin-top=20}		
+		
+		place { control=LibraryHeader region=content }
+		place { control=LibraryList region=content width=max start=LibraryHeader margin-top=10 dir=down height=80}
+		
+		place { control=AddLibraryButton,RemoveLibraryButton,StartCrawlingButton region=content y=120 dir=right spacing=10 }
+		place { control=LibraryDivider region=content start=AddLibraryButton dir=down margin-top=15 width=max }
+		
+		place { control=DatabaseHeader region=content start=LibraryDivider dir=down margin-top=10 }
+		place { control=DatabaseCrawlAtStartup region=content start=DatabaseHeader dir=down margin-top=5}	
+		place { control=DatabaseCrawlSteamInstallFolders region=content start=DatabaseHeader dir=down margin-top=5 x=250}
+
+		place { control=ResetDatabaseButton region=content start=DatabaseCrawlAtStartup dir=down margin-top=8}
+		place { control=DatabaseInfoLabel region=content start=ResetDatabaseButton dir=right margin-left=10 margin-top=3}
+
+		place { control=DatabaseDivider region=content start=ResetDatabaseButton dir=down margin-top=15 width=max }
+		
+		place { control=VolumeHeader region=content start=DatabaseDivider dir=down margin-top=15 }
+		place { control=VolumeSlider region=content start=VolumeHeader dir=right margin-left=10 width=200 spacing=10 }
+		place { control=EnableMediaKeysCheckbox region=content start=VolumeHeader dir=down margin-top=10 spacing=10 }
+		place { control=VolumeDivider region=content start=EnableMediaKeysCheckbox dir=down margin-top=10 width=max }
+		
+		place { control=PauseMusicHeader region=content start=VolumeDivider dir=down margin-top=10 }
+		place { control="PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox" region=content start=PauseMusicHeader dir=down margin-top=5 }
+		place { control=LoggingHeader region=content start=VolumeDivider dir=down margin-top=10 x=250}
+		place { control=LoggingCrawlingCheckbox region=content start=LoggingHeader dir=down margin-top=5}
+		place { control=NotificationHeader region=content start=PauseMusicWhenVoiceChatCheckbox dir=down margin-top=10 }
+		place { control=NotificationPlaylistNowPlayingCheckbox region=content start=NotificationHeader dir=down margin-top=5}
+		
+		
+	}
+}

@@ -1,0 +1,209 @@
+"resource/layout/gamespage_details_subheader.layout"
+{
+	controls
+	{
+		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
+		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
+		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
+	}
+
+	colors
+	{
+		GameDetailsSubHeader.HorizontalSpacing=10
+		GameDetailsSubHeader.VerticalMargin=10
+	}
+
+	styles
+	{
+		CDetailsGameSubHeaderPanel
+		{
+			bgcolor=Root.BackTransparent
+		}
+		
+		
+		ClientListButton
+		{
+			inset="-4 4 0 0"
+			// minimum-width=20
+			// minimum-height set by code to match actual height of Launch button
+			// Do not set either minimum-width or -height here or it will override the code and the layout will break
+			bgcolor=Accent
+			render_bg {}
+			render {}
+		}
+		
+		ClientListButton:hover
+		{
+			bgcolor=Accent.Hover
+		}	
+		
+		ClientListButton:active
+		{
+			bgcolor=Accent.Hover
+		}	
+				
+		ClientListButton:selected
+		{
+			bgcolor=Accent.Hover
+		}	
+		
+
+		DetailsButton
+		{   
+			inset="-3 0 0 0"
+			font-family=basefont
+			font-weight=400
+			textcolor=Accent.Text
+			//font-style=uppercase
+			bgcolor=Accent
+
+			render_bg {}
+		}
+		
+		DetailsButton:hover
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsButton:active
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsLaunchButton
+		{   
+			inset="20 0 0 1"
+			font-family=basefont
+			font-weight=400
+			textcolor=Accent.Text
+			//font-style=uppercase
+			bgcolor=Accent
+
+			render
+			{
+				1="image( x0 + 9, y0 + 7, x1, y1, graphics/Threshold/icons/play )"
+			}
+			render_bg {}	
+		}
+	
+		DetailsLaunchButton:Hover
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsLaunchButton:Selected
+		{ 
+			bgcolor=Accent.Hover
+		}
+		
+		
+		DetailsLaunchButton:Active
+		{
+			bgcolor=Accent.Hover
+		}
+				
+		DetailsInstallButton
+		{  
+			
+			inset="20 0 0 1"
+			font-family=basefont
+			font-weight=400
+			textcolor=Accent.Text
+			//font-style=uppercase
+			bgcolor=Accent 
+			render
+			{
+				1="image( x0 + 8, y0 + 7, x1, y1, graphics/Threshold/icons/install)"
+			}
+			render_bg {}
+		}
+		
+		DetailsInstallButton:Hover
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsInstallButton:Selected
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		
+		DetailsInstallButton:Active
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		
+		DetailsBuyButton
+		{   
+			inset="20 0 0 1"
+			font-family=basefont
+			font-weight=400
+			textcolor=Accent.Text
+			//font-style=uppercase
+			bgcolor=Accent
+
+			render
+			{
+				1="image( x0 + 6, y0 + 7, x1, y1, graphics/Threshold/icons/buy )"
+			}
+			render_bg {}
+		}
+		
+		DetailsBuyButton:hover
+		{   
+			bgcolor=Accent.Hover
+		}
+		
+		DetailsBuyButton:active
+		{
+			bgcolor=Accent.Hover
+		}
+		
+		
+		DetailsBuyButton:Selected
+		{
+			bgcolor=Accent.Hover
+		}
+	}
+
+	layout
+	{
+		// Y offset here should match the vertical padding value above in the colors section
+		region { name="header" y=0 x=0 width=max height=max }
+
+		place { 
+			control=launchbutton
+			region=header
+			dir=right
+			align=middle
+			margin-left=10
+			margin-right=0
+			margin-top=10
+			margin-bottom=10
+			spacing=0
+		}
+		place { 
+			start=launchbutton
+			control=clientlist
+			region=header
+			dir=right
+			align=middle
+			margin-left=0
+			margin-right=0
+			spacing=0
+		}
+		place { 
+			start=clientlist
+			control=subheaderlabels
+			region=header
+			dir=right
+			align=middle
+			margin-top=-3
+			margin-left=10
+			margin-right=0
+			spacing=10
+		}
+	}
+}

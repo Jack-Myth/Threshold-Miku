@@ -1,0 +1,54 @@
+"resource/layout/gamespage_details_friends.layout"
+{
+	controls
+	{
+		friendsdetails { controlname="CGamesPage_Details_Friends" style="friendsdetails" }
+		
+		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Friends" }
+		listplayingnow	{ controlname="CGamesPage_Details_Friends_List" }
+		listplayever	{ controlname="CGamesPage_Details_Friends_List" }
+
+		viewall { controlname="Button" style="viewallbutton" labeltext="#Steam_ViewAllFriends" command="OpenFriendsDialog" }
+	}
+
+	colors
+	{
+		GameDetailsFriends.ExtraVerticalSpacing=100	
+	}
+
+	styles
+	{
+		friendsdetails
+		{
+			bgcolor=Root.RightCol
+		}
+
+		infolabel
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+		}	
+		
+	}
+
+	layout
+	{
+		region { name=body margin=10 margin-left=15 width=max height=max }
+		place { region=body control=headerlabel width=max }
+		
+		place 
+		{ 
+			region=body
+			start=headerlabel
+			dir=down
+			margin-top=10
+			width=max
+			height=72
+			control=listplayingnow,listplayever
+			dir=down
+			spacing=0
+			margin=0
+		}
+		place {	region=body control=viewall start=listplayever dir=down margin-top=10 }
+	}
+}

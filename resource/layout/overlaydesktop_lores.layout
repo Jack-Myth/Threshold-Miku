@@ -1,0 +1,85 @@
+"resource/layout/overlaydesktop_lores.layout"
+{
+	controls
+	{
+		BaseDesktopPanel
+		{ 
+			controlname="EditablePanel"
+		}
+		
+		GameHubButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameHub" style=sidemenu }
+		GameGroupsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameGroups" style=sidemenu }	
+		ChatRoomButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ChatRoom" style=sidemenu }	
+		DLCButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_DLC" style=sidemenu }			
+		GuideButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Guide" style=sidemenu }			
+		GuidesButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_SteamGuides" style=sidemenu }
+		LegacyCDKeyButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_legacycdkey" style=sidemenu }			
+		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }	
+		ForumsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Forums" style=sidemenu }	
+		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }	
+		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }	
+		
+		FriendsButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Friends" style=sidemenu }
+		PlayersButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Players" style=sidemenu }
+		AchievementsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Achievements" style=sidemenu }				
+		ScreenshotsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Screenshots" style=sidemenu }
+		
+		Clock { controlname="Label" labeltext="10:43" style=topbar }
+		ClockSuffix { controlname="Label" labeltext="am" style=clocksuffix }
+		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
+		TwoWeeksText { controlname=label style=TimeStrings }
+		ForeverText { controlname=label style=TimeStrings }
+	}
+	
+	styles
+	{
+		sidemenu
+		{
+			font-size=15
+			textcolor=DefaultText
+		}
+		
+		sidemenu:hover
+		{
+			font-size=15
+			textcolor=DefaultText.Hover
+		}
+		
+		topbar
+		{
+			font-size=24
+			textcolor=DefaultText
+		}
+		
+		clocksuffix
+		{
+			font-size=24
+			textcolor=DefaultText
+			font-weight=400
+			font-style=uppercase;
+		}
+		
+		timeStrings
+		{
+			font-size="17"
+			textcolor=DefaultText.Hover
+			font-family=basefont
+		}
+	}
+	
+	layout
+	{
+		region { name=hidden width=0 height=0}
+		region { name="main" width=max height=max} //Not used, but has to exist to remove scrollbar
+		region { name="gameOps" width=max height=max} //Ditto
+		
+		region { name=broadcast width=330 height=240 align=right margin-right=80}
+		region { name=right height=150}
+		
+		place { controls="BroadcastDetailPanel" region=broadcast width=330 height=240 align=bottom }
+		place { controls="GameHubButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton,GameGroupsButton" y=80 align=left margin-left=20 dir=down spacing=10 }
+		
+		place { control="Clock,ClockSuffix" margin-right=20 margin-top=10 align=right}
+		place { control="SessionText,TwoWeeksText,ForeverText,CloseButton" dir=down region=right align=right y=45 margin-right=20}
+	}	
+}

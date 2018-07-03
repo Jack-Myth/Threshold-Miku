@@ -1,0 +1,5 @@
+"resource/layout/gameproperties.layout" {
+	layout {
+		place { control=sheet y=28 width=max height=max margin-bottom=58}
+	}
+}

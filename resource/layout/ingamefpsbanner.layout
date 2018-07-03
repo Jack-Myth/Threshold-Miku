@@ -1,0 +1,45 @@
+"resource/layout/ingamefpsbanner.layout"
+{
+	controls
+	{
+		TextLabel { controlname=Label labeltext="99" }
+	}
+	
+	styles
+	{
+		CounterTextSmall
+		{
+			font-size=10 [$LINUX]
+			font-size=12	
+		}
+		
+		CounterTextMedium
+		{
+			font-size=12 [$LINUX]
+			font-size=14
+		}
+		
+		CounterTextLarge
+		{
+			font-size=14 [$LINUX]
+			font-size=16
+		}
+		
+		HighContrast
+		{
+			bgcolor="0 0 0 60"
+			textcolor="0 255 0 255"
+		}
+	  
+		LowContrast
+		{
+			bgcolor="0 0 0 0"
+			textcolor="128 128 128 255"
+		}
+	}
+	
+	layout
+	{
+		place { control="TextLabel" margin=4 align=center }
+	}
+}

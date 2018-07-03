@@ -1,0 +1,59 @@
+"resource/layout/layoutdebugdialog.layout"
+{
+	controls
+	{
+		wiki_link { controlname="URLLabel" labeltext="VGUI editor wiki page"  urltext="https://intranet.valvesoftware.com/wiki/index.php/VGUI_Editing" }
+	}
+	
+	styles
+	{
+		//0="image( x0, y0, x1, y1, graphics/Threshold/beta )"
+		Frame
+		{
+			minimum-height=633
+			minimum-width=800
+			render_bg
+			{
+				0="image_scale(x0,y0,x1,y1,graphics/JackMyth/LittleVirgin)"
+			}
+		}
+		Panel
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
+			}
+		}
+		ListPanelInterior
+		{
+			render_bg
+			{
+				0="image_scale(x0-7,y0-125,x1+7,y1+17,graphics/JackMyth/LittleVirgin)"
+			}
+		}
+		ListPanel
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,JackMyth.Translucent)"
+			}
+		}
+		PageTab
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
+			}
+		}
+	}
+	
+	layout
+	{
+		place { control="containerlabel,fileurl" y=30 x=6 dir="right" align="top" spacing=10 margin=4 }
+		place { control="selectionlabel" y=48 x=6 dir="right" align="top" spacing=10 margin=4 }
+		
+		place { control="tabs" y=70 width="max" height="max" }
+		place { control="wiki_link" width=0 height=0}
+	}
+
+}

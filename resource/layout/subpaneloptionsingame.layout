@@ -1,0 +1,89 @@
+"resource/layout/subpaneloptionsingame.layout"
+{
+	controls
+	{
+		TitleLabel { controlname=label labeltext="#Steam_SettingsInGameTitle" style=highlight }
+		EnableOverlayCheck {	ControlName=CheckButton labelText="#Overlay_SettingsEnable" }
+		EnableSCTenfootOverlayCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }	
+		EnableVRDesktopGameTheaterCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsEnableVRDesktopGameTheaterCheck" }	
+		HotKeySelector {	ControlName=HotKeyEntry	}
+		ScreenshotHotKeySelector { ControlName=HotKeyEntry }
+		DescriptionLabel	{ ControlName=Label labeltext="#Overlay_SettingsDescription" wrap=1  }
+		HotKeySelectorLabel {	ControlName=Label labelText="#Overlay_SettingsHotKeyLabel" }
+		ScreenshotLabel {	ControlName=Label labelText="#Overlay_SettingsScreenshotHotKeyLabel"	}
+		ScreenshotActionLabel 	{	ControlName=Label	labelText="#Overlay_SettingsScreenshotActionLabel" }
+		ScreenshotNotifyCheck { ControlName=CheckButton labelText="#Friends_DisplayNotification" style=checkbox }
+		ScreenshotPlaySoundCheck { ControlName=CheckButton labelText="#Friends_PlayASound" }
+		ScreenshotSaveUncompressedCheck { ControlName=CheckButton labelText="#Overlay_SaveUncompressed" }
+	
+		SetScreenshotFolderButton { ControlName=Button labelText="#Steam_SettingsInGameScreenshotFolder" 	command=SetScreenshotFolder }
+						
+		ShowIngameFPSLabel { ControlName=Label labelText="#Steam_Settings_Ingame_ShowFPS_Title" }
+		ShowIngameFPSCornerCombo { ControlName="ComboBox" fieldName="ShowIngameFPSCombo" editable="0" }
+		ShowIngameFPSContrastCheck { ControlName=CheckButton labelText="#Steam_Settings_Ingame_ShowFPS_HightContrast" style=checkbox }
+	
+		Divider1 { ControlName=Divider	}
+		PingRateLabel {	controlname=label	labeltext=#Steam_ServerBrowserPingRateLabel wrap=1 style=highlight		}
+		PingRateInfo {	controlname=label	labeltext=#Steam_ServerBrowserPingRateInfo wrap=1		}		
+		PingRateCombo
+		{
+			controlname=combobox
+      			editable="0"
+		}		
+	}
+	
+	colors
+	{
+	}	
+	
+	styles
+	{
+		highlight
+		{
+			textcolor=DefaultText
+			font-size=18 [$LINUX]
+			font-size=24
+		}	
+		
+		checkbox
+		{
+			padding-top=0
+			padding-bottom=0
+		}
+	}
+	
+	layout
+	{
+		region { name=box margin-top=20 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		
+		place { controls=TitleLabel region=box }
+		place { controls=DescriptionLabel width=max region=box start=TitleLabel width=max dir=down margin-top=8 }
+		place { controls=EnableOverlayCheck region=box start=DescriptionLabel margin-top=5 width=max dir=down }
+		place [!$OSX&&!$LINUX] { controls=EnableSCTenfootOverlayCheck region=box start=EnableOverlayCheck dir=down }
+		place [!$OSX&&!$LINUX] { controls=EnableVRDesktopGameTheaterCheck region=box start=EnableSCTenfootOverlayCheck dir=down }
+		
+		place [$WINDOWS] { controls=HotKeySelectorLabel,HotKeySelector start=EnableVRDesktopGameTheaterCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		place [!$WINDOWS] { controls=HotKeySelectorLabel,HotKeySelector start=EnableOverlayCheck margin-top=10 dir=down spacing=5 width=220 region=box }
+		
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=55 width=220 region=box }
+			
+		place [$WINDOWS] { controls=ScreenshotLabel start=EnableVRDesktopGameTheaterCheck margin-top=10 x=270 dir=down region=box }
+		place [!$WINDOWS] { controls=ScreenshotLabel start=EnableOverlayCheck margin-top=10 x=270 dir=down region=box }
+		place { controls=ScreenshotHotKeySelector,SetScreenshotFolderButton 
+			dir=down 
+			start=ScreenshotLabel
+			margin-top=4
+			spacing=5
+			width=220
+			region=box }
+
+		place { control=ScreenshotActionLabel region=box start=SetScreenshotFolderButton dir=down margin-top=20 }
+		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
+			margin-top=6 margin-left=10 region=box }
+		
+		place { control=Divider1 start=ShowIngameFPSContrastCheck dir=down margin-top=40 region=box width=max }
+		place { controls="PingRateLabel" region=box start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="PingRateCombo" region=box start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
+		place { controls="PingRateInfo" region=box start=PingRateCombo margin-top=10 width=max dir=down }				
+	}
+}

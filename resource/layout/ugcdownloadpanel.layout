@@ -1,0 +1,261 @@
+"resource/layout/ugcdownloadpanel.layout"
+{
+	controls
+	{
+		// this just sets the height
+		appsubscriptionsdownloadpanel {	tall="145" }
+		ugcdownloadpanel {	style="panelStyle" }
+
+		// black fill, used on the background
+
+		workshopminibanner { controlname="ImagePanel" zpos="2" image="resource/workshop_minibanner" }
+
+		// top row
+		namelabel	{ controlname="Label"	labelText="#steam_subscribed_files" style="ModuleHeading" }
+		dashlabel	{ controlname="Label"	labelText="" }
+		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_updating" style=ModuleHeading2 }
+		starttimelabel	{ controlname="Label"	labelText="#steam_downloads_initiated" style=Label2}
+		starttimefield	{ controlname="Label"	labelText="%time_started%" style=Label}
+		pauseresumebutton	{ controlname="Button" style="SmPauseButton" tooltiptext="#steam_downloads_pause" }
+
+		// second row
+		downloadtotallabel	{ controlname="Label"	labelText="#steam_downloads_gamesize_update" style="label2" }
+		downloadtotalfield	{ controlname="Label"	labelText="%download_totals%" style="label" }
+		downloadfileslabel { controlname="Label" labelText="#steam_subscribed_files_complete" style="Label2" }
+		downloadfilesfield { controlname="Label" labeltext="%download_files_totals%" style="label" }
+
+		timeremaininglabel	{ controlname="Label"	labelText="#steam_downloads_timeremaining" style="label2" group="HideOnCompletion" }
+		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="HideOnCompletion" }
+
+		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="HideOnCompletion" }
+
+
+		// right pane
+		graphdownloadrate	{ controlname="Label"	labelText="#steam_downloads_currentrate" zpos="1" style="label2" group="HideOnCompletion" }
+		
+		//
+		viewmodsbutton { controlname="Button" labelText="#steam_downloads_view_on_workshop" style=ViewModsButton command=ViewMods }
+	}
+
+	
+	colors
+	{
+	}
+
+	styles
+	{
+		panelStyle
+		{
+			
+		}	
+		panelStyleHighlight
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y1+3, Root.Header)"
+			}			
+		}
+
+		links
+		{
+			font-size=12 [$LINUX]
+			font-size=14
+			font-style=normal
+			font-family=basefont
+			//font-style="uppercase"
+			padding-left=0
+			padding-top=0
+			padding-bottom=0
+		}
+
+		links:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+
+		rightcolumnlink:hover
+		{
+			textcolor=DefaultText.Hover
+		}
+
+		label2
+		{
+			bgcolor			none
+			font-size=12 [$LINUX]
+			font-size=14
+			textcolor		Root.SubLabel.Text
+			padding-top		"0"
+			//font-style="uppercase"
+		}
+
+		ModuleHeading
+		{
+			font-family	basefont
+			bgcolor="none"
+			font-size=14 [$LINUX]
+			font-size=18
+			padding-top	"0"
+			font-weight	"700"
+		}
+
+		ModuleHeading2
+		{
+			font-family	basefont
+			bgcolor="none"
+			font-size=14 [$LINUX]
+			font-size=18
+			padding-top	"0"
+			font-weight	"400"
+		}
+
+		panelBgColorActive
+		{
+			//bgcolor="clientbg"
+		}
+
+
+		graphdownloadrate
+		{
+			font-family		"Arial"
+			font-size=12 [$LINUX]
+			font-size=14
+			//font-style="uppercase"
+			//padding-left	"10"
+			//padding-right	"20"
+		}
+
+		SmPauseButton
+		{
+
+			inset="2 0 0 0"
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=16
+			font-weight=400
+			textcolor=DefaultText
+			bgcolor=none
+			image=graphics/Threshold/icons/pause
+
+			render
+			{
+			}
+		}
+
+		SmResumeButton
+		{
+
+			inset="2 0 0 0"
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=16
+			font-weight=400
+			textcolor=DefaultText
+			bgcolor=none
+			image=graphics/Threshold/icons/install
+			
+			render
+			{
+			}
+		}
+
+		SmRemoveButton
+		{
+			inset="2 0 0 0"
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=16
+			font-weight=400
+			textcolor=DefaultText
+			bgcolor=none
+			image=graphics/Threshold/icons/close
+
+			render
+			{
+			}
+		}
+
+		SlimProgressBar
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Progress.Back )"
+			}
+			render
+			{
+			}   
+		}
+
+		
+		ViewModsButton
+		{   
+
+			inset="23 0 0 0"
+			font-family=basefont
+			font-size=14 [$LINUX]
+			font-size=16
+			font-weight=400
+			textcolor=DefaultText
+			bgcolor=none
+
+			render
+			{
+				1="image( x0 + 6, y0 + 4, x1, y1, graphics/Threshold/icons/workshop )"
+			}
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Accent )"
+			}	
+		}
+	
+		ViewModsButton:Hover
+		{   
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Accent.Hover )"
+			}	
+		}
+		
+		ViewModsButton:Disabled
+		{   
+			textcolor=DefaultText.Hover
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, Button.Disabled )"
+			}
+		}
+	}
+
+
+	layout
+	{
+	
+		region { name="column1" x=0 width=200 }
+		region { name="column2" x=210 width=max }
+		region { name="column3" x=430 width=max }
+		region { name="column4" x=0 width=max overflow=allow-horizontal } //Wierd x setting to account for smallest window size
+
+		// Left Column
+		place { control="gameimage" 		 margin-left=8 margin-top=15 width=184 height=69 }
+		place { control="workshopminibanner" margin-left=8 margin-top=15 width=184 height=69 }
+		
+		//Left-mid
+		place { control="namelabel" 		  region=column2 margin-top=16 margin-left=0 }
+		place { control="viewmodsbutton" 	  region=column2 start=namelabel dir=down margin-top=10 height=23}
+		place { control="downloadprogressbar" region=column2 start=viewmodsbutton margin-top=5 dir=down spacing=10 height=3 width=150 }
+		place { control="graphdownloadrate"   region=column2 start=downloadprogressbar dir=down margin-top=5 margin-left=0  }
+		
+		//right-mid
+		place { control="downloadtotallabel,downloadtotalfield" region="column3" x=0 align=top margin-top=43 spacing=6 }
+		place { control="downloadfileslabel,downloadfilesfield" region="column3" x=0 align=top margin-top=63 spacing=6 }
+		place { control="starttimelabel,starttimefield" 		region="column3" x=0 align=top margin-top=83 spacing=6 }
+		place { control="timeremaininglabel,timeremainingfield" region="column3" x=0 align=top margin-top=83 spacing=6 }
+		
+		// right 
+		place { control="updatetypelabel" 	region="column4" spacing=10 margin-top=22 align=right margin-right=16 }
+		place { control="pauseresumebutton" region="column4" width=26 dir=right spacing=10 margin-top=50 align=right margin-right=16}
+
+	}
+}

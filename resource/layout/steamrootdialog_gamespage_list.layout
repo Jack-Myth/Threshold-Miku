@@ -1,0 +1,31 @@
+"resource/layout/steamrootdialog_gamespage_list.layout"
+{
+	controls
+	{
+		"GamesList"
+		{
+			tabposition=1
+		}
+	}
+	
+	styles
+	{
+		URLLabel
+		{
+			font-style=normal
+		}
+	}
+
+	colors
+	{
+		ListPanel.PostSectionLeading	12
+	}	
+	
+	layout
+	{
+		// content pages
+		place { control="GamesList" 		width=max height=max }
+
+	}
+
+}

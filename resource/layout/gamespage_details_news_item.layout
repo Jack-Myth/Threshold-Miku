@@ -1,0 +1,102 @@
+"resource/layout/gamespage_details_news_item.layout"
+{
+	controls
+	{
+		newsitem_title { controlname="Label" style="title_label" }
+		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
+		newsitem_body { controlname="RichText" style="newsitem_body" }
+		newsitem_more { controlname="URLLabel" style="more_link" labeltext="#steam_newscontinued" }
+	}
+	colors
+	{
+		// The extra space needed vertical beyond the autocomputed size of the blurb contents
+		// this is used in code to make the vertical size of the panel fit the title/author/morelink
+		// and should be updated if you change vertical padding/margins/layout.
+		GameDetailsNewsItem.ExtraVerticalSpacing "76"
+
+		// Override base style rich text x inset inside this control
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+	styles
+	{
+		title_label
+		{
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+		}
+
+		date_and_author
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			font-family=semibold
+			textcolor=Root.SubLabel.Text
+		}
+
+		newsitem_body
+		{
+			textcolor=Root.Label.Text
+			selectedtextcolor=Root.Label.Text
+			render_bg {}
+			font-size=13 [$LINUX]
+			font-size=15
+			font-family=basefont
+		}
+		
+		"newsitem_body url"
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			font-style="underline"
+			textcolor=URL.Text
+			selectedtextcolor=URL.Text	
+		}
+		
+		"newsitem_body url:hover"
+		{
+			textcolor=URL.Hover.Text
+			selectedtextcolor=URL.Hover.Text	
+		}
+		
+		"newsitem_body bold"
+		{
+			font-weight=400
+			font-family=bold
+			textcolor=Root.Label.Text
+			selectedtextcolor=Root.Label.Text	
+		}
+		"newsitem_body emphasis"
+		{
+			textcolor=Root.Label.Text
+			selectedtextcolor=Root.Label.Text
+			font-style="italic"
+		}
+		
+		more_link
+		{
+			font-size=13 [$LINUX]
+			font-size=15
+			font-style="underline"
+			font-family=semibold
+			textcolor=Root.SubLabel.Text
+			selectedtextcolor=Root.SubLabel.Text	
+		}
+		
+		more_link:hover
+		{
+			font-style="underline"
+			textcolor=Root.Label.Text
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=0 width=max }
+		place { region=body control=newsitem_title x=0 y=0 width=max height=24 }
+		place { region=body y=17 control=newsitem_dateandauthor width=max height=24 }
+		place { region=body y=36 control=newsitem_body width=max }
+		place { region=body control=newsitem_more align=bottom margin-bottom=20 }
+	}
+}
