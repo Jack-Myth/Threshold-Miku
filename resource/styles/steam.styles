@@ -179,14 +179,14 @@ steam.styles
 	//Games that are installed/running use "Installed.Text"
 	//Games that are uninstalled use "Uninstalled.Text"
 	//Games that are updating/have updates use "Updating.Text"
-	Uninstalled.Text="200 200 200 255"
-	Uninstalled.Hover.Text="230 230 230 255"
+	Uninstalled.Text="55 55 55 255"
+	Uninstalled.Hover.Text="70 70 70 255"
 	//Uninstalled.Hover.Text="80 80 80 255"
 	Installed.Text=DefaultText
 	Installed.Hover.Text="230 230 230 255"
-	Updating.Text="76 159 191 255"
+	Updating.Text="16 99 131 255"
 	//Updating.Text="165 165 165 255"
-	Updating.Hover.Text="140 140 140 255"
+	Updating.Hover.Text="80 180 80 255"
 	Shortcut.Text=Installed.Text
 	Shortcut.Hover.Text=Installed.Hover.Text
 	Mod.Text=Installed.Text

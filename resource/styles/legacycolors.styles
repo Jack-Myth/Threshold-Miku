@@ -220,12 +220,13 @@
     
 
     // Friends List colors
-    Friends.InGameColor       "144 186 60 255"
-    Friends.InGameHoverColor  "182 235 76 255"
-    Friends.OnlineColor		   "84 165 196 255"
-    Friends.OnlineHoverColor	"104 203 242 255"
-    Friends.OfflineColor      "127 127 127 255"
-    Friends.OfflineHoverColor "185 185 185 255"
+    // Origin Color Is Current Color's RGB + 60(84 126 0 255 to 144 186 60 255)
+    Friends.InGameColor       "84 126 0 255"
+    Friends.InGameHoverColor  "122 175 16 255"
+    Friends.OnlineColor		   "24 105 136 255"
+    Friends.OnlineHoverColor	"44 143 182 255"
+    Friends.OfflineColor      "67 67 67 255"
+    Friends.OfflineHoverColor "125 125 125 255"
     Friends.PanelDefault      "Label"
     Friends.PanelOver       "Text"
     Friends.PanelSelected     "ClientBG"
