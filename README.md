@@ -1,6 +1,7 @@
 # Threshold Miku Skin for Steam
-From Threshold Skin
-Modified By JackMyth
+From [Threshold Skin](https://github.com/Edgarware/Threshold-Skin)  
+Modified By JackMyth  
+
 
 ![](http:/jackmyth.cn/Resource/SteamSkinMiku.jpg)
 
