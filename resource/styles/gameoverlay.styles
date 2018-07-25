@@ -12,7 +12,7 @@ gameoverlay.styles
 		Overlay.Back=Root.RightCol
 		Overlay.Footer=Root.LeftCol
 		Overlay.Item.Hover="96 96 96 96"
-		Overlay.Sidebar="0 0 0 96"
+		Overlay.Sidebar="200 200 200 96"
 		Overlay.Sidebar.Hover="96 96 96 96"
 		Overlay.Div="96 96 96 255"
 	

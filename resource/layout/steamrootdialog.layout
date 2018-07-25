@@ -555,7 +555,7 @@
 		
 		//place { control="view_friends,add_game" region=hidden}
 		place { control="add_game" region=hidden}
-		place { control="view_friends" height=36 width=36 region=bottom align=right dir=right margin-right=105 margin-top=7 }
+		place { control="view_friends" height=36 width=36 region=bottom align=right dir=right margin-right=106 margin-top=6 }
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
 	
