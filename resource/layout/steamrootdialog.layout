@@ -266,7 +266,8 @@
 
 		view_friends
 		{
-			textcolor=Root.Label.Text
+			//textcolor=Root.Label.Text
+			textcolor=none
 			bgcolor="none"
 			font-family=basefont
 			font-size=13 [$LINUX]
@@ -277,7 +278,8 @@
 		
 		view_friends:hover
 		{
-			textcolor=Root.Label.Hover.Text
+			textcolor=none
+			//textcolor=Root.Label.Hover.Text
 		}
 
 		online_friends
@@ -551,8 +553,9 @@
 		region { name=bottom width=max height=48 align=bottom}
 		region { name=account align=bottom-right margin-right=96 width=max height=48 margin-left=505}
 		
-		place { control="view_friends,add_game" region=hidden}
-		
+		//place { control="view_friends,add_game" region=hidden}
+		place { control="add_game" region=hidden}
+		place { control="view_friends" height=36 width=36 region=bottom align=right dir=right margin-right=105 margin-top=7 }
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
 	

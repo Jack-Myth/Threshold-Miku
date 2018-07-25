@@ -33,8 +33,8 @@
 			"fieldName"		"account_persona"
 			"style" 		"AccountPersonaStyleOffline"
 			"labelText"		"%persona%"
-			//"zpos" 			"-2" // behind dropdown button
-			"command" "ViewFriends"
+			"zpos" 			"-2" // behind dropdown button
+			command="ViewFriends"
 		}
 
 		account_menu_button
