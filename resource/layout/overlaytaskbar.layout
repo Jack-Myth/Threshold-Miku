@@ -38,20 +38,12 @@
 			command="OpenFriendsDialog"
 			
 			style="view_friends"
-			textAlignment=east
+			textAlignment=west
 		}
-		online_friends
-		{
-			ControlName=Label
-			labelText="#Steam_OnlineFriends"
-			style="online_friends"
-			textAlignment=east
-		}	
 	}
 	
 	styles
 	{
-	
 		taskbar
 		{
 			textcolor=none
@@ -63,29 +55,6 @@
 			render_bg{
 				0="fill(x0,y0,x1,y1,Overlay.Sidebar.Hover)"
 			}
-		}
-		
-		view_friends
-		{
-			textcolor="Text"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=regular,uppercase
-		}
-		view_friends:Hover
-		{
-			 textcolor="textHover"
-		}
-
-		online_friends
-		{
-			textcolor="label2"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-style=regular
 		}		
 	}
 	
@@ -97,9 +66,6 @@
 		place { control="SteamLogo"  region=hidden x=0 y=10 width=200 height=120 }
 		place { controls="WebBrowserButton,MusicPlayerButton,SettingsButton,ScreenshotsButton" width=80 height=80 dir=down spacing=0 align=bottom }	
 
-
-		place { control="FriendPanel" height=48 width=48 align=right margin-right=6 margin-top=4 region=hidden}
 		place { control="view_friends" height=12 y=12 align=right dir=right margin-right=60 region=hidden}
-		place { control="online_friends" height=12 y=26 align=right dir=right margin-right=60 region=hidden}
 	}	
 }

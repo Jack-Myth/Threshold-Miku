@@ -7,7 +7,7 @@
 	layout{
 		place { control=LogoutLabel,ContactEmailLabel,Label2,SecurityStatusLabel dir=down margin-top=20 margin-left=20 spacing=8 width=120}
 		place { control=AccountInfo, start=LogoutLabel dir=right margin-left=0}
-		place { control=EmailInfo,VACStatusLabel,VacInfoLink start=AccountInfo dir=down margin-top=8 spacing=8}
+		place { control=EmailInfo,VacInfoURL start=AccountInfo dir=down margin-top=8 spacing=8}
 		place { control=SecurityIcon,SecurityStatusState start=SecurityStatusLabel dir=right margin-left=0 spacing=4}
 		place { control=AccountLink start=LogoutLabel dir=right align=right margin-right=50}
 		
@@ -145,29 +145,26 @@
 		"Default"		"0"
 		"selected"		"0"
 	}
-	"VACInfoLinkImage"
+	"VacInfoURL"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VACInfoLinkImage"
-		"xpos"		"468"
-		"ypos"		"58"
-		"wide"		"28"
-		"tall"		"28"
+		"ControlName"		"URLLabel"
+		"fieldName"		"VacInfoLink"
+		"labelText"		"#Steam_NoVacBanOnAccount"
+		"URLText"		"Steam://url/HelpVacBans/"
+		"xpos"		"136"
+		"ypos"		"67"
+		"wide"		"340"
+		"tall"		"42"
 		"AutoResize"		"0"
 		"PinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
 		"paintbackground"		"1"
-		"image"		"graphics/icon_click_for_details"
-		"fillcolor"		""
-		"gradientStart"		""
-		"gradientEnd"		""
-		"gradientVertical"		"0"
-		"scaleImage"		"0"
-		"zpos"			"2"
+		"textAlignment"		"north-west"
+		"wrap"		"1"
 	}
-	
+
 	"SecurityStatusLabel"
 	{
 		"ControlName"		"Label"
@@ -305,7 +302,7 @@
 		"paintbackground"		"1"
 		"textAlignment"		"north-east"
 		"wrap"		"0"
-		}
+	}
 
 	
 	"ContactEmailLabel"
@@ -421,24 +418,6 @@
 		"labelText"		"#VAC_Status"
 		"textAlignment"		"west"
 		"wrap"		"0"
-	}
-	"VACStatusLabel"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"VACStatusLabel"
-		"xpos"		"136"
-		"ypos"		"67"
-		"wide"		"340"
-		"tall"		"42"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"paintbackground"		"1"
-		"labelText"		"#VAC_NoBans"
-		"textAlignment"		"north-west"
-		"wrap"		"1"
 	}
 	"Divider2"
 	{

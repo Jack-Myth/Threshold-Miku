@@ -22,59 +22,43 @@
 		{
 			bgcolor=none
 			inset="0 0 0 0"
-			render_bg={}
 			image="graphics/Threshold/back"
 		}
 		BackButtonSm:hover
 		{
-			bgcolor=Menu.Button.Hover
+			bgcolor=none
 			image="graphics/Threshold/back"
-			render_bg={
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
-			}
 		}
 		BackButtonSm:active
 		{
-			bgcolor=Accent
+			bgcolor=Button.Active
 			image="graphics/Threshold/back"
-			render_bg={
-				0="fill(x0,y0,x1,y1,Accent)"
-			}
 		}
 		BackButtonSm:disabled
 		{
 			bgcolor=none
-			render_bg={}
 			image="graphics/Threshold/back_dis"
 		}
 		ForwardButtonSm
 		{
 			bgcolor=none
 			inset="0 0 0 0"
-			render_bg={}
 			image="graphics/Threshold/forward"
 		}
 		
 		ForwardButtonSm:hover
 		{
-			bgcolor=Menu.Button.Hover
+			bgcolor=none
 			image="graphics/Threshold/forward"
-			render_bg={
-				0="fill(x0,y0,x1,y1,Menu.Button.Hover)"
-			}
 		}
 		ForwardButtonSm:active
 		{
-			bgcolor=Accent
+			bgcolor=Button.Active
 			image="graphics/Threshold/forward"
-			render_bg={
-				0="fill(x0,y0,x1,y1,Menu.Button.Accent)"
-			}
 		}
 		ForwardButtonSm:disabled
 		{
 			bgcolor=none
-			render_bg={}
 			image="graphics/Threshold/forward_dis"
 		}
 		

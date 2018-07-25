@@ -2,57 +2,48 @@
 {
 	controls
 	{
-
 		"fullscreen"
 		{
 			"ControlName"		"Button"
 			style="FullscreenButton"
 			command="fullscreen"
-			tooltiptext="#tooltip_view_fullscreen" 
+			tooltiptext="#tooltip_view_fullscreen"
 		}
-		
+
 		"startvr"
 		{
 			"ControlName"		"Button"
 			style="VRButton"
-      			command="url steam://run/250820"
-     			tooltiptext="#tooltip_view_vr_start" 
+			command="startvr"
+			tooltiptext="#tooltip_view_vr_start"
 		}
-    
+
 		"exitvr"
 		{
 			"ControlName"		"Button"
 			style="VRButtonExit"
 			command="exitvr"
-			tooltiptext="#tooltip_view_vr_exit" 
+			tooltiptext="#tooltip_view_vr_exit"
 		}
-		
-		"New"
-		{
-		"ControlName" 	"URLLabel"
-		style="new_label"
-		"URLText"		"http://store.steampowered.com/uiupdate"
-		zpos=-2
-		}
-		
+
 		"UINavigatorPanel"
 		{
 			"ControlName"		"CUINavigatorPanel"
 			zpos=-2
-		}	
-		
+		}
+
 		"UIStatusPanel"
 		{
 			"ControlName"		"CUIStatusPanel"
 			zpos=-2
-		}	
-		
+		}
+
 		"MenuBar"
 		{
 			"ControlName"		"MenuBar"
 			style=RootMenu
 		}
-		
+
 		SupportAlert
 		{
 			ControlName=Button
@@ -60,7 +51,16 @@
 			style="support_alert"
 			textAlignment=center
 			command="OpenSupportAlertWindow"
-		}	
+		}
+
+		XPVistaAlert
+		{
+			ControlName=Button
+			labelText="#Steam_XPVistaAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenXPVistaAlertWindow"
+		}
 
 		ParentalLockButton
 		{
@@ -70,80 +70,61 @@
 			text=""
 			command="ParentalLock"
 		}
-		
+
 		InboxButton
 		{
-			ControlName=MenuButton
+			ControlName=CInboxButton
 			style="inbox_button"
 			textAlignment=west
-		}	
-		
+		}
+
+		AnnouncementButton
+		{
+			ControlName=CAnnouncementButton
+			style="announcement_button"
+			textAlignment=west
+		}
+
+		AccountButton
+		{
+			ControlName=CAccountButton
+			style="AccountButtonStyle"
+		}
+
 		add_game
 		{
 			"ControlName"		"MenuButton"
 			labelText="#steam_client_add_game"
 			style="AddGameButton"
 		}
-		
+
 		frame_title
 		{
 			ControlName=Label
-	
+
 			style="ClientTitle"
 			"textAlignment"   "west"
 			"textAlignment"   "center" [$OSX]
 		}
-		
-		account_url
-		{
-			"ControlName"		"MenuButton"
-			"fieldName"		"account_url"
-			"labelText"		"#Steam_Account_Name"
-			style="AccountURLStyle"
-		}
-		
-		
-		account_balance
-		{
-			"ControlName"	"URLLabel"
-			"fieldName"		"account_balance"
-			"labelText"		""
-			"URLText"		"steam://url/StoreWallet/"
-			style="AccountBalanceStyle"
-		}
-		
-		account_balance_seperator
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_balance_seperator"
-			"labelText"		"|"
-			style="AccountBalanceSeparatorStyle"
-		}
-		
+
 		universe_label
 		{
-			ControlName=Label
-			labelText=#Steam_Universe_Internal
+			"ControlName"	"Label"
+			"fieldName"		"universe_label"
+			"labelText"		"#Steam_Universe_Internal"
+			style="UniverseLabel"
 		}
 
 		view_friends
 		{
-			ControlName=URLLabel
+			ControlName=Button
 			labelText="#Steam_ViewFriends"
-			"URLText"	"steam://open/friends"
+			command="ViewFriends"
 			style="view_friends"
 			textAlignment=east
 		}
-		online_friends
-		{
-			ControlName=Label
-			labelText="#Steam_OnlineFriends"
-			style="online_friends"
-			textAlignment=east
-			zpos=-1
-		}
 	}
-	
+
 	styles
 	{    		
 			
@@ -172,131 +153,7 @@
 		    font-style=regular
 			inset="0 -1 0 0"
 		}
-		
-		new_label	
-		{			
-			bgcolor=none
-			inset="0 0 0 0"
-		}
-		
-		new_label:hover
-		{
-			bgcolor=none
-			inset="0 0 0 0"
-		}
 
-		new_label_german
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_german"
-			inset="0 0 0 0"
-		}
-
-		new_label_german:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_german"
-			inset="0 0 0 0"
-		}
-
-		new_label_french
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_french"
-			inset="0 0 0 0"
-		}
-
-		new_label_french:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_french"
-			inset="0 0 0 0"
-		}
-		
-		new_label_italian
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_italian"
-			inset="0 0 0 0"
-		}
-
-		new_label_italian:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_italian"
-			inset="0 0 0 0"
-		}
-		
-		new_label_spanish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_spanish"
-			inset="0 0 0 0"
-		}
-
-		new_label_spanish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_spanish"
-			inset="0 0 0 0"
-		}
-		
-		new_label_danish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_danish"
-			inset="0 0 0 0"
-		}
-
-		new_label_danish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_danish"
-			inset="0 0 0 0"
-		}
-		
-		new_label_norwegian
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_norwegian"
-			inset="0 0 0 0"
-		}
-
-		new_label_norwegian:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_norwegian"
-			inset="0 0 0 0"
-		}
-		
-		new_label_swedish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_swedish"
-			inset="0 0 0 0"
-		}
-
-		new_label_swedish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_swedish"
-			inset="0 0 0 0"
-		}
-		
 		RootMenu
 		{
 			bgcolor="none"
@@ -358,7 +215,6 @@
 				5="fill(x0, y0, x0+1, y1, Frame.Outline.Focus)"
 				6="fill(x1-1, y0, x1, y1, Frame.Outline.Focus)"
 				7="fill(x0, y1-1, x1, y1, Frame.Outline.Focus)"
-				
 			}
 		}
 		
@@ -556,8 +412,63 @@
 			render {}
 		}	
 		
+		announcement_button
+		{
+			bgcolor=none
+			inset="3 0 0 0"
+			image="graphics/Threshold/community"
+			render{}
+			render_bg{}	
+		}
+
+		announcement_button:hover
+		{
+			bgcolor=Menu.Hover
+			render{}
+		}
+
+		announcement_button:selected
+		{
+			bgcolor=Menu.Hover
+			render{}
+		}
+
+		announcement_button:disabled
+		{
+			image="graphics/Threshold/community"
+			render{}
+		}	
+
+		announcement_button_button_active
+		{
+			inset="3 0 0 0"
+			bgcolor=Accent
+			image="graphics/Threshold/community"
+			render {}
+			render_bg{}
+		}
+		
+		announcement_button_button_active:hover
+		{
+			bgcolor=Accent.Hover
+			render {}
+		}
+		announcement_button_button_active:selected
+		{
+			bgcolor=Accent.Hover
+			render {}
+		}
+
+		announcement_button_button_active:disabled
+		{
+			image="graphics/Threshold/community"
+			render {}
+		}
+
+
 		parental_lock_button
 		{
+			inset="-10 0 0 0"
 			bgcolor=none
 			image="graphics/Threshold/notfamilyview"
 			render{}
@@ -638,22 +549,19 @@
 		region { name=left width=240 y=32}
 		region { name=bottom-left region=left align=bottom height=48 width=max}
 		region { name=bottom width=max height=48 align=bottom}
-		region { name=account align=bottom-right margin-right=48 width=max height=52 margin-left=505}
+		region { name=account align=bottom-right margin-right=96 width=max height=48 margin-left=505}
 		
-		place { control="New, account_URL" region=hidden}
-		place { control="add_game" x=14 y=16 region=hidden height=0 width=0}
+		place { control="view_friends,add_game" region=hidden}
 		
 		place { control="MenuBar" height=48 width=48 y=32 x=0 }
 		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=48 margin-top=0 }
 	
 		place { control="ParentalLockButton, startVR, exitVR, SupportAlert" region=bottom-left align=right margin-right=48 height=48 width=48 spacing=0 dir=right}
 		place { control="UIStatusPanel" height=48 width=323 region=bottom margin-left=192}
-		place { control="InboxButton" height=48 width=48 region=bottom align=right }
+		place { control="AnnouncementButton,InboxButton" height=48 width=48 region=bottom align=right }
 
 		place { control="fullscreen,frame_minimize,frame_maximize,frame_close" align=right width=46 height=32 spacing=0 }
 
-		place { control="FriendPanel" height=48 y=0 width=48 margin-left=4 region=account align=right}
-		place { control="account_balance, account_balance_seperator, view_friends, universe_label" dir=right margin-right=54 margin-top=12 spacing=5 region=account align=right}
-		place { control="online_friends" height=12 y=30 spacing=5 margin-right=54 region=account align=right}
+		place { control="AccountButton" margin-left=4 region=account height=48 align=right}
 	}
 }

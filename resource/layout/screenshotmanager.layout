@@ -4,13 +4,12 @@
 	{
 		ScreenshotManager { title="#steam_screenshotsupload_title" style="CScreenshotManager" }
 
-		DarkRegionDetails { controlname="ImagePanel" style=DarkRegionDetails zpos="-1" }
-		SSDetails { controlname="ImagePanel" style=SSDetails }
+		SSDetails { controlname="ImagePanel" style=SSDetails scaling=fit}
 		SSDate { controlname="Label" labelText="%selected_ss_date%" }
 		SSSize { controlname="Label" labelText="#Overlay_Screenshots_Size_Cloud" }
 		SSSizeOriginal { controlname="Label" labelText="#Overlay_Screenshots_Size_Original" }
 
-		grid { alignment="left" interiorspacing=5 wwheelpct=50 style="WrapPanel" }
+		grid { alignment="left" interiorspacing=5 wheelpct=50 style="WrapPanel" }
 		view_screenshots { controlname="Button" labeltext="#Overlay_View_All_Screenshots" command="viewscreenshots" }
 		view_local_library_button { controlname="Button" labeltext="#Overlay_View_Local" command="viewlocallibrary" visible=0 }
 		selectorlabel { controlname="Label" labeltext="#Overlay_Screenshots_Show" }
@@ -45,7 +44,7 @@
 		instr_no_selection_title { controlname="Label" labeltext="#steam_screenshots_no_selection_title" style="NoSelectionTitle" wrap=1 }
 		instr_no_selection { controlname="Label" labeltext="#steam_screenshots_no_selection_instructions" style="NoSelectionInstructions" wrap=1 }
 
-		null_placer { controlname="Panel" visible=1 } // Used to bottom-right align things. YOU FOOLS
+		null_placer { controlname="Panel" visible=1 } // Used to bottom-right align things.
 	}
 
 	colors
@@ -267,7 +266,7 @@
 		place {	control="grid" region="list" margin-top=48 margin-left=20 margin-bottom=48 width=max height=max }
 		place { control="no_screenshots" region="hidden" y=50 align="top-center" }
 
-		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
+		//place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
 		place { control="SSDetails" region="details" y=0 width=max height=250 align="top-center"  }
 		place { control="SSDate" region="detailsinfo" margin-left=10 height=max align=left }
 		place { control="SSSize,SSSizeOriginal" region="detailsinfo" margin-right=15 align=right height=max dir=right }

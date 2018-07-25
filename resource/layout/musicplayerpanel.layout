@@ -73,8 +73,8 @@
 		RepeatOnceButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/rep_once_sel_hover inset="-4 0 0 0"}
 		ShuffleButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf	inset="3 0 0 0"}
 		ShuffleButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_hover	}
-		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel inset="0 0 0 0"}
-		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel_hover inset="0 0 0 0"}
+		ShuffleButtonStyle:selected	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel inset="-4 0 0 0"}
+		ShuffleButtonStyle:selected:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/shuf_sel_hover inset="-4 0 0 0"}
 		PreviousButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/prev	inset="3 0 0 0"}
 		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/prev_hover }
 		NextButtonStyle	{	bgcolor=none render_bg={} render={} image=graphics/Threshold/music/next	inset="3 0 0 0"}
