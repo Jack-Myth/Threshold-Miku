@@ -3,7 +3,7 @@ From [Threshold Skin](https://github.com/Edgarware/Threshold-Skin)
 Modified By JackMyth  
 
 
-![](http:/jackmyth.cn/Resource/SteamSkinMiku.jpg)
+![](Previews/Main.jpg)
 
 ## Installation
 1. Download the skin, extract the zip file, and copy the folder to:
