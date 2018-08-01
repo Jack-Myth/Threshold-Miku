@@ -1,0 +1,678 @@
+"resource/layout/uinavigatorpanel.layout"
+{
+	styles
+	{
+		BackButton
+		{
+			bgcolor=TitleBar
+			padding-left=0
+			padding-right=0
+			inset="13 0 0 0"
+			image="graphics/Threshold/back_sm_dis"
+			render_bg {
+			}
+			render
+			{
+				0="image(x0+60, y0+12, x1, y1, graphics/Threshold/title)"
+			}
+		}
+		
+		BackButton:framefocus
+		{
+			image="graphics/Threshold/back_sm"
+			bgcolor=TitleBar.Accent
+			render_bg{
+			}
+			render
+			{
+				0="image(x0+60, y0+12, x1, y1, graphics/Threshold/titlefocus)"
+			}
+		}
+		
+		BackButton:hover
+		{
+			image="graphics/Threshold/back_sm"
+			bgcolor=TitleBar.Accent.Hover
+			render_bg{
+			}
+		}
+		
+		BackButton:active
+		{
+			image="graphics/Threshold/back_sm"
+			bgcolor=TitleBar.Accent.Hover
+			render_bg{
+			}
+		}
+		
+		BackButton:disabled
+		{
+			bgcolor=none
+			image="none"
+			render_bg {}
+			render {}
+		}
+		
+		grouper
+		{
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x0 + 275, y1, clientgrouper )"
+			}
+		}
+		
+		headertextlarge
+		{
+			padding-left=10
+			padding-top=5
+			padding-right=10
+			padding-bottom=5
+			font-size=26 [$LINUX]
+			font-size=34
+			font-family=light
+			textcolor=Text
+			font-weight=400
+			//bgcolor=DarkDialogBGTransparent
+			minimum-width=200
+		}
+		
+		zoomslider
+		{
+			inset="0 0 0 0"
+			textcolor=Root.Label.Text
+		}
+		
+		zoomslider:hover
+		{
+			inset="0 0 0 0"
+			textcolor=Root.Label.Hover.Text
+		}
+
+		LibrarySeparator
+		{
+			textcolor=none
+			render_bg
+			{
+				0="fill(x1-2, y0+13, x1, y1-13, DefaultText.Hover)"
+			}
+		}
+		   
+		
+		LibrarySearch
+		{
+			padding-left=-4
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			textcolor=Search.Active.Text
+			shadowtextcolor=DefaultCursor
+			bgcolor=Search.Back
+			render_bg{
+			}
+			render{}
+			
+		}
+		
+		LibrarySearch:empty
+		{
+			font-style=normal
+			textcolor=Search.Text
+			
+		}
+		
+		LibrarySearch:hover
+		{	
+			textcolor=Search.Active.Text
+		}
+		
+		LibrarySearch:empty:hover
+		{
+			font-style=normal
+			textcolor=Search.Hover.Text
+			
+		}
+			
+		LibrarySearch:disabled
+		{
+			font-style=DefaultText.Disabled
+			textcolor="None"
+			
+		}
+			
+		LibrarySearchIcon
+		{
+			bgcolor=Search.Back
+			inset="15 2 0 0"
+			image="graphics/Threshold/icons/search"
+			padding-left=0
+			padding-right=0
+			padding-top=0
+			render_bg{
+			}
+		
+		}
+		
+		LibrarySearchIcon:disabled
+		{
+			image="none"
+		}
+
+		MusicAddButton
+		{
+			inset="5 0 0 0"
+			font-size=13 [$LINUX]
+			font-size=15
+			font-family=basefont
+			textcolor="labelfocus"
+			font-style=uppercase
+			image="graphics/Threshold/icons/plus"
+			render_bg
+			{
+			}
+		}
+		
+		MusicAddButton:hover
+		{
+			textcolor="white"
+			image="graphics/Threshold/icons/plus_hover"
+			render_bg
+			{
+
+			}
+		}			
+		
+		MusicPlayerIcon
+		{
+			bgcolor="none"
+			inset="0 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		MusicPlayerIcon:hover
+		{
+			bgcolor=Menu.Button.Hover
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		MusicPlayerIcon:selected
+		{
+			bgcolor=Menu.Button.Active
+			render_bg={}
+			image="graphics/Threshold/icons/music_player"
+		}
+		
+		LibraryShow
+		{
+			padding-left=0
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400
+			textcolor="LabelDisabled"
+			font-style=uppercase
+		}
+		
+		NavLabel
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15 
+			font-weight=400
+			textcolor="Label"
+			font-style=uppercase
+		}	
+		
+		NavLabelView
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400
+			textcolor="LabelDisabled"
+			font-style=uppercase
+			padding-left=0
+		}
+
+		NavLabelZoom
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400
+			textcolor=Root.SubLabel.Text
+			font-style=uppercase 
+			padding-right=5
+		}
+	
+		NavLabel2
+		{
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400
+			textcolor=Root.Label.Text
+			font-style=uppercase
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down)"
+			}
+		}
+		
+		NavLabel2:hover
+		{
+			textcolor=Root.Label.Hover.Text
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down_hover)"
+			}
+		}	
+		
+		NavLabel2:selected
+		{
+			textcolor=Root.Label.Text
+			inset="0 0 6 0"
+			render{
+				0="image(x1-7,y0+20,x1,y1,graphics/Threshold/icons/down)"
+			}
+		}
+		
+		Panel_transparent
+		{
+			bgcolor="none"
+		}
+		
+
+		ViewDetailButton
+		{
+			bgcolor=DefaultText
+			inset="0 0 0 0"
+			padding-left=0
+			padding-right=0
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale)"
+			}
+			render_bg{}
+		}
+		
+		ViewDetailButton:hover
+		{
+			bgcolor=DefaultText
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+			}
+		}
+
+		ViewDetailButton:active
+		{
+			bgcolor=Accent
+		}
+		
+		ViewDetailButton:selected
+		{
+			bgcolor=Accent
+		}
+		
+		ViewDetailButton:selected:hover
+		{
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+			}
+		}
+
+		ViewDetailButton:disabled
+		{
+			bgcolor=DefaultText.Disabled
+		}
+		
+		ViewGridButton
+		{
+			bgcolor=DefaultText
+			inset="1 0 0 0"
+			//image="graphics/icon_button_grid"
+			padding-left=0
+			padding-right=0
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale)"
+			}
+			render_bg{}
+		}
+		
+		ViewGridButton:hover
+		{
+			bgcolor=DefaultText
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+			}
+		}
+
+		ViewGridButton:active
+		{
+			bgcolor=Accent
+		}
+		
+		ViewGridButton:selected
+		{
+			bgcolor=Accent
+		}
+
+		ViewGridButton:selected:hover
+		{
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+			}
+		}
+		
+		ViewGridButton:disabled
+		{
+			bgcolor=DefaultText.Disabled)
+		}
+		
+		ViewListButton
+		{
+			bgcolor=DefaultText
+			inset="1 0 0 0"
+			padding-left=0
+			padding-right=0
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale)"
+			}
+		}
+		
+		ViewListButton:hover
+		{
+			bgcolor=DefaultText
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+			}
+		}
+
+		ViewListButton:active
+		{
+			bgcolor=Accent
+		}
+		
+		ViewListButton:selected
+		{
+			bgcolor=Accent
+		}
+		
+		ViewListButton:selected:hover
+		{
+			bgcolor=Accent
+			render{
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+			}
+		}
+		
+		ViewListButton:disabled
+		{
+			bgcolor=DefaultText.Disabled
+		}
+		
+		WebPanelStyle
+		{
+			bgcolor="almostblack"
+			textcolor=DefaultText
+			
+			render_bg 
+			{
+			}
+		}
+		
+		BroadcastPanelMinimized
+		{
+			bgcolor=almostblack
+			textcolor="label"
+			inset="0 0 0 0"
+			render_bg 
+			{
+			}
+		}
+
+		TextEntryURL
+		{
+			inset-left=5
+			bgcolor=TextBox.Back
+			render_bg{}
+			render{}
+		}
+		
+		CUINavButtonNew
+		{
+			textcolor="133 176 223 255"
+			font-weight=800
+		}
+		
+		CUINavButton
+		{
+			textcolor=none
+			bgcolor="none"
+			font-family=basefont
+			font-size=15 [$LINUX]
+			font-size=20
+			font-weight=400 
+			inset="57 0 0 0"
+		}
+
+		CUINavButton:disabled
+		{
+			textcolor=none
+			bgcolor="none"
+			font-family=basefont
+			font-weight=400 
+		}
+		
+		CUINavButton:hover
+		{
+			textcolor=none
+			bgcolor=Menu.Hover
+			render_bg 
+			{
+			}
+		}
+
+		CUINavButton:disabled:hover
+		{
+			textcolor=none
+			//font-style="uppercase"
+		}
+
+		CUINavButton:selected
+		{
+			textcolor=none
+			bgcolor=Accent.Hover
+			render_bg 
+			{
+			}
+		}
+
+		CUINavButton2
+		{
+			textcolor="Labelfocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			font-weight=400 
+			font-style="uppercase"
+			padding-left=5
+			padding-right=5
+			padding-bottom=4
+		}
+ 				
+		CUINavButton2:hover
+		{
+			textcolor="text"
+			font-style="uppercase,outerglow"
+			font-outerglow-color="TextGlowHoverSm"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+		}
+
+		CUINavButton2:selected 
+		{
+			textcolor="white"
+			bgcolor=none
+			font-style="uppercase,outerglow"
+			font-outerglow-color="TextGlowSelectedSm"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+		}
+
+		CUINavigatorPanel
+		{			
+				bgcolor="none"
+		}
+		
+		"CSteamRootDialog CGameFilterMenuButton"
+		{
+			inset="0 0 0 0"
+			padding-left=5
+			
+		}
+				
+		"CGamesPage_Mini CGameFilterMenuButton"
+		{
+			inset="3 0 0 0"
+			padding-left="0"
+			
+		}	
+
+		LabelEVCert
+		{
+			font-family=basefont
+			font-size=13 [$LINUX]
+			font-size=15
+			textcolor="darkclientbg"
+			font-weight=400
+			bgcolor="html.secureurl"
+			inset-left=4
+			inset-right=4	
+		}
+		
+		ForwardButton
+		{
+			bgcolor=none
+			inset="5 0 0 0"
+			render_bg={}
+			image="graphics/Threshold/forward"
+		}
+		
+		ForwardButton:hover
+		{
+			bgcolor=Menu.Button.Hover
+			render_bg={}
+			image="graphics/Threshold/forward"
+		}
+		
+		ForwardButton:active
+		{
+			bgcolor=Accent
+			render_bg={}
+			image="graphics/Threshold/forward"
+		}
+		
+		ForwardButton:disabled
+		{
+			bgcolor=none
+			render_bg={}
+			image="none"
+		}
+		
+		ReloadButton
+		{
+			inset="5 0 0 0"
+		}
+		
+		StopButton
+		{
+			inset="5 0 0 0"
+		}
+
+		URLStatusImage
+		{
+			bgcolor=none
+			inset="0 0 0 0"
+			render{
+			}
+		}
+
+		URLBarSecure
+		{
+		textcolor="html.secureurl"
+		}
+
+		URLBarBrokenSecure
+		{
+		textcolor="html.insecureurl"
+		}		
+	}
+	
+	colors
+	{
+
+	}
+	
+	layout
+	{
+		region {name=hidden width=0 height=0}
+		region {name=left width=48 y=32}
+		region {name=right x=48 y=32}
+		
+		place { control="label_store,label_library,label_community,label_me,label_news,label_console" dir=down x=0 y=48 spacing=0 width=max height=48 region=left} 
+		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=hidden}
+		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 region=hidden}
+
+		place { control="back" x=0 y=0 height=32 width=48}
+		place { control="forward" region=hidden x=48 height=48 width=48}
+
+		place { control="URLBar" dir=right region=right width=max height=48 end-right=URLStatusImage}
+		place { control="EVCert" region=hidden}
+		place { control="URLStatusImage,refresh,stop,PageLoadThrobber" height=48 width=48 align=right region=right}
+ 	
+		place { control="subnavgroup_library" y=0 height=48 width=max margin-right=0 region=hidden region=right}
+
+		place { control="label_search_icon" align=left height=48 region=right width=35}
+		place { control="library_search" start=label_search_icon height=48 dir=right region=right}
+
+		place { control="library_filters" x=275 y=0 height=48 region=right}
+
+		place { control="label_zoom_separator" align=right height=48 spacing=3 margin-right=150 region=right}
+		place { control="library_zoom" width=82 height=22 align=right y=13 margin-right=165 region=right}
+		place { control="label_library_view,label_library_zoom" region=hidden }
+
+		place { control="library_music_add_button" region=hidden}
+		place { control="library_music_player_icon" width=48}
+		place { control="library_music_menu,library_music_player_icon" align=right y=0 height=48 spacing=10 margin-right=0 region=right}
+
+		place { control="library_filters_details,library_filters_list,library_filters_grid" align=right y=0 height=48 spacing=0 margin-right=1 width=48 region=right}
+
+ 	  	place { control=emailreminderbar start=URLBar dir=down margin-top=0 margin-right=0 width=max height=50 region=right}
+		place { control=phonereminderbar start=URLBar dir=down margin-top=0 margin-left=0  width=max height=80 region=right}
+
+		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
+		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=ScreenshotsPage 	width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=GamesPage_List		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=GamesPage_Details 	width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=GamesPage_Grid 		width=max height=max margin-top=46 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=BroadcastPage		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }	
+		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down}
+
+		place { control=MediaPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		place { control=ToolsPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+		
+		place { control=MusicPage_Details width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
+	}
+
+}
+
