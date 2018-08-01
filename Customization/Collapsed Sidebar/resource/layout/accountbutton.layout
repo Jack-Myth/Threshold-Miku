@@ -1,0 +1,150 @@
+"resource/layout/accountbutton.layout"
+{
+	controls
+	{
+		account_avatar
+		{
+			"ControlName"	"Image"
+			"fieldName"		"account_avatar"
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_drop_down
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_drop_down"
+			"zpos" 			"-2" // behind dropdown button
+			"style"			"AccountDropDownStyleOffline"
+		}
+
+
+		account_balance
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_balance"
+			"style"			"AccountBalanceStyle"
+			
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_persona
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_persona"
+			"style" 		"AccountPersonaStyleOffline"
+			"labelText"		"%persona%"
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_menu_button
+		{
+			"ControlName"	"Button"
+			"fieldName"		"account_menu_button"
+			"labelText"		""
+			"style" 		"AccountMenuButtonStyle"
+		}
+	}
+
+	styles
+	{
+		AccountPersonaStyleOffline
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.OfflineColor
+		}
+
+		AccountPersonaStyleOnline
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.OnlineColor
+		}
+
+		AccountPersonaStyleInGame
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.InGameColor
+		}
+		
+		AccountDropDownStyleOffline
+		{
+			render
+			{
+				0="image(x0,y0,x1,y1,graphics/avatarBorderOffline)"
+			}
+		}
+		
+		AccountDropDownStyleOnline
+		{
+			render
+			{
+				0="image(x0,y0,x1,y1,graphics/avatarBorderOnline)"
+			}
+		}
+		
+		AccountDropDownStyleInGame
+		{
+			render
+			{
+				0="image(x0,y0,x1,y1,graphics/avatarBorderInGame)"
+			}
+		}
+
+		AccountButtonStyle
+		{
+			bgcolor=none
+		}
+
+		AccountButtonStyle:hover
+		{
+			bgcolor=none
+		}
+
+		AccountBalanceStyle
+		{
+			textcolor="labeldisabled"
+			bgcolor="none"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=regular
+			padding-top=1
+			padding-right=8
+			padding-left=2
+		}
+
+		AccountBalanceStyle [$OSX]
+		{
+		      textcolor="labeldisabled"
+		      bgcolor="none"
+		      font-family=basefont
+		      font-size=13
+		      font-weight=400
+		      font-style=regular
+		      inset="0 1 0 0"
+		}
+		
+		AccountMenuButtonStyle
+		{
+			bgcolor=none
+		}
+
+		AccountMenuButtonStyle:hover
+		{
+		 	bgcolor=none
+		}
+	}
+
+	layout
+	{
+		place { control="account_menu_button" align=left height=0 width=0 } //This normally spans the whole element but it only opens the menu down, so disable it for now
+
+		place { control="account_drop_down" align=right height=48 width=48 margin-top=4 } //Avatar & outline
+		place { control="account_avatar" align=right margin-top=8 height=32 width=32 margin-right=12}
+
+		place { control="account_balance" align=right end-right="account_drop_down" y=22 }
+		place { control="account_persona" align=right end-right="account_drop_down" y=8  }
+	}
+}

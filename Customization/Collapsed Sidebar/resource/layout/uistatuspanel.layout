@@ -1,0 +1,59 @@
+"resource/layout/uistatuspanel.layout"
+{
+	controls
+	{
+		StatusDownloading { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
+		StatusPaused{ controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
+		StatusComplete { controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
+		StatusProgressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 } 
+	}
+	
+	styles
+	{
+		CUIStatusPanel
+		{
+			render{
+				0="image( x0, y0, x1, y1, graphics/Threshold/downloads)"
+			}
+		}
+		
+		StatusLabelDim
+		{
+			textcolor=none
+		}
+
+		StatusLabelDim:hover
+		{
+			textcolor=none
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, Menu.Hover)"
+			}
+		}
+		
+		SlimProgressBar
+		{
+			textcolor=Accent
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Progress.Back )"
+			}
+			render
+			{
+			}      
+		}
+	}
+	
+	layout
+	{
+		region {name=hidden width=0 height=0}
+		region {name=button width=48 height=48}
+		region {name=text width=max height=48 margin-left=48}
+		
+		place { control="StatusPaused" region=button height=max width=max}
+		place { control="StatusComplete" region=button height=max width=max}
+		
+		place { control="StatusDownloading" region=text margin-left=10 margin-top=12} //Also Offline mode status
+	 	place { control="StatusProgressbar" region=text width=max height=5 align=bottom margin-bottom=9 margin-right=10 margin-left=10}
+	}
+}
