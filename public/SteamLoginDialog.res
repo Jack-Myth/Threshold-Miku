@@ -9,7 +9,7 @@
 			height=610
 			render_bg
 			{
-				0=image(x0,y0,x1,y1,graphics/JackMyth/LoginBG)
+				0=image_scale(x0,y0,x1,y1,graphics/JackMyth/LoginBG)
 			}
 		}
 		
