@@ -474,9 +474,10 @@
 		CUINavButton:hover
 		{
 			textcolor=Root.LeftCol.Hover
-			bgcolor=Menu.Hover
+			//bgcolor=Menu.Hover
 			render_bg 
 			{
+				0="image_scale(x0,y0,x1,y1,graphics/JackMyth/LeftMenuHover)"
 			}
 		}
 
@@ -489,9 +490,10 @@
 		CUINavButton:selected
 		{
 			textcolor=Root.LeftCol.Selected
-			bgcolor=Accent.Hover
+			//bgcolor=Accent.Hover
 			render_bg 
 			{
+				0="image_scale(x0,y0,x1,y1,graphics/JackMyth/LeftMenuSelected)"
 			}
 		}
 
