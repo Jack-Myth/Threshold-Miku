@@ -3226,12 +3226,13 @@ steam.styles
 	}
 	
 	//Special window styling for older frames
-	CGamePropertiesDialog
-	{
-		render_bg {
-			0="fill(x0, y0, x1, y0+64, Page.Tab)"
-		}
-	}
+	//Deprecated,Moved to JackMyth.styles
+	//CGamePropertiesDialog
+	//{
+	//	render_bg {
+	//		0="fill(x0, y0, x1, y0+64, Page.Tab)"
+	//	}
+	//}
 	
 	CServerBrowserDialog
 	{

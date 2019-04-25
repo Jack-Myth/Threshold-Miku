@@ -308,6 +308,66 @@ jackmyth.styles
 	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\UseOffline)"
 	  	}
 	  }
+
+	 //GameProperties
+	//Background
+	CGamePropertiesDialog
+	{
+		render_bg
+		{
+			0="image_scale( x0, y0, x1, y1, graphics\JackMyth\GameProperties)"
+		}
+	}
+
+	"CGamePropertiesDialog Page"
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+	
+	CSubGamePropertiesGeneralPage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+
+	CSubGamePropertiesLocalFilesPage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+
+	CSubGamePropertiesLanguagePage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+
+	CSubGamePropertiesUpdatesPage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+
+	CSubGamePropertiesBetasPage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+	
+	CSubGamePropertiesDLCPage
+	{
+		bgcolor=none
+		render_bg
+		{}
+	}
+
 	  
 	  // Notification Overrides
 	  // Seems doesn't work
