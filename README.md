@@ -4,6 +4,8 @@ Modified By JackMyth
 
 ![](Previews/Main.jpg)
 
+Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/tree/Light)
+
 ## Installation
 1. Download the skin, extract the zip file, and copy the folder to:
    * Windows - C:\Program Files (x86)\Steam\skins
