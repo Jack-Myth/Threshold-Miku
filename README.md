@@ -16,4 +16,4 @@ Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/t
 
 3. Restart Steam and enjoy!
 
-# Intrduce Threshold Miku Light for SteamUI：[Check this!](https://github.com/Jack-Myth/Threshold-Miku/tree/Light)
+# Introduce Threshold Miku Light for SteamUI：[Check this!](https://github.com/Jack-Myth/Threshold-Miku/tree/Light)
