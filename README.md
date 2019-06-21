@@ -15,3 +15,5 @@ Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/t
 2. In Steam, go to Settings > Interface > and choose Threshold Miku from the list of skins.
 
 3. Restart Steam and enjoy!
+
+# Intrduce Threshold Miku Light for SteamUI：[Check this!](https://github.com/Jack-Myth/Threshold-Miku/tree/Light)
