@@ -14,7 +14,7 @@
 		place { controls=Divider3 start=FavoriteWindowCombo dir=down margin-top=15 width=max margin-right=20}
 		place { controls=Label3,SkinCombo start=Divider3 dir=down margin-top=15 spacing=4}
 		
-		place { controls=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,GPUWebViewCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0}
+		place { controls=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,GPUWebViewCheck,SmoothScrollWebViewCheck,H264HWAccelCheck start=SkinCombo dir=down margin-top=8 spacing=0}
 		place [$WINDOWS] { controls=Divider2 start=H264HWAccelCheck dir=down margin-top=15 width=max margin-right=20}
 		place [!$WINDOWS] { controls=Divider2 start=UrlBarCheck dir=down margin-top=15 width=max margin-right=20}
 		
@@ -304,6 +304,26 @@
 		"tabPosition"		"8"
 		"paintbackground"		"1"
 		"labelText"		"#Steam_EnableGPUWebViews_Option"
+		"textAlignment"		"west"
+		"wrap"		"0"
+		"Default"		"0"
+		"selected"		"0"
+	}
+	"SmoothScrollWebViewCheck"
+	{
+		"ControlName"		"CheckButton"
+		"fieldName"		"SmoothScrollWebViewCheck"
+		"xpos"		"17"
+		"ypos"		"361"
+		"wide"		"430"
+		"tall"		"24"
+		"AutoResize"		"0"
+		"PinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"9"
+		"paintbackground"		"1"
+		"labelText"		"#Steam_SmoothScrollWebViews_Option"
 		"textAlignment"		"west"
 		"wrap"		"0"
 		"Default"		"0"
