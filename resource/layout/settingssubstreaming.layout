@@ -18,6 +18,8 @@
 		"EnableStreaming" { ControlName="CheckButton" fieldName="EnableStreaming" labelText="#Steam_Settings_Streaming_EnableStreaming" }
 
 		"Pair" { ControlName="Button" fieldName="Pair" command="Pair" labelText="#Steam_Settings_Streaming_Pair" }
+		
+		"Unpair" { ControlName="Button" fieldName="Unpair" command="Unpair" labelText="#Steam_Settings_Streaming_Unpair" }
 
 		"SetPIN" { ControlName="Button" fieldName="SetPIN" command="SetPIN" labelText="#Steam_Settings_Streaming_SetPIN" }
 
@@ -88,7 +90,7 @@
 			spacing=10
 		}
 		
-		place { control="Pair,SetPIN" start=EnableStreaming spacing=10 dir=right align=right margin-right=20 }
+		place { control="Pair,Unpair,SetPIN" start=EnableStreaming spacing=10 dir=right align=right margin-right=20 }
 		
 		place { region=bottom control=HostDivider width=max}
 		place { region=bottom control=HostLabel width=max start=HostDivider dir=down margin-top=15 }
