@@ -73,6 +73,7 @@ jackmyth.styles
 	  CInstallAppWizard
 	  {
 	  	minimum-height=592
+		minimum-width=476
 	  	render_bg
 	  	{
 	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\InstallAppWizard)"
