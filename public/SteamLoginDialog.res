@@ -7,6 +7,9 @@
 			minimum-height=610
 			maximum-height=610
 			height=610
+			minimum-width=480
+			maximum-width=480
+			width=480
 			render_bg
 			{
 				0=image_scale(x0,y0,x1,y1,graphics/JackMyth/LoginBG)
