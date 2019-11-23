@@ -22,6 +22,7 @@
 		
 		MiniMode						{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
 		LargeMode						{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
+		Hidden							{	text="#steam_menu_hidden_games"			shellcmd="steam://nav/library/collection/hidden" }
 		StartVR							{	text="#steam_menu_startvr"				shellcmd="steam://run/250820" }
 		ExitVR							{	text="#steam_menu_exitvr"				command="exitvr" }
 		BigPictureMode					{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" } 
@@ -40,6 +41,7 @@
 		Divider							{}
 	
 		CheckForUpdates					{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
+		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		Settings						{	text="#steam_menu_settings"				command="Settings" }
 		Restart 						{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
 		Exit							{	text="#Steam_ExitSteam"					command="Exit" }
