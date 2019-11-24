@@ -41,6 +41,7 @@
 		Divider							{}
 	
 		CheckForUpdates					{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
+		CTMU							{	text="Check Threshold Miku Update" shellcmd="steam://openurl/https://github.com/Jack-Myth/Threshold-Miku" }
 		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		Settings						{	text="#steam_menu_settings"				command="Settings" }
 		Restart 						{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
