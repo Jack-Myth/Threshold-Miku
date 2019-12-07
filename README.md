@@ -23,7 +23,7 @@ It's an experimental version,and the SteamUI may have big changes in future,so i
 # Installation
 0. First Join Steam Beta Update to enable the new library,and install the Threshold Miku Light VGUI version.
 2. Make a folder named "skins" at Steam/steamui/
-3. Download Threshold Miku Light For SteamUI at [the Releases Page](https://github.com/Jack-Myth/Threshold-Miku/releases), extract the folder to the folder we created at last step.
+3. Download ***Threshold Miku Light For SteamUI*** at [the Releases Page](https://github.com/Jack-Myth/Threshold-Miku/releases), extract the folder to the folder we created at last step.
 4. Open Steam/steamui/index.html,Add ***\<link href="skins/Threshold Miku/main.css" rel="stylesheet"\>*** before the "\</html\>"
 5. To prevent the file be restored by steam, we need open steam with parameter "-noverifyfiles". Add it to your steam sortcut.  
 6 Save the file, you will meet a new steam.
