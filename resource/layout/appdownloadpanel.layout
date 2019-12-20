@@ -4,6 +4,7 @@
 	{
 		// this just sets the height
 		appdownloadpanel	{	tall="110"	style=panelStyle }
+		downloadprogressbar	{ controlname="ProgressBar" zpos="-1" style="SlimProgressBar" barinset=0 continuous=1 group="ShowWhileDownloading" style="SlimProgressBar" }
 
 		// image
 		spacer			{ controlname="Panel" }
@@ -14,7 +15,6 @@
 		namelabel	{ controlname="Label"	labelText="#steam_downloads_gamename" style="ModuleHeading" }
 		dashlabel	{ controlname="Label"	labelText=""	}
 		launchbutton		{ controlname="Button"	style="DetailsLaunchButton"	labelText="#Steam_LaunchGame" zpos="1" }
-		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="ShowWhileDownloading" style="SlimProgressBar" }
 		settingslink		{ controlname="URLlabel"	style="settingslink" }
 
 		// right-mid column
@@ -240,9 +240,11 @@
 		
 		SlimProgressBar
 		{
+			textcolor="JackMyth.DownloadProgress"
+			bgcolor=none
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, Progress.Back )"
+				0="fill( x0, y0, x1, y1, none )"
 			}
 			render
 			{
@@ -263,9 +265,9 @@
 		
 		// left column
 		place { control="spacer" }
+		place { control="downloadprogressbar" start= spacer dir=down margin-left=0 height=max width=max }
 		place { control="gameimage" 	 margin-left=15 margin-top=30 width=184 height=69 }
 		place { control="workshopbanner" margin-left=15 margin-top=30 width=184 height=69 } 
-		place { control="downloadprogressbar" start=gameimage dir=down width=184 height=5  }
 		
 		// left-mid column
 		place { control="namelabel" 		  region=column2 margin-top=24 margin-left=0 }

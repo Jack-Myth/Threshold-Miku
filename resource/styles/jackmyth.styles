@@ -13,6 +13,8 @@ jackmyth.styles
   	JackMyth.HalfOpacityInverse = "0 0 0 150"
   	JackMyth.OpacityInverse = "0 0 0 200"
   	JackMyth.LittleTranslucent180Inverse="0 0 0 180"
+	JackMyth.DownloadProgress="0 120 255 100"
+	JackMyth.DownloadProgressBack="255 255 255 0"
   }
   styles
   {
