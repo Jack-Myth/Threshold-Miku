@@ -266,7 +266,7 @@
 
 		view_friends
 		{
-			textcolor=Root.Label.Text
+			textcolor=none
 			bgcolor="none"
 			font-family=basefont
 			font-size=13 [$LINUX]
