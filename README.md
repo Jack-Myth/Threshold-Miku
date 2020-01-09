@@ -15,7 +15,8 @@ Want a dark version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/tre
 
 2. In Steam, go to Settings > Interface > and choose Threshold Miku from the list of skins.
 
-3. Restart Steam and enjoy!
+3. Restart Steam and enjoy!  
+
 
 # Introduce the Threshold Miku Light For SteamUI
 ![](Previews/SteamNewLibrary.jpg)
