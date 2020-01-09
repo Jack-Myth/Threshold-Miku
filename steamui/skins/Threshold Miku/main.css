@@ -1,0 +1,235 @@
+﻿#root
+{
+	background: url("images/MainBG.jpg");
+	background-position: -240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
+	background-repeat: no-repeat;
+}
+
+div[class^="gamelistbar_Container"]
+{
+	background-color: #00000000;
+	z-index:2;
+}
+
+div[class^="gamelistbar_Container"]:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+	background: url("images/MainBG.jpg");
+	background-position:-240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
+	background-attachment: fixed;
+	filter: blur(5px);
+}
+
+
+/*
+//If you want a translucent detail,uncomment this block.
+div[class^="appdetailsoverview_Container][class*="appdetailsoverview_ColumnContainer"] {
+	background-color: #24282f00;
+}
+.appdetails_Container_3HDlC
+{
+	background-color: #24282fcc;
+}
+*/
+
+div[class^="gamelistbar_GameListHomeAndSearch"] {
+	background: #20212433;
+	border-radius: 10px;
+}
+
+div[class^="gamelistdropdown_MenuHeader"]
+{
+	color: rgba(0, 0, 0, 1);
+}
+
+div[class^="gamelistfilter_Icon"]
+{
+	filter: brightness(0%);
+}
+
+div[class^="libraryhome_Container"]
+{
+	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
+}
+
+div[class^="gamelistsectionheader_SectionHeaderContent"]
+{
+	color: rgba(0, 0, 0, 1);
+}
+
+div[class^="libraryhome_UpdatesContainer"]
+{
+	background-color: #36373800;
+}
+
+div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]
+{
+	font-weight:bold;
+	color: black;
+}
+div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
+{
+	font-weight:bold;
+	color: black;
+}
+div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"]
+{
+	font-weight:bold;
+	color: lightgray;
+}
+div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
+{
+	font-weight:bold;
+	color: black;
+}
+
+div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
+{
+	font-weight:bold;
+	color: black;
+}
+div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"]:hover {
+	color: rgba(0, 0, 0, 0.8); }
+div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"] {
+	color: rgba(0, 0, 0, 1); }
+div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Uninstalled"] {
+	color: rgba(0, 0, 0, 1); }
+div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
+{
+	background: linear-gradient(to right, #CBCBCB 0%, #CBCBCB 90%, rgba(53, 55, 63, 0) 110%);
+	}
+  div[class^="gamelistentry_Container"]:hover {
+	color: #000000;
+	background-color: #CBCBCB;
+	transition: background-color 0.25s; }
+
+
+
+div[class^="gamelistsectionheader_Container"][class*="gamelistsectionheader_Selected"] {
+	background: linear-gradient(to right, #CBCBCB 0%, #BBBBBB 90%, #303230CB 110%);
+}
+
+div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] {
+	color: rgba(0, 0, 0, 0.5); }
+
+div[class^="gamelistsectionheader_SectionHeaderContent"]:hover span[class*="gamelistsectionheader_SectionName"] {
+	color: rgba(0, 0, 0, 1); }
+
+
+div[class^="appactivityday_ActivityAchievementUnlocked"][class*="appactivityday_ActivityPublishedScreenshot"] {
+	background: #1d222782;
+}
+
+/*div[class^="collectionview_Container"]
+{
+	background: linear-gradient(#222222FF,#222222AA,#22222222 50%);
+}*/
+
+div[class^="gamelistdropdown_MenuHeader"]:hover {
+	color: #000000CB; }
+	div[class^="gamelistdropdown_MenuHeader"]:hover *[class^="gamelistdropdown_Arrow"] polygon {
+	  fill: #000000CB; }
+
+div[class^="library_AppDetailsTransitionGroup"]
+{
+	background:#00000000;
+}
+
+div[class^="library_MainPanel"]
+{
+	//background: radial-gradient(100% 100% at 45% 45%, #00000080 0%, #30303f 100%);
+	z-index:1;
+}
+
+div[class^="library_MainPanel"]:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background: url("images/MainBG.jpg");
+	background-position:-240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
+	background-attachment: fixed;
+   filter: blur(10px) brightness(60%);
+}
+
+div[class^="libraryhome_UpdatesContainer"]
+{
+	background:#00000000;
+}
+
+div[class^="gamelistdropdown_MenuHeader"][class*="gamelistdropdown_FiltersActive"]
+{
+	background-color:#3e40478a;
+}
+
+div[class^="gamelistsearchbar_SearchInput"] input[class^="DialogInput"]
+{
+	background:rgba(67, 73, 83, 0.6) !important;
+}	
+
+div[class^="gamelistsectionheader_SectionCount"]
+{
+	color:rgba(0, 0, 0, 0.5);
+}
+
+/*div[class^="smartscrollcontainer_Container"][class*="libraryhome_Container"]*/
+
+div[class^="smartscrollcontainer"]
+{
+	background:#00000000;
+}
+
+div[class^="library_LibraryWindowDivider"]
+{
+	box-shadow: 1px 0px 6px 1px #000000;
+}
+
+div[class^="gamelisthome_Label"]
+{
+ color:rgba(0,0,0,1);
+}
+
+div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Label"]
+{
+ color:rgba(255,255,255,0.5);
+}
+
+div[class^="gamelisthome_Icon"] .SVGIcon_Home
+{
+	stroke:#000000;
+}
+
+div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Icon"] .SVGIcon_Home
+{
+	stroke:rgba(255,255,255,0.5);
+}
+
+div[class^="gamelistdropdown_Filters"] div:not([class*="gamelistdropdown_Active"]) svg
+{
+	filter:brightness(10%);
+}
+
+div[class^="gamelistdropdown_Filters"] div[class*="gamelistdropdown_Active"] svg
+{
+	fill:#66CCFF;
+	stroke:$66CCFF;
+	filter:drop-shadow(-1px 1px 1px rgba(0,0,0,0.9));
+}
+
+div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
+{
+	background-color:rgba(10, 10, 15, 0.3);
+}
