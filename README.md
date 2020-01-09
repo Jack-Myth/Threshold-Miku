@@ -23,6 +23,6 @@ It's an experimental version,and the SteamUI may have big changes in future,so i
 # Installation
 1. Install the VGUI skin.  
 2. open Threshold Miku skin folder,you will see a folder named "steamui".  
-3. copy and paste it to Steam root folder to replace the original "steamui". 
+3. copy and paste it to Steam root folder to replace the original "steamui".   
 4. To prevent the file be restored by steam, we need open steam with parameter "-noverifyfiles". Add it to your steam shortcut.  
-5 Save the file, you will meet a new steam.
+5. Save the file, you will meet a new steam.
