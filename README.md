@@ -26,6 +26,6 @@ It's an experimental version,and the SteamUI may have big changes in future,so i
 4. To prevent the file be restored by steam, we need open steam with parameter "-noverifyfiles". Add it to your steam shortcut.  
 5. Save the file, you will meet a new steam.  
 
-# Collapsed Sidebar is also supported!
-![](Previews/CollapsedPreview.jpg)
-Use the files in "Customization" folder to use this Style.
+# Collapsed Sidebar is also supported!  
+![](Previews/CollapsedPreview.jpg)  
+Use the files in "Customization" folder to use this Style.  
