@@ -23,7 +23,9 @@
 		PlayersButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Players" style=sidemenu }
 		AchievementsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Achievements" style=sidemenu }				
 		ScreenshotsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Screenshots" style=sidemenu }
-		
+		EditControllerConfig { controlname="URLLabel" labeltext="#Overlay_Taskbar_EditControllerConfig" style=sidemenu }	
+		ForceQuitButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ForceQuit" style=sidemenu }	
+
 		Clock { controlname="Label" labeltext="10:43" style=topbar }
 		ClockSuffix { controlname="Label" labeltext="am" style=clocksuffix }
 		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
@@ -77,7 +79,7 @@
 		region { name=right height=150}
 		
 		place { controls="BroadcastDetailPanel" region=broadcast width=330 height=240 align=bottom }
-		place { controls="GameHubButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton,GameGroupsButton" y=80 align=left margin-left=20 dir=down spacing=10 }
+		place { controls="GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton,EditControllerConfig,ForceQuitButton" y=80 align=left margin-left=20 dir=down spacing=10 }
 		
 		place { control="Clock,ClockSuffix" margin-right=20 margin-top=10 align=right}
 		place { control="SessionText,TwoWeeksText,ForeverText,CloseButton" dir=down region=right align=right y=45 margin-right=20}
