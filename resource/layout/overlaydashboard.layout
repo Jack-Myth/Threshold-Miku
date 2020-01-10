@@ -85,7 +85,8 @@
 		{
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1,Overlay.Sidebar)"
+				//0="fill(x0,y0,x1,y1,Overlay.Sidebar)"
+				0="image_scale(x0,y0,x1,y1,graphics\JackMyth\OverlayBG)"
 			}
 		}	
 		overlaymain
@@ -134,7 +135,9 @@
 		region	 { name="right" width=125 height=40 align=right }
 		
 		place { control="TopFadePanel" region=main width=max height=max }
-		place { control="BottomFadePanel" region=right width=max height=max }
+		
+		//BottomFadePanel is align to top beause it actually the background
+		place { control="BottomFadePanel" align=top width=max height=max }
 		
 		place { control="CloseButton" region=sidebar align=top width=80 height=80 }
 		place { control="HotkeyLabel,HotkeyExplain" region=hidden }

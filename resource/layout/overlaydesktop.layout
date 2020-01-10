@@ -14,7 +14,9 @@
 		LegacyCDKeyButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_legacycdkey" style=sidemenu }			
 		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }	
 		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }	
-		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }	
+		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }
+		EditControllerConfig { controlname="URLLabel" labeltext="#Overlay_Taskbar_EditControllerConfig" style=sidemenu }	
+		ForceQuitButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ForceQuit" style=sidemenu }	
 		
 		FriendsDetailPanel { controlname="COverlay_Details_Friends" style="detailsbox" }
 		AchievementsDetailPanel { controlname="COverlay_Details_Achievements" style="detailsbox" }
@@ -78,7 +80,7 @@
 		region	 { name="right" width=450 height=max align=right }
 		
 		region	 { name="gameOps" region=footer width=200 height=max align=right overflow=scroll-vertical}
-		place { control="LegacyCDKeyButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,WebSiteButton,RecommendButton,WorkshopButton" align=right region=gameOps dir=down margin-right=20 margin-top=10}
+		place { control="EditControllerConfig,LegacyCDKeyButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,WebSiteButton,RecommendButton,WorkshopButton,ForceQuitButton" align=right region=gameOps dir=down margin-right=20 margin-top=10}
 		
 		place { control="BroadcastDetailPanel" region=right width=330 height=240 align=bottom }
 		
