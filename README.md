@@ -19,7 +19,9 @@ Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/t
 # Introduce the Threshold Miku For SteamUI
 ![](Previews/NewLibrary.jpg)
 It's an experimental version,and the SteamUI may have big changes in future,so if you meet any bugs,or have any advice,please post them on [the Issues Page](https://github.com/Jack-Myth/Threshold-Miku/issues)
-# Installation
+# Installation  
+Just run the script named "Install.cmd"，It will get all things done.  
+Or you can follow these steps:  
 1. Install the VGUI skin.  
 2. open Threshold Miku skin folder,you will see a folder named "steamui".  
 3. copy it and paste to Steam root folder to replace the original "steamui".   
