@@ -9,6 +9,7 @@
 div[class^="gamelistbar_Container"]
 {
 	background-color: #00000000;
+	background-image: none;
 	z-index:2;
 }
 
@@ -235,7 +236,7 @@ div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 }
 
 
-//2020.1.23
+/*2020.1.23*/
 div[class^="gamelistsectionheader_Container"]
 {
 	background: #FFFFFF00;
@@ -266,7 +267,7 @@ div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Label"]
 	color:#CBCBCBCB;
 }
 
-div[class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
+div[class^="gamelisthome_Bar"][class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
 {
 	color:white;
 }
