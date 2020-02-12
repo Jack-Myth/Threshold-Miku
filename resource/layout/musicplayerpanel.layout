@@ -48,7 +48,7 @@
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, DefaultBackground )"
-				1="image(x1-283,y1-476,x1,y1,graphics/JackMyth/MusicPlayerImg)"
+				1="image(x1-283,y1-476,x1,y1-76,graphics/JackMyth/MusicPlayerImg)"
 				2="fill( x0, y1-76, x1, y1, Accent.Hover )"
 			}
 		}		
