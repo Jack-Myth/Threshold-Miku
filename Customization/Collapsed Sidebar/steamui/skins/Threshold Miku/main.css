@@ -9,6 +9,7 @@
 div[class^="gamelistbar_Container"]
 {
 	background-color: #00000000;
+	background-image:none;
 	z-index:2;
 }
 
@@ -114,7 +115,7 @@ div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 
 
 div[class^="gamelistsectionheader_Container"][class*="gamelistsectionheader_Selected"] {
-	background: linear-gradient(to right, #CBCBCB 0%, #BBBBBB 90%, #303230CB 110%);
+	background: linear-gradient(to right, #0B0B0B 0%, #0B0B0B 90%, #303230CB 110%);
 }
 
 div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] {
@@ -232,4 +233,50 @@ div[class^="gamelistdropdown_Filters"] div[class*="gamelistdropdown_Active"] svg
 div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 {
 	background-color:rgba(200, 200, 200, 0.3);
+}
+
+/*2020.1.23*/
+div[class^="gamelistsectionheader_Container"]
+{
+	background: #00000000;
+}
+
+div[class*="collapseicon_CollapseIconParent"] div[class *="collapseicon_Container"]
+{
+	stroke:rgb(100,100,100);
+}
+
+div[class^="gamelistsectionheader_Container"]:hover
+{
+	background:#0B0B0BCB;
+}
+
+div[class^="gamelisthome_Bar"]
+{
+	background-color:#3e404780;
+}
+
+div[class*="gamelisthome_CollectionButton"]
+{
+	background-color:#00000000;
+}
+
+div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Label"]
+{
+	color:#CBCBCBCB;
+}
+
+div[class^="gamelisthome_Bar"][class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
+{
+	color:white;
+}
+
+div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Icon"]
+{
+	fill:rgb(0,0,0,0.5);
+}
+
+div[class ^="libraryhome_LibraryHome"]
+{
+	background-image:none;
 }
