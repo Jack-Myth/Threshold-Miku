@@ -9,6 +9,7 @@
 div[class^="gamelistbar_Container"]
 {
 	background-color: #00000000;
+	background-image: none;
 	z-index:2;
 }
 
@@ -232,4 +233,51 @@ div[class^="gamelistdropdown_Filters"] div[class*="gamelistdropdown_Active"] svg
 div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 {
 	background-color:rgba(10, 10, 15, 0.3);
+}
+
+
+/*2020.1.23*/
+div[class^="gamelistsectionheader_Container"]
+{
+	background: #FFFFFF00;
+}
+
+div[class*="collapseicon_CollapseIconParent"] div[class *="collapseicon_Container"]
+{
+	stroke:rgb(100,100,100);
+}
+
+div[class^="gamelistsectionheader_Container"]:hover
+{
+	background:#CBCBCBCB;
+}
+
+div[class^="gamelisthome_Bar"]
+{
+	background-color:#3e404780;
+}
+
+div[class*="gamelisthome_CollectionButton"]
+{
+	background-color:#00000000;
+}
+
+div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Label"]
+{
+	color:#CBCBCBCB;
+}
+
+div[class^="gamelisthome_Bar"][class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
+{
+	color:white;
+}
+
+div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Icon"]
+{
+	fill:rgb(255,255,255,0.5);
+}
+
+div[class ^="libraryhome_LibraryHome"]
+{
+	background-image:none;
 }
