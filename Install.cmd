@@ -7,7 +7,7 @@ if not exist "..\skins" (
 ))
 REM Copy SteamUI's file to the original place.
 xcopy /e /y ".\steamui" "..\..\steamui"
-for %%i in ("%cd%") do set SkinName=%%~ni
+for %%i in ("%cd%") do set SkinName=%%~nxi
 REM SteamV4 seems to be deprecated, but just add it.
 reg add HKCU\Software\Valve\Steam /v SkinV4 /t REG_SZ /d "%SkinName%" /f
 reg add HKCU\Software\Valve\Steam /v SkinV5 /t REG_SZ /d "%SkinName%" /f
