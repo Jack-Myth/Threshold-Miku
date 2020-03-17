@@ -1,8 +1,8 @@
 ﻿#root
 {
 	background: url("images/MainBG.jpg");
-	background-position: -48px -31px;
-	background-size: calc(100% + 48px) calc(100% + 80px);
+	background-position: -240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
 	background-repeat: no-repeat;
 }
 
@@ -23,8 +23,8 @@ div[class^="gamelistbar_Container"]:after
 	bottom: 0;
 	z-index: -2;
 	background: url("images/MainBG.jpg");
-	background-position:-48px -31px;
-	background-size: calc(100% + 48px) calc(100% + 80px);
+	background-position:-240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
 	background-attachment: fixed;
 	/*TMC2:BeginGameListBlur*/filter: blur(5px);/*TMC2:EndGameListBlur*/
 }
@@ -160,8 +160,8 @@ div[class^="library_MainPanel"]:after
 	bottom: 0;
 	z-index: -1;
 	background: url("images/MainBG.jpg");
-	background-position:-48px -31px;
-	background-size: calc(100% + 48px) calc(100% + 80px);
+	background-position:-240px -31px;
+	background-size: calc(100% + 240px) calc(100% + 80px);
 	background-attachment: fixed;
     /*TMC2:BeginMainContent*/filter: blur(10px) brightness(60%);/*TMC2:EndMainContent*/
 }
