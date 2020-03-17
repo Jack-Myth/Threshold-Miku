@@ -11,6 +11,7 @@ for %%i in ("%cd%") do set SkinName=%%~nxi
 REM SteamV4 seems to be deprecated, but just add it.
 reg add HKCU\Software\Valve\Steam /v SkinV4 /t REG_SZ /d "%SkinName%" /f
 reg add HKCU\Software\Valve\Steam /v SkinV5 /t REG_SZ /d "%SkinName%" /f
+if "%2"=="WithoutShortcut" (exit)
 FOR /F %%i IN ("..\..\Steam.exe") DO set Program=%%~fi
 FOR /F %%i IN ("..\..\") DO set WorkDir=%%~fi
 set LnkName=Steam
@@ -24,6 +25,7 @@ echo oShellLink.Save)>makelnk.vbs
 makelnk.vbs
 del /f /q makelnk.vbs
 cls
+if "%1"=="CalledByCustomizer" (exit)
 echo All works done.
 echo You need to restart Steam before the skin takes effect.
 echo Next open Steam,Pleace use the shortcut on the DesKtop, or the skin will be restored.
@@ -33,6 +35,7 @@ explorer https://github.com/Jack-Myth/Threshold-Miku
 exit
 
 :WrongDirErr
+if "%1"=="CalledByCustomizer" (exit)
 REM Try find Steam Path
 FOR /F "tokens=2* skip=2" %%a in ('reg query "HKCU\Software\Valve\Steam" /v "SteamPath"') do set SteamPath=%%b
 REM If return value is not an exist path(Err Msg)
