@@ -34,6 +34,9 @@ Or you can follow these steps:
 ![](Previews/CollapsedPreview.jpg)  
 Use the files in "Customization" folder to use this Style.  
 
+# New Threshold Miku Customizer is included!  
+![](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2/raw/master/TMC2.jpg)   
+
 
 # Q&A:  
 Q:Why the background of webpage is misaligned?  
