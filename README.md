@@ -34,7 +34,5 @@ Or you can follow these steps:
 ![](Previews/CollapsedPreview.jpg)  
 Use the files in "Customization" folder to use this Style.  
 
-
-# Q&A:  
-Q:Why the background of webpage is misaligned?  
-A:Enable the URL address Bar in Steam Settings. Or if you don't want to Enable it, Copy all files in "Customization/WebPage without URL" to the root folder of the skin and replace the existed file(Webkit.css), Then it should work fine.
+# New Threshold Miku Customizer is included!  
+![](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2/raw/master/TMC2.jpg)  
