@@ -26,7 +26,7 @@ div[class^="gamelistbar_Container"]:after
 	background-position:-48px -31px;
 	background-size: calc(100% + 48px) calc(100% + 80px);
 	background-attachment: fixed;
-	filter: blur(2px);
+	/*TMC2:BeginGameListBlur*/filter: blur(2px);/*TMC2:EndGameListBlur*/
 }
 
 
@@ -163,7 +163,7 @@ div[class^="library_MainPanel"]:after
 	background-position:-48px -31px;
 	background-size: calc(100% + 48px) calc(100% + 80px);
 	background-attachment: fixed;
-   filter: blur(10px) brightness(60%);
+    /*TMC2:BeginMainContent*/filter: blur(10px) brightness(60%);/*TMC2:EndMainContent*/
 }
 
 div[class^="libraryhome_UpdatesContainer"]
