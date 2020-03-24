@@ -19,7 +19,7 @@ Want a dark version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/tre
 
 
 # Introduce the Threshold Miku Light For SteamUI
-![](Previews/SteamNewLibrary.jpg)
+![](Previews/NewLibrary.jpg)
 It's an experimental version,and the SteamUI may have big changes in future,so if you meet any bugs,or have any advice,please post them on [the Issues Page](https://github.com/Jack-Myth/Threshold-Miku/issues)
 # Installation  
 Just run the script named "Install.cmd"，It will get all things done.  
