@@ -195,7 +195,10 @@ div[class^="smartscrollcontainer"]
 
 div[class^="library_LibraryWindowDivider"]
 {
+	/*TMC2:BeginLWD*/
+	background-color: #17191bFF!important;
 	box-shadow: 1px 0px 6px 1px #000000;
+	/*TMC2:EndLWD*/
 }
 
 div[class^="gamelisthome_Label"]
