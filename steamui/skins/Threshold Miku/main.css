@@ -1,4 +1,4 @@
-﻿#root
+#root
 {
 	background: url("images/MainBG.jpg");
 	background-position: -240px -31px;
@@ -195,7 +195,10 @@ div[class^="smartscrollcontainer"]
 
 div[class^="library_LibraryWindowDivider"]
 {
+	/*TMC:BeginLWD*/
 	box-shadow: 1px 0px 6px 1px #000000;
+	background-color: #17191bFF!important;
+	/*TMC:EndLWD*/
 }
 
 div[class^="gamelisthome_Label"]
