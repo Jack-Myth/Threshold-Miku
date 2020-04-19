@@ -284,3 +284,91 @@ div[class ^="libraryhome_LibraryHome"]
 {
 	background-image:none;
 }
+
+/*TMC2:BeginTransparentContent*/
+div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
+{
+	background-image:none;
+}
+div[class ^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivityDate"]
+{
+	color:#cccccc;
+}
+div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"]
+{
+	color: #cccccc;
+}
+.offline span[class^="personanameandstatus_playerName"]
+{
+	color:#c3c3c3;
+}
+
+div[class^="appactivityday_Event"] div[class^="appactivityday_EventBody"]
+{
+	background: linear-gradient(to right, rgba(46, 50, 58, 0.4) 0%, rgba(36, 40, 47, 0.4) 95%)
+}
+div[class^="appdetailssection_AppDetailsSectionContainer"][class*="appdetailssection_RightColumnSection"]
+{
+	background: linear-gradient(to right, rgba(46, 50, 58, 0.4) 0%, rgba(36, 40, 47, 0.4) 95%)
+}
+div[class^="appdetailssectionheader_Label"]
+{
+	color:#cccccc;
+}
+button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"]
+{
+	color:#cccccc;
+}
+button[class*="TextButton"][class*="appdetailsfriendssection_ShowMore"]
+{
+	color:#c3c3c3;
+}
+div[class*="appdetailssection_Highlight"]
+{
+	background: linear-gradient(to right, #3b414a00 0%, #2c313855 95%);
+}
+div[class^="appdetailsspotlight_ReviewContainer"]
+{
+	background-color:#00000000;
+}
+div[class*="writereview_RatingContainer"]
+{
+	background-color:#00000000;
+}
+div[class*="appdetailsactivitysection_NoActivity"], div[class*="appdetailsactivitysection_Loading"]
+{
+	color: #2299ff;
+	border: 2px dashed #2299ff66;
+}
+span[class^="personanameandstatus_playerNickname"]
+{
+	color: #e6e6e6;
+}
+div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeIcon"] [class^="comment_thread_RatingIcon"], 
+div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentIcon"] [class^="comment_thread_RatingIcon"]
+{
+	fill:#cccccc;
+	stroke:#cccccc;
+}
+
+div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
+div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
+{
+	color:#cccccc;
+}
+
+div[class^="appdetailstradingcardssection_CardsLeft"]
+{
+	color: #c3c3c3;
+}
+
+div[class^="appdetailsreviewsection_PlayedForTime"]
+{
+	color: #c3c3c3;
+}
+
+[class*="appactivityday_Event"] [class*="appactivityday_EventHeadline"] [class*="appactivityday_HeadlineGameName"]
+{
+	color: #ccddff;
+}
+/*TMC2:EndTransparentContent*/
