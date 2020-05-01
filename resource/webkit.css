@@ -78,7 +78,7 @@
     filter: blur(0px) brightness(40%);
 }*/
 
-.ClientUIControls #root
+.ClientUIControls #root,
 .ClientUIControls div[class^="library_MainPanel"]:after,
 .ClientUIControls div[class^="gamelistbar_Container"]:after,
 html.client .responsive_page_frame
