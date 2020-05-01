@@ -273,7 +273,7 @@ html.client body.labs .responsive_page_content
 
 .ClientUIControls div[class^="gamelistdropdown_MenuHeader"]
 {
-	color: rgba(0, 0, 0, 1);
+	color: #aeaeaf;
 }
 
 .ClientUIControls div[class^="gamelistfilter_Icon"]
