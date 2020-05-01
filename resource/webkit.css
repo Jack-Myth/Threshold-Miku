@@ -233,7 +233,7 @@ html.client body.labs .responsive_page_content
 
 /*TMC2:EndWebPageStyle*/
 
-#root
+.ClientUIControls #root
 {
 	/*TMC2:BeginCSide0*/
 	background-position: -240px -31px;
@@ -242,14 +242,14 @@ html.client body.labs .responsive_page_content
 	background-repeat: no-repeat;
 }
 
-div[class^="gamelistbar_Container"]
+.ClientUIControls div[class^="gamelistbar_Container"]
 {
 	background-color: #00000000;
 	background-image: none;
 	z-index:2;
 }
 
-div[class^="gamelistbar_Container"]:after
+.ClientUIControls div[class^="gamelistbar_Container"]:after
 {
 	content: '';
 	position: absolute;
@@ -266,108 +266,106 @@ div[class^="gamelistbar_Container"]:after
 	/*TMC2:BeginGameListBlur*/filter: blur(5px);/*TMC2:EndGameListBlur*/
 }
 
-div[class^="gamelistbar_GameListHomeAndSearch"] {
+.ClientUIControls div[class^="gamelistbar_GameListHomeAndSearch"] {
 	background: #20212433;
 	border-radius: 10px;
 }
 
-div[class^="gamelistdropdown_MenuHeader"]
+.ClientUIControls div[class^="gamelistdropdown_MenuHeader"]
 {
 	color: #aeaeaf;
 }
 
-div[class^="gamelistfilter_Icon"]
+.ClientUIControls div[class^="gamelistfilter_Icon"]
 {
 	filter: brightness(0%);
 }
 
-div[class^="libraryhome_Container"]
+.ClientUIControls div[class^="libraryhome_Container"]
 {
 	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
 }
 
-div[class^="gamelistsectionheader_SectionHeaderContent"]
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]
 {
 	color: rgba(0, 0, 0, 1);
 }
 
-div[class^="libraryhome_UpdatesContainer"]
+.ClientUIControls div[class^="libraryhome_UpdatesContainer"]
 {
 	background-color: #36373800;
 }
 
-div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]
 {
 	font-weight:bold;
 	color: black;
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
 {
 	font-weight:bold;
 	color: black;
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"]
 {
 	font-weight:bold;
 	color: lightgray;
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
 {
 	font-weight:bold;
 	color: black;
 }
 
-div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
 {
 	font-weight:bold;
 	color: black;
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"] 
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"] 
 {
 	color: rgba(0, 0, 0, 1); 
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"]:hover 
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"]:hover 
 {
 	color: rgba(0, 0, 0, 0.8); 
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"][class*="gamelistentry_HoverOverlay"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"][class*="gamelistentry_HoverOverlay"]
 {
 	color: lightgray;
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Uninstalled"] 
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Uninstalled"] 
 {
 	color: rgba(0, 0, 0, 1); 
 }
-div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 {
 	background: linear-gradient(to right, #CBCBCB 0%, #CBCBCB 90%, rgba(53, 55, 63, 0) 110%);
 }
-div[class^="gamelistentry_Container"]:hover 
+.ClientUIControls div[class^="gamelistentry_Container"]:hover 
 {
 	color: #000000;
 	background-color: #CBCBCB;
 	transition: background-color 0.25s; 
 }
 
-
-
-div[class^="gamelistsectionheader_Container"][class*="gamelistsectionheader_Selected"] 
+.ClientUIControls div[class^="gamelistsectionheader_Container"][class*="gamelistsectionheader_Selected"] 
 {
 	background: linear-gradient(to right, #CBCBCB 0%, #BBBBBB 90%, #303230CB 110%);
 }
 
-div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] 
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] 
 {
 	color: rgba(0, 0, 0, 0.5); 
 }
 
-div[class^="gamelistsectionheader_SectionHeaderContent"]:hover span[class*="gamelistsectionheader_SectionName"] 
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]:hover span[class*="gamelistsectionheader_SectionName"] 
 {
 	color: rgba(0, 0, 0, 1); 
 }
 
 
-div[class^="appactivityday_ActivityAchievementUnlocked"][class*="appactivityday_ActivityPublishedScreenshot"] 
+.ClientUIControls div[class^="appactivityday_ActivityAchievementUnlocked"][class*="appactivityday_ActivityPublishedScreenshot"] 
 {
 	background: #1d222782;
 }
@@ -377,27 +375,27 @@ div[class^="appactivityday_ActivityAchievementUnlocked"][class*="appactivityday_
 	background: linear-gradient(#222222FF,#222222AA,#22222222 50%);
 }*/
 
-div[class^="gamelistdropdown_MenuHeader"]:hover 
+.ClientUIControls div[class^="gamelistdropdown_MenuHeader"]:hover 
 {
 	color: #000000CB; 
 }
-div[class^="gamelistdropdown_MenuHeader"]:hover *[class^="gamelistdropdown_Arrow"] polygon 
+.ClientUIControls div[class^="gamelistdropdown_MenuHeader"]:hover *[class^="gamelistdropdown_Arrow"] polygon 
 {
 	fill: #000000CB; 
 }
 
-div[class^="library_AppDetailsTransitionGroup"]
+.ClientUIControls div[class^="library_AppDetailsTransitionGroup"]
 {
 	background:#00000000;
 }
 
-div[class^="library_MainPanel"]
+.ClientUIControls div[class^="library_MainPanel"]
 {
 	//background: radial-gradient(100% 100% at 45% 45%, #00000080 0%, #30303f 100%);
 	z-index:1;
 }
 
-div[class^="library_MainPanel"]:after
+.ClientUIControls div[class^="library_MainPanel"]:after
 {
 	content: '';
 	position: absolute;
@@ -414,34 +412,34 @@ div[class^="library_MainPanel"]:after
     /*TMC2:BeginMainContent*/filter: blur(10px) brightness(60%);/*TMC2:EndMainContent*/
 }
 
-div[class^="libraryhome_UpdatesContainer"]
+.ClientUIControls div[class^="libraryhome_UpdatesContainer"]
 {
 	background:#00000000;
 }
 
-div[class^="gamelistdropdown_MenuHeader"][class*="gamelistdropdown_FiltersActive"]
+.ClientUIControls div[class^="gamelistdropdown_MenuHeader"][class*="gamelistdropdown_FiltersActive"]
 {
 	background-color:#3e40478a;
 }
 
-div[class^="gamelistsearchbar_SearchInput"] input[class^="DialogInput"]
+.ClientUIControls div[class^="gamelistsearchbar_SearchInput"] input[class^="DialogInput"]
 {
 	background:rgba(67, 73, 83, 0.6) !important;
 }	
 
-div[class^="gamelistsectionheader_SectionCount"]
+.ClientUIControls div[class^="gamelistsectionheader_SectionCount"]
 {
 	color:rgba(0, 0, 0, 0.5);
 }
 
 /*div[class^="smartscrollcontainer_Container"][class*="libraryhome_Container"]*/
 
-div[class^="smartscrollcontainer"]
+.ClientUIControls div[class^="smartscrollcontainer"]
 {
 	background:#00000000;
 }
 
-div[class^="library_LibraryWindowDivider"]
+.ClientUIControls div[class^="library_LibraryWindowDivider"]
 {
 	/*TMC2:BeginLWD*/
 	box-shadow: 1px 0px 6px 1px #000000;
@@ -449,173 +447,173 @@ div[class^="library_LibraryWindowDivider"]
 	/*TMC2:EndLWD*/
 }
 
-div[class^="gamelisthome_Label"]
+.ClientUIControls div[class^="gamelisthome_Label"]
 {
  color:rgba(0,0,0,1);
 }
 
-div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Label"]
+.ClientUIControls div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Label"]
 {
  color:rgba(255,255,255,0.5);
 }
 
-div[class^="gamelisthome_Icon"] .SVGIcon_Home
+.ClientUIControls div[class^="gamelisthome_Icon"] .SVGIcon_Home
 {
 	stroke:#000000;
 }
 
-div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Icon"] .SVGIcon_Home
+.ClientUIControls div[class^="gamelisthome_Bar"]:hover div[class*="gamelisthome_Icon"] .SVGIcon_Home
 {
 	stroke:rgba(255,255,255,0.5);
 }
 
-div[class^="gamelistdropdown_Filters"] div:not([class*="gamelistdropdown_Active"]) svg
+.ClientUIControls div[class^="gamelistdropdown_Filters"] div:not([class*="gamelistdropdown_Active"]) svg
 {
 	filter:brightness(10%);
 }
 
-div[class^="gamelistdropdown_Filters"] div[class*="gamelistdropdown_Active"] svg
+.ClientUIControls div[class^="gamelistdropdown_Filters"] div[class*="gamelistdropdown_Active"] svg
 {
 	fill:#66CCFF;
 	stroke:#66CCFF;
 	filter:drop-shadow(-1px 1px 1px rgba(0,0,0,0.9));
 }
 
-div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
+.ClientUIControls div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 {
 	background-color:rgba(10, 10, 15, 0.3);
 }
 
 
 /*2020.1.23*/
-div[class^="gamelistsectionheader_Container"]
+.ClientUIControls div[class^="gamelistsectionheader_Container"]
 {
 	background: #FFFFFF00;
 }
 
-div[class*="collapseicon_CollapseIconParent"] div[class *="collapseicon_Container"]
+.ClientUIControls div[class*="collapseicon_CollapseIconParent"] div[class *="collapseicon_Container"]
 {
 	stroke:rgb(100,100,100);
 }
 
-div[class^="gamelistsectionheader_Container"]:hover
+.ClientUIControls div[class^="gamelistsectionheader_Container"]:hover
 {
 	background:#CBCBCBCB;
 }
 
-div[class^="gamelisthome_Bar"]
+.ClientUIControls div[class^="gamelisthome_Bar"]
 {
 	background-color:#3e404780;
 }
 
-div[class*="gamelisthome_CollectionButton"]
+.ClientUIControls div[class*="gamelisthome_CollectionButton"]
 {
 	background-color:#00000000;
 }
 
-div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Label"]
+.ClientUIControls div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Label"]
 {
 	color:#CBCBCBCB;
 }
 
-div[class^="gamelisthome_Bar"][class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
+.ClientUIControls div[class^="gamelisthome_Bar"][class*="gamelisthome_Selected"] div[class*="gamelisthome_Label"]
 {
 	color:white;
 }
 
-div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Icon"]
+.ClientUIControls div[class^="gamelisthome_Bar"] div[class*="gamelisthome_Icon"]
 {
 	fill:rgb(255,255,255,0.5);
 }
 
-div[class ^="libraryhome_LibraryHome"]
+.ClientUIControls div[class ^="libraryhome_LibraryHome"]
 {
 	background-image:none;
 }
 
 /*TMC2:BeginTransparentContent*/
-div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
+.ClientUIControls div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
 {
 	background-image:none;
 }
-div[class ^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivityDate"]
+.ClientUIControls div[class ^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivityDate"]
 {
 	color:#cccccc;
 }
-div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"]
+.ClientUIControls div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"]
 {
 	color: #cccccc;
 }
-.offline span[class^="personanameandstatus_playerName"]
+.ClientUIControls .offline span[class^="personanameandstatus_playerName"]
 {
 	color:#c3c3c3;
 }
 
-div[class^="appactivityday_Event"] div[class^="appactivityday_EventBody"]
+.ClientUIControls div[class^="appactivityday_Event"] div[class^="appactivityday_EventBody"]
 {
 	background: linear-gradient(to right, rgba(46, 50, 58, 0.4) 0%, rgba(36, 40, 47, 0.4) 95%)
 }
-div[class^="appdetailssection_AppDetailsSectionContainer"][class*="appdetailssection_RightColumnSection"]
+.ClientUIControls div[class^="appdetailssection_AppDetailsSectionContainer"][class*="appdetailssection_RightColumnSection"]
 {
 	background: linear-gradient(to right, rgba(46, 50, 58, 0.4) 0%, rgba(36, 40, 47, 0.4) 95%)
 }
-div[class^="appdetailssectionheader_Label"]
+.ClientUIControls div[class^="appdetailssectionheader_Label"]
 {
 	color:#cccccc;
 }
-button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"]
+.ClientUIControls button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"]
 {
 	color:#cccccc;
 }
-button[class*="TextButton"][class*="appdetailsfriendssection_ShowMore"]
+.ClientUIControls button[class*="TextButton"][class*="appdetailsfriendssection_ShowMore"]
 {
 	color:#c3c3c3;
 }
-div[class*="appdetailssection_Highlight"]
+.ClientUIControls div[class*="appdetailssection_Highlight"]
 {
 	background: linear-gradient(to right, #3b414a00 0%, #2c313855 95%);
 }
-div[class^="appdetailsspotlight_ReviewContainer"]
+.ClientUIControls div[class^="appdetailsspotlight_ReviewContainer"]
 {
 	background-color:#00000000;
 }
-div[class*="writereview_RatingContainer"]
+.ClientUIControls div[class*="writereview_RatingContainer"]
 {
 	background-color:#00000000;
 }
-div[class*="appdetailsactivitysection_NoActivity"], div[class*="appdetailsactivitysection_Loading"]
+.ClientUIControls div[class*="appdetailsactivitysection_NoActivity"], div[class*="appdetailsactivitysection_Loading"]
 {
 	color: #2299ff;
 	border: 2px dashed #2299ff66;
 }
-span[class^="personanameandstatus_playerNickname"]
+.ClientUIControls span[class^="personanameandstatus_playerNickname"]
 {
 	color: #e6e6e6;
 }
-div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeIcon"] [class^="comment_thread_RatingIcon"], 
-div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentIcon"] [class^="comment_thread_RatingIcon"]
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeIcon"] [class^="comment_thread_RatingIcon"], 
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentIcon"] [class^="comment_thread_RatingIcon"]
 {
 	fill:#cccccc;
 	stroke:#cccccc;
 }
 
-div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
-div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
 {
 	color:#cccccc;
 }
 
-div[class^="appdetailstradingcardssection_CardsLeft"]
+.ClientUIControls div[class^="appdetailstradingcardssection_CardsLeft"]
 {
 	color: #c3c3c3;
 }
 
-div[class^="appdetailsreviewsection_PlayedForTime"]
+.ClientUIControls div[class^="appdetailsreviewsection_PlayedForTime"]
 {
 	color: #c3c3c3;
 }
 
-[class*="appactivityday_Event"] [class*="appactivityday_EventHeadline"] [class*="appactivityday_HeadlineGameName"]
+.ClientUIControls [class*="appactivityday_Event"] [class*="appactivityday_EventHeadline"] [class*="appactivityday_HeadlineGameName"]
 {
 	color: #ccddff;
 }
