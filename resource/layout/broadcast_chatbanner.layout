@@ -12,7 +12,7 @@
 	
 	colors
 	{
-		ChatTextLineBG = "0 0 0 80"
+		ChatTextLineBG = JackMyth.HalfTranslucent
 	}
 	
 	styles
