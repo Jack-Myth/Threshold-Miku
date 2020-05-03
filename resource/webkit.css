@@ -297,6 +297,7 @@ html.client body.labs .responsive_page_content
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"]:hover,
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
 {
