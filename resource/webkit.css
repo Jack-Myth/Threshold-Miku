@@ -296,11 +296,7 @@ html.client body.labs .responsive_page_content
 	background-color: #36373800;
 }
 
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]
-{
-	font-weight:bold;
-	color: black;
-}
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
 {
 	font-weight:bold;
@@ -310,11 +306,6 @@ html.client body.labs .responsive_page_content
 {
 	font-weight:bold;
 	color: lightgray;
-}
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
-{
-	font-weight:bold;
-	color: black;
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
@@ -338,6 +329,43 @@ html.client body.labs .responsive_page_content
 {
 	color: rgba(0, 0, 0, 1); 
 }
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"]:hover
+{
+	font-weight:bold;
+	color: #26b7ff;
+}
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"][class*="gamelistentry_HoverOverlay"]
+{
+	font-weight:bold;
+	color: #26b7ff;
+}
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Updating"]
+{
+	font-weight:bold;
+	color: #26b7ff;
+}
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"]:hover
+{
+	font-weight:bold;
+	color: greenyellow;
+}
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"][class*="gamelistentry_HoverOverlay"]
+{
+	font-weight:bold;
+	color: greenyellow;
+}
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Running"]
+{
+	font-weight:bold;
+	color: greenyellow;
+}
+
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 {
 	background: linear-gradient(to right, #CBCBCB 0%, #CBCBCB 90%, rgba(53, 55, 63, 0) 110%);
