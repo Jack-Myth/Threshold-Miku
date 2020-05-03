@@ -125,7 +125,7 @@
 			shadowtextcolor=DefaultCursor  // this is the cursor color
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, white)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			} 
@@ -139,7 +139,7 @@
 			shadowtextcolor=DefaultCursor  
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, white)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			} 
@@ -153,7 +153,7 @@
 			shadowtextcolor=DefaultCursor  
 			render_bg
 			{
-				0="fill(x0, y0, x1, y1, black)"
+				0="fill(x0, y0, x1, y1, white)"
 				// lines around
 				1="fill( x0, y0, x1, y0 + 1, DefaultBackground )"  // top
 			}

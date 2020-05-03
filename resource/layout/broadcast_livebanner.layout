@@ -29,6 +29,7 @@
 		{
 			font-size=15 [$LINUX]
 			font-size=20
+			color="200 200 200 200"
 		}		
 		
 		LiveBannerStyleIngame
