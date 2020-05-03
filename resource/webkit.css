@@ -296,18 +296,23 @@ html.client body.labs .responsive_page_content
 	background-color: #36373800;
 }
 
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
 {
 	font-weight:bold;
 	color: white;
 }
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"][class*="gamelistentry_HoverOverlay"].
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"]
 {
 	font-weight:bold;
 	color: lightgray;
 }
 
+
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="InstalledRemotely"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
 {
 	font-weight:bold;
