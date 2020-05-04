@@ -149,6 +149,11 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
+
+	layout
+	{
+		place { control=Button1 align="bottom-right" margin-bottom=12 margin-right=12 width=92 height=24}
+	}
 	
 	styles
 	{
