@@ -1,14 +1,22 @@
 "steam/cached/InstallSubConvertApps.res"
 {
 
-	styles{
-		
+	styles
+	{
+		ProgressBar
+		{
+			bgcolor=none
+			render_bg
+			{}
+			textcolor="JackMyth.DownloadProgress"
+		}
 	}
 	
 	layout{
 		region { name=body margin-top=20 margin-left=20 margin-right=20 width=max height=max }
 		place { control=Label1 region=body width=max}
 		place { control=HTMLEULA width=max height=max margin-top=50}
+		place { control=ProgressBar align="bottom" margin-buttom=0 width=max height=12}
 		
 	}
 
