@@ -250,12 +250,12 @@ html.client .game_area_sys_req ul li strong
 
 html.client .game_language_options td
 {
-	color:#CBCBCB;
+	color:#CBCBCB!important;
 }
 
 html.client .game_language_options tr.unsupported td
 {
-	color: #8f98a0;
+	color: #8f98a0!important;
 }
 
 /*TMC2:EndWebPageStyle*/
