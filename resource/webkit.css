@@ -231,6 +231,33 @@ html.client body.labs .responsive_page_content
 	background:none!important;
 }
 
+html.client .game_area_purchase_game p.package_contents,
+html.client .game_area_offsite_purchase p.package_contents,
+html.client .game_area_description_bodylabel,
+html.client .glance_ctn .user_reviews,
+html.client .glance_tags_label,
+html.client .game_description_column,
+html.client .block .block_title,
+html.client .game_details b
+{
+	color: #c6d4df!important;
+}
+
+html.client .game_area_sys_req ul li strong
+{
+	color: #ABABAB!important;
+}
+
+html.client .game_language_options td
+{
+	color:#CBCBCB;
+}
+
+html.client .game_language_options tr.unsupported td
+{
+	color: #8f98a0;
+}
+
 /*TMC2:EndWebPageStyle*/
 
 .ClientUIControls #root
@@ -651,4 +678,5 @@ html.client body.labs .responsive_page_content
 {
 	color: #ccddff;
 }
+
 /*TMC2:EndTransparentContent*/
