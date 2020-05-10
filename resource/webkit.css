@@ -670,4 +670,23 @@ div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 {
 	color: #ccddff;
 }
+
+.ClientUIControls [class^="appdetailssoundtrack_SoundtrackPanel"]
+{
+	background: none;
+}
+
+.ClientUIControls [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackNumber"],
+.ClientUIControls [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackLength"],
+.ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"]
+{
+	color:#CBCBCB;
+}
+
+.ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] 
+[class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"] 
+[class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"]
+{
+	color: #ABABAB;
+}
 /*TMC2:EndTransparentContent*/
