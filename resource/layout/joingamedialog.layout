@@ -39,8 +39,8 @@
 		place { controls="InfoLabel" region=box margin-top=15 dir=down align=left width=max  }
 		place { controls="ThrobberThrobberThrobber" region=box start=InfoLabel dir=down align=left margin-top=15 }
 		place { controls="ReadyToPlayInfoLabel" region=box start=ThrobberThrobberThrobber margin-top=10 width=max dir=down }
-		place { controls="ReadyToPlayTimeLabel" region=box start=ThrobberThrobberThrobber margin-top=10 margin-left=200 dir=down }
-		place { controls="Progress" region=box start=ReadyToPlayInfoLabel margin-top=10 width=max dir=down }
+		place { controls="ReadyToPlayTimeLabel" region=box start=ReadyToPlayInfoLabel margin-top=10 margin-left=200 dir=down }
+		place { controls="Progress" region=box start=ReadyToPlayTimeLabel margin-top=10 width=max dir=down }
 		place { controls="OverrideThrottleCheckBox" region=box start=Progress margin-top=10 width=max height=15 dir=down }
 		place { controls="AutoLaunchCheckBox" region=box start=OverrideThrottleCheckBox margin-top=10 height=15 width=max dir=down }
 		place { controls="NewsButton" region=box start=AutoLaunchCheckBox margin-top=10 width=135 height=25 dir=down margin-right=0 align=right }
