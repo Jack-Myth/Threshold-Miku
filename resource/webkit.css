@@ -258,6 +258,11 @@ html.client .game_language_options tr.unsupported td
 	color: #8f98a0!important;
 }
 
+html.client .apphub_background
+{
+	background-image: none!important;
+}
+
 /*TMC2:EndWebPageStyle*/
 
 .ClientUIControls #root
