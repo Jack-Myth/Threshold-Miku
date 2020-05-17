@@ -258,6 +258,11 @@ html.client .game_language_options tr.unsupported td
 	color: #8f98a0!important;
 }
 
+html.client .apphub_background
+{
+	background-image: none!important;
+}
+
 /*TMC2:EndWebPageStyle*/
 
 .ClientUIControls #root
@@ -438,11 +443,11 @@ html.client .game_language_options tr.unsupported td
 
 .ClientUIControls div[class^="gamelistdropdown_MenuHeader"]:hover 
 {
-	color: #000000CB; 
+	color: #CBCBCBCB; 
 }
 .ClientUIControls div[class^="gamelistdropdown_MenuHeader"]:hover *[class^="gamelistdropdown_Arrow"] polygon 
 {
-	fill: #000000CB; 
+	fill: #CBCBCBCB; 
 }
 
 .ClientUIControls div[class^="library_AppDetailsTransitionGroup"]
