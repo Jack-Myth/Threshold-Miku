@@ -104,7 +104,7 @@ html.client .responsive_page_frame:after
 	right: 0;
 	bottom: 0;
 	z-index: -2;
-	background:linear-gradient(to right,#00000000 0%,#00000099 2%);
+	/*TMC2:BeginWebBGBrightness*/background:linear-gradient(to right,#00000000 0%,#00000099 2%);/*TMC2:EndWebBGBrightness*/
 	background-attachment:fixed;
 }
 
