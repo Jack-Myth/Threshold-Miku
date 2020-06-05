@@ -7,11 +7,21 @@ steam.styles
   colors
   {
 	//Font Familys
+	//TMC2:BeginBaseFont
 	basefont="Segoe UI" 
+	//TMC2:EndBaseFont
+	//TMC2:BeginLight
 	light="Segoe UI Light"
+	//TMC2:EndLight
+	//TMC2:BeginSemiLight
 	semilight="Segoe UI Semilight"
+	//TMC2:EndSemiLight
+	//TMC2:BeginSemiBold
 	semibold="Segoe UI Semibold"
+	//TMC2:EndSemiBold
+	//TMC2:BeginBold
 	bold="Segoe UI Bold"
+	//TMC2:EndBold
 	
 	//Standard Element/Text colors ********
 	//TODO: Some of these colors arent actually used, fix or remove
