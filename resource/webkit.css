@@ -589,6 +589,12 @@ div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 	background-image:none;
 }
 
+.ClientUIControls
+{
+	/*TMC2:BeginSTUIFontGlobal*/
+	/*TMC2:EndSTUIFontGlobal*/
+}
+
 /*TMC2:BeginTransparentContent*/
 .ClientUIControls div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
 {
