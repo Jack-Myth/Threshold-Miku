@@ -24,4 +24,5 @@ Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/t
 Use the files in "Customization" folder to use this Style.  
 
 # New Threshold Miku Customizer is included!  
+[Source code here!](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2)
 ![](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2/raw/master/TMC2.jpg) 
