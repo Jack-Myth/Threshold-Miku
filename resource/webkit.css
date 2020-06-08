@@ -336,7 +336,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class*="gamelistentry_Container"][class*="gamelistentry_HoverOverlay"]
 {
-	background-color: #8fa6d6;
+	background-color: #66CCFF;
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"]:hover 
