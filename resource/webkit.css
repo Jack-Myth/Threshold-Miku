@@ -336,7 +336,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class*="gamelistentry_Container"][class*="gamelistentry_HoverOverlay"]
 {
-	background-color: #66CCFF;
+	background-color: #CCFFFF;
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"]:hover 
@@ -377,8 +377,9 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"][class*="gamelistentry_DownloadProgress"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"][class*="gamelistentry_HoverOverlay"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Running"]
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Running"],
 {
 	font-weight:bold;
 	/*TMC2:BeginRunning*/color: greenyellow;/*TMC2:EndRunning*/
