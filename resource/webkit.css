@@ -328,76 +328,45 @@ html.client .apphub_background
 	background-color: #36373800;
 }
 
-.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"]:hover,
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover
-{
-	font-weight:bold;
-	color: white;
-}
-
-.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"][class*="gamelistentry_HoverOverlay"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"]
-{
-	font-weight:bold;
-	color: lightgray;
-}
-
-
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="InstalledRemotely"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
-{
-	font-weight:bold;
-	color: white;
-}
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"]:hover 
-{
-	color: rgba(255,255, 255, 0.8); 
-}
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Uninstalled"] 
-{
-	color: rgba(255, 255, 255, 1); 
-}
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 {
 	background: linear-gradient(to right, #0B0B0B 0%, #0B0B0B 90%, rgba(53, 55, 63, 0) 110%);
 }
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"]:hover
-{
-	font-weight:bold;
-	color: #26b7ff;
-}
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"][class*="gamelistentry_HoverOverlay"]
-{
-	font-weight:bold;
-	color: #26b7ff;
-}
 
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="InstalledRemotely"][class*="gamelistentry_HoverOverlay"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Installed"][class*="gamelistentry_HoverOverlay"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="InstalledRemotely"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Installed"]
+{
+	font-weight:bold;
+	/*TMC2:BeginInstalled*/color: white;/*TMC2:EndInstalled*/
+}
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Uninstalled"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Uninstalled"] 
+{
+	/*TMC2:BeginUninstalled*/color: rgba(255, 255, 255, 1);/*TMC2:EndUninstalled*/
+}
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"],
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Updating"][class*="gamelistentry_HoverOverlay"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Updating"]
 {
 	font-weight:bold;
-	color: #26b7ff;
+	/*TMC2:BeginUpdating*/color: #26b7ff;/*TMC2:EndUpdating*/
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"],
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"]:hover
-{
-	font-weight:bold;
-	color: greenyellow;
-}
-.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"][class*="gamelistentry_HoverOverlay"]
-{
-	font-weight:bold;
-	color: greenyellow;
-}
-
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"]:hover,
+.ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Running"][class*="gamelistentry_HoverOverlay"],
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"][class*="gamelistentry_Running"]
 {
 	font-weight:bold;
-	color: greenyellow;
+	/*TMC2:BeginRunning*/color: greenyellow;/*TMC2:EndRunning*/
 }
 
 .ClientUIControls div[class^="gamelistentry_Container"]:hover 
