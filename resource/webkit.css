@@ -611,18 +611,19 @@ html.client .apphub_background
 	color:#0009;
 }
 
-.ClientUIControls div[class^="pageablecontainer_HeaderPageControls"] div[class^="pageablecontainer_Rule"],
-.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_Rule"],
-.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PostDropdownRule"]
+.ClientUIControls div[class^="pageablecontainer_HeaderPageControls"] div[class*="pageablecontainer_Rule"],
+.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class*="libraryhomeshowcases_Rule"],
+.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class*="libraryhomeshowcases_PostDropdownRule"]
 {
 	background-color:rgba(0, 0, 0, 0.07);
 }
 
 .ClientUIControls div[class^="libraryhomeshowcases_AddShowcaseRow"] svg,
-.ClientUIControls div[class^="pageablecontainer_PageClickContainer"] div[class^="pageablecontainer_PageLeft"] svg,
-.ClientUIControls div[class^="pageablecontainer_PageClickContainer"] div[class^="pageablecontainer_PageRight"] svg,
+.ClientUIControls div[class^="pageablecontainer_PageClickContainer"] div[class*="pageablecontainer_PageLeft"] svg,
+.ClientUIControls div[class^="pageablecontainer_PageClickContainer"] div[class*="pageablecontainer_PageRight"] svg,
 .ClientUIControls div[class^="libraryhomenewupdates_SettingsButton"] svg,
-.ClientUIControls div[class^="appdetailsplaysection_MenuButton"] svg
+.ClientUIControls div[class^="appdetailsplaysection_MenuButton"] svg,
+.ClientUIControls div[class^="collectionview_Container"] div[class*="collectionview_EditButton"][class*="collectionview_Pencil"] svg
 {
 	filter:invert(1);
 }
