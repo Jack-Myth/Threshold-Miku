@@ -383,14 +383,10 @@ html.client .apphub_background
 	background: linear-gradient(to right, #0B0B0B 0%, #0B0B0B 90%, #303230CB 110%);
 }
 
-.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] 
-{
-	color: rgba(255, 255, 255, 0.5); 
-}
-
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"],
 .ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]:hover span[class*="gamelistsectionheader_SectionName"] 
 {
-	color: rgba(255, 255, 255, 1); 
+	/*TMC2:BeginGameListSectionHeader*/color: rgba(255, 255, 255, 1);/*TMC2:EndGameListSectionHeader*/ 
 }
 
 
