@@ -812,11 +812,14 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeName"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnlockedLabel"],
-.ClientUIControls a[class^="appactivityday_WishlistLink"],
-.ClientUIControls span[class^="appactivityday_Event"] span[class^="appactivityday_EventHeadline"] a:-webkit-any-link,
 .ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"]	
 {
 	color: #333;
+}
+
+.ClientUIControls a[class^="appactivityday_WishlistLink"]
+{
+	color: #333!important;
 }
 
 .ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"]
