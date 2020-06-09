@@ -420,7 +420,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="library_MainPanel"]
 {
-	/*background: radial-gradient(100% 100% at 45% 45%, #00000080 0%, #30303f 100%);*/
+	background: #000;
 	z-index:1;
 }
 
@@ -438,7 +438,7 @@ html.client .apphub_background
 	background-size: calc(100% + 240px) calc(100% + 80px);
 	/*TMC2:EndCSide2*/
 	background-attachment: fixed;
-    /*TMC2:BeginMainContent*/filter: blur(10px) brightness(60%);/*TMC2:EndMainContent*/
+    /*TMC2:BeginMainContent*/filter: blur(10px) opacity(90%);/*TMC2:EndMainContent*/
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
