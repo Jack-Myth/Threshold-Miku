@@ -623,7 +623,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="pageablecontainer_PageClickContainer"] div[class*="pageablecontainer_PageRight"] svg,
 .ClientUIControls div[class^="libraryhomenewupdates_SettingsButton"] svg,
 .ClientUIControls div[class^="appdetailsplaysection_MenuButton"] svg,
-.ClientUIControls div[class^="collectionview_Container"] div[class*="collectionview_EditButton"][class*="collectionview_Pencil"] svg
+.ClientUIControls div[class^="collectionview_Container"] div[class*="collectionview_EditButton"][class*="collectionview_Pencil"] svg,
+.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageLeft"] svg,
+.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageRight"] svg
 {
 	filter:invert(1);
 }
