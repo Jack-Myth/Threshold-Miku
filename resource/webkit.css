@@ -318,11 +318,6 @@ html.client .apphub_background
 	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
 }
 
-.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]
-{
-	color: rgba(0, 0, 0, 1);
-}
-
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
 {
 	background-color: #36373800;
@@ -390,14 +385,11 @@ html.client .apphub_background
 	background: linear-gradient(to right, #CBCBCB 0%, #BBBBBB 90%, #303230CB 110%);
 }
 
-.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"] 
-{
-	color: rgba(0, 0, 0, 0.5); 
-}
-
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"],
+.ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"] span[class*="gamelistsectionheader_SectionName"],
 .ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]:hover span[class*="gamelistsectionheader_SectionName"] 
 {
-	color: rgba(0, 0, 0, 1); 
+	/*TMC2:BeginGameListSectionHeader*/color: rgba(0, 0, 0, 1);/*TMC2:EndGameListSectionHeader*/
 }
 
 
@@ -655,10 +647,6 @@ html.client .apphub_background
 .ClientUIControls div[class^="appgrid_SortingDropDown"] ._DialogInputContainer .DialogDropDown_Arrow
 {
 	background-color:rgba(0, 0, 0, 0.1);
-}
-
-.ClientUIControls div[class^="appgrid_SortingDropDown"] ._DialogInputContainer .DialogDropDown_Arrow
-{
 	color:#333;
 }
 
@@ -801,7 +789,8 @@ html.client .apphub_background
 
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] 
 [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"] 
-[class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"]
+[class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"],
+.ClientUIControls div[class^="collectionview_Container_2q70u"]
 {
 	color: #4B4B4B;
 }
