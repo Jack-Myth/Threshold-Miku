@@ -571,7 +571,8 @@ html.client .apphub_background
 	color:#222222;
 }
 
-.ClientUIControls div[class^="libraryhomenewupdates_EventTime"]
+.ClientUIControls div[class^="libraryhomenewupdates_EventTime"],
+.ClientUIControls div[class*="libraryhome_InnerContainer"]
 {
 	color:#000000CC;
 }
