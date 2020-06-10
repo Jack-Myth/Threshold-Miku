@@ -808,7 +808,8 @@ html.client .apphub_background
 [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"] 
 [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"],
 .ClientUIControls div[class^="collectionview_Container"],
-.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"]
+.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"],
+.ClientUIControls div[class^="appdetailsachievementssection_UnlockedLabelPercent"]
 {
 	color: #4B4B4B;
 }
@@ -864,7 +865,8 @@ html.client .apphub_background
 	filter: brightness(0.5);
 }
 
-.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Summary"]
+.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Summary"],
+.ClientUIControls div[class^="spotlightgameplaysummary_GamePlaySummaryHeader"]
 {
 	color: #595c5d;
 }
