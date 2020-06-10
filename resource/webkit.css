@@ -625,7 +625,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailsplaysection_MenuButton"] svg,
 .ClientUIControls div[class^="collectionview_Container"] div[class*="collectionview_EditButton"][class*="collectionview_Pencil"] svg,
 .ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageLeft"] svg,
-.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageRight"] svg
+.ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageRight"] svg,
+.ClientUIControls div[class^="appdetailsprimarylinkssection_MenuButton"] svg,
+.ClientUIControls div[class^="infoicon_MoreInfoIcon"]
 {
 	filter:invert(1);
 }
@@ -707,9 +709,19 @@ html.client .apphub_background
 {
 	color: #333333;
 }
-.ClientUIControls .offline span[class^="personanameandstatus_playerName"]
+.ClientUIControls .offline [class^="personanameandstatus_playerName"]
 {
 	color:#3c3c3c;
+}
+
+.ClientUIControls .online [class^="personanameandstatus_playerName"]
+{
+	text-shadow: 1px 1px 1px black;
+}
+
+.ClientUIControls .ingame [class^="personanameandstatus_playerName"]
+{
+	text-shadow: 1px 1px 1px black;
 }
 
 
@@ -785,7 +797,9 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackLength"],
 .ClientUIControls div[class^="appdetailsscreenshotssection_ScreenshotsSection"] div[class^="appdetailsscreenshotssection_NoneTaken"],
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"],
-.ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"]
+.ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"],
+.ClientUIControls div[class^="appactivityday_PlayedForTime"],
+.ClientUIControls div[class^="appactivityday_ReviewText_3ZTUR"]
 {
 	color:#3B3B3B;
 }
@@ -793,7 +807,8 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] 
 [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"] 
 [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"],
-.ClientUIControls div[class^="collectionview_Container_2q70u"]
+.ClientUIControls div[class^="collectionview_Container"],
+.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"]
 {
 	color: #4B4B4B;
 }
@@ -811,8 +826,10 @@ html.client .apphub_background
 
 
 .ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeName"],
+.ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeLevel"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnlockedLabel"],
-.ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"]	
+.ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"],
+.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"]
 {
 	color: #333;
 }
@@ -860,4 +877,9 @@ html.client .apphub_background
 .ClientUIControls div[class*="appactivityday_PartnerEvent"]
 {
 	background: radial-gradient(100% 80% at 64% 95%, rgba(148, 140, 128, 0.3) 0%, rgba(193, 185, 175, 0.5) 20%, rgba(219, 215, 208, 0.5) 100%);
+}
+
+.ClientUIControls div[class^="appactivityday_ReviewDescriptionRecommended"]
+{
+	color:#0055ff;
 }
