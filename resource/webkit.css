@@ -628,7 +628,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageLeft"] svg,
 .ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageRight"] svg,
 .ClientUIControls div[class^="appdetailsprimarylinkssection_MenuButton"] svg,
-.ClientUIControls div[class^="infoicon_MoreInfoIcon"]
+.ClientUIControls div[class^="infoicon_MoreInfoIcon"],
+.ClientUIControls div[class^="appdetailsreviewsection_CommentsGroup"]
 {
 	filter:invert(1);
 }
@@ -831,7 +832,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeLevel"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnlockedLabel"],
 .ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"],
-.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"]
+.ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"],
+.ClientUIControls div[class^="appdetailssection_Highlight"],
+.ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"]
 {
 	color: #333;
 }
@@ -841,7 +844,8 @@ html.client .apphub_background
 	color: #333!important;
 }
 
-.ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"]
+.ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"],
+.ClientUIControls div[class^="appgrid_AppGridSectionLabel"]
 {
 	color: #000000e0;
 }
@@ -854,7 +858,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Title"],
 .ClientUIControls div[class*="appactivityday_PartnerEventMediumImage_Container"]:hover div[class^="appactivityday_PartnerEventMediumImage_Title"],
-.ClientUIControls div[class^="appactivityday_PartnerEventType"]
+.ClientUIControls div[class^="appactivityday_PartnerEventType"],
+.ClientUIControls button.TextButton
 {
 	color:#000;
 }
@@ -877,9 +882,16 @@ html.client .apphub_background
 	color: #0005;
 }
 
-.ClientUIControls div[class*="appactivityday_PartnerEvent"]
+.ClientUIControls div[class*="appactivityday_PartnerEvent_"]
 {
 	background: radial-gradient(100% 80% at 64% 95%, rgba(148, 140, 128, 0.3) 0%, rgba(193, 185, 175, 0.5) 20%, rgba(219, 215, 208, 0.5) 100%);
+}
+
+.ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Container"],
+.ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Title"],
+.ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"]
+{
+	color:#000;
 }
 
 .ClientUIControls div[class^="appactivityday_ReviewDescriptionRecommended"]
