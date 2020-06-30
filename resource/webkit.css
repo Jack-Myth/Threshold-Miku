@@ -845,12 +845,15 @@ html.client .apphub_background
 }
 
 .ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"],
-.ClientUIControls div[class^="appgrid_AppGridSectionLabel"]
+.ClientUIControls div[class^="appgrid_AppGridSectionLabel"],
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_Soundtracks"] div[class*="appdetailsadditionalcontentsection_SoundtrackDetails"] div[class*="appdetailsadditionalcontentsection_Title"]
 {
 	color: #000000e0;
 }
 
-.ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Desc"]
+.ClientUIControls div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Desc"],
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_Soundtracks"] div[class*="appdetailsadditionalcontentsection_SoundtrackDetails"] div[class*="appdetailsadditionalcontentsection_Artist"],
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_Soundtracks"] div[class*="appdetailsadditionalcontentsection_SoundtrackDetails"] div[class*="appdetailsadditionalcontentsection_TracksDetails"]
 {
 	color: #00000080;
 }
