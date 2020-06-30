@@ -1801,6 +1801,7 @@ steam.styles
     ScrollBarButton.up:active
     {
 		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/up_active"
 		render_bg
 		{
 		}
@@ -1836,6 +1837,7 @@ steam.styles
     ScrollBarButton.down:active
 	{
 		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/down_active"
 		render_bg
 		{
 		}
@@ -1868,6 +1870,15 @@ steam.styles
 		{
 	    }
     }
+
+    ScrollBarButton.left:active
+	{
+		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/left_active"
+		render_bg
+		{
+		}
+    }
         
     ScrollBarButton.right
     {
@@ -1884,6 +1895,15 @@ steam.styles
     {
 		bgcolor=Scroll.Button.Hover
 		render_bg 
+		{
+		}
+    }
+
+    ScrollBarButton.right:active
+	{
+		bgcolor=Scroll.Button.Active
+		image="graphics/Threshold/scroll/right_active"
+		render_bg
 		{
 		}
     }
