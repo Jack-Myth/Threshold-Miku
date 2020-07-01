@@ -104,15 +104,15 @@
     BackgroundStart="22 22 22 180"
     BackgroundStartOpaque="35 35 35 255"
     
-    ClientBG="30 30 30 255"
+    ClientBG="200 200 200 255"
     ClientBGTop="25 32 46 255"
     ClientGrouper="41 42 46 255"
-    DialogBG="38 38 38 255"
+    DialogBG="200 200 200 255"
     DialogBGFade1="56 56 56 255"
     DialogBGFade2="56 56 56  0"  
     
-    DarkClientBG="35 35 35 255"
-    DarkDialogBG="38 38 38 255"
+    DarkClientBG="220 220 220 255"
+    DarkDialogBG="225 225 225 255"
     DarkClientBGTransparent="35 35 35 19"
     DarkDialogBGTransparent="55 55 55 170"
 
