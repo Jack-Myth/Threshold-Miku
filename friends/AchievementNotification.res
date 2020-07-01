@@ -16,6 +16,7 @@
 		place {control="IconBorder" x=13 y=14 width=66 height=66}
 		place {control="LabelTitle" x=88 y=26 width=max height=32}
 		place {control="LabelText" x=88 y=48 width=max height=32}
+		place {control="DarkenedRegion" width=0 height=0}
 	}
 	
 	"AchievementNotification"

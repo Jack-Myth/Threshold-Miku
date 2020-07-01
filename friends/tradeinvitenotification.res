@@ -6,6 +6,7 @@
 		place {control="LabelSender" x=64 y=16 width=172 height=16}
 		place {control="LabelInfo" x=64 y=30 width=172 height=16}
 		place {control="LabelHotkey" x=0 y=74 width=240 height=24}
+		place {control="DarkenedRegion" width=0 height=0}
 	}
 	
 	"TradeInviteNotification"

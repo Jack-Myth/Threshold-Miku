@@ -16,6 +16,7 @@
 		place {control="LabelInfo" x=64 y=30 width=172 height=16}
 		place {control="LabelChat" x=64 y=44 width=172 height=16}
 		place {control="LabelHotkey" x=0 y=74 width=240 height=24}
+		place {control="DarkenedRegion" width=0 height=0}
 	}
 	
 	"ChatInvitationNotification"

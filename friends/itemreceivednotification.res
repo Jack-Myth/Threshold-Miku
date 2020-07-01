@@ -14,6 +14,7 @@
 		place {control="NotificationClickPanel" x=0 y=0 width=max height=max}
 		place {control="LabelInfo" x=64 y=16 width=172 height=34}
 		place {control="LabelHotkey" x=0 y=74 width=240 height=24}
+		place {control="DarkenedRegion" width=0 height=0}
 	}
 	
 	"ItemReceivedNotification"
