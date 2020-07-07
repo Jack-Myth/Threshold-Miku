@@ -867,6 +867,11 @@ html.client .apphub_background
 	color:#000;
 }
 
+.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"]
+{
+	background:none;
+}
+
 .ClientUIControls div[class*="writereview_RatingContainer"] div[class^="writereview_LeftContainer"] div[class^="writereview_Playtime"],
 .ClientUIControls button[class^="writereview_ReviewThumbButton"],
 .ClientUIControls button[class^="writereview_CompactThumbButton"]
