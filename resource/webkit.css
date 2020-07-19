@@ -692,7 +692,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class*="spotlightgameplaysummary_SummaryCarouselContainer"]
 {
-	radial-gradient(100% 150% at 33% 45%, rgba(226, 221, 212, 0.3) 0%, rgba(245, 244, 241, 0.3) 100%)
+	background:radial-gradient(100% 150% at 33% 45%, rgba(226, 221, 212, 0.3) 0%, rgba(245, 244, 241, 0.3) 100%)
 }
 
 .ClientUIControls div.LowPerfMode div[class^="appdetailsplaysection_StickyHeader"] div[class^="appdetailsplaysection_Glassy"]
