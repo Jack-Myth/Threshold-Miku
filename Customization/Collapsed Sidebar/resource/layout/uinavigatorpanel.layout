@@ -293,7 +293,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail)"
 			}
 			render_bg{}
 		}
@@ -302,7 +302,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
@@ -320,7 +320,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/detail_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/detail_hover)"
 			}
 		}
 
@@ -337,7 +337,7 @@
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid)"
 			}
 			render_bg{}
 		}
@@ -346,7 +346,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 
@@ -364,7 +364,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/grid_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/grid_hover)"
 			}
 		}
 		
@@ -375,12 +375,12 @@
 		
 		ViewListButton
 		{
-			bgcolor=DefaultText
+			bgcolor=none
 			inset="1 0 0 0"
 			padding-left=0
 			padding-right=0
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list)"
 			}
 		}
 		
@@ -388,7 +388,7 @@
 		{
 			bgcolor=DefaultText
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 
@@ -406,7 +406,7 @@
 		{
 			bgcolor=Accent
 			render{
-				0="image(x0,y0,x1,y1,graphics/Threshold/list_scale_hover)"
+				0="image(x0,y0,x1,y1,graphics/Threshold/list_hover)"
 			}
 		}
 		
@@ -667,6 +667,7 @@
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }	
 		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down}
+		place { control=NewLibraryPage          width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=phonereminderbar dir=down }
 
 		place { control=MediaPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }
 		place { control=ToolsPage 		width=max height=max margin-top=48 margin-left=0 margin-right=0 margin-bottom=0 start=emailreminderbar dir=down }

@@ -23,7 +23,7 @@
 			font-family=basefont
 			font-weight=400
 			render_bg{	
-				0="fill(x0, y0, x1, y1, Root.Back)"
+				0="fill(x0, y0, x1, y1, JackMyth.HalfOpacity)"
 			}
 		}
 		
@@ -63,7 +63,7 @@
 		"MusicPage_Details_Content ListPanel"
 		{
 			padding-left=15
-			bgcolor=Root.Back
+			bgcolor=none
 			render_bg{}
 			
 		}		
@@ -71,7 +71,7 @@
 		{
 			textcolor="DefaultText"
 			inset="1 1 0 0"
-			bgcolor=Root.Back
+			bgcolor=none
 			render_bg{}
 			
 		}
@@ -79,7 +79,7 @@
 		"MusicPage_Details_Content ListPanelInterior:scrollbar"
 		{     
 			inset="1 1 -2 0"
-			bgcolor=Root.Back
+			bgcolor=JackMyth.HalfOpacity
 			render_bg{}
 		}
 

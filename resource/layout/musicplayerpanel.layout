@@ -42,13 +42,18 @@
 		{
 			bgcolor=none
 			
+			//TMC2:BeginMusicPlayerSize
 			minimum-width = 440
-			minimum-height = 108
+			minimum-height = 476
+			//TMC2:EndMusicPlayerSize
 			
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, DefaultBackground )"
-				0="fill( x0, y1-76, x1, y1, Accent.Hover )"
+				//TMC2:BeginMusicPlayerLayout
+				1="image( x1-290, y1-476, x1, y1-76, graphics/JackMyth/MusicPlayerImg)"
+				//TMC2:EndMusicPlayerLayout
+				2="fill( x0, y1-76, x1, y1, Accent.Hover )"
 			}
 		}		
 		

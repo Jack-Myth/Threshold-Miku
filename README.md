@@ -16,4 +16,13 @@ Want a bright version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/t
 
 3. Restart Steam and enjoy!
 
-# Introduce Threshold Miku Light for SteamUI：[Check this!](https://github.com/Jack-Myth/Threshold-Miku/tree/Light#introduce-the-threshold-miku-light-for-steamui)
+# Introduce the Threshold Miku For SteamUI
+![](Previews/NewLibrary.jpg)
+
+# Collapsed Sidebar is also supported!  
+![](Previews/CollapsedPreview.jpg)  
+Use "Threshold Miku Customizer" to apply this Style.  
+
+# New Threshold Miku Customizer is included!  
+[Source code here!](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2)  
+![](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2/raw/master/TMC2.jpg) 

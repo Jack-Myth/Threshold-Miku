@@ -266,7 +266,7 @@
 
 		view_friends
 		{
-			textcolor=Root.Label.Text
+			textcolor=none
 			bgcolor="none"
 			font-family=basefont
 			font-size=13 [$LINUX]
@@ -277,7 +277,7 @@
 		
 		view_friends:hover
 		{
-			textcolor=Root.Label.Hover.Text
+			textcolor=none
 		}
 
 		online_friends
@@ -416,7 +416,7 @@
 		{
 			bgcolor=none
 			inset="3 0 0 0"
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render{}
 			render_bg{}	
 		}
@@ -435,7 +435,7 @@
 
 		announcement_button:disabled
 		{
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render{}
 		}	
 
@@ -443,7 +443,7 @@
 		{
 			inset="3 0 0 0"
 			bgcolor=Accent
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render {}
 			render_bg{}
 		}
@@ -461,7 +461,7 @@
 
 		announcement_button_button_active:disabled
 		{
-			image="graphics/Threshold/community"
+			image="graphics/Threshold/announce"
 			render {}
 		}
 
