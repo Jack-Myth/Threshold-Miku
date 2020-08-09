@@ -770,7 +770,9 @@ html.client .apphub_background
 }
 
 .ClientUIControls div[class^="appdetailstradingcardssection_CardsLeft"],
-.ClientUIControls div[class^="appdetailsreviewsection_PlayedForTime"]
+.ClientUIControls div[class^="appdetailsreviewsection_PlayedForTime"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemDesc"]
+
 {
 	color: #3c3c3c;
 }
@@ -826,7 +828,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"],
 .ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"],
 .ClientUIControls div[class^="appdetailssection_Highlight"],
-.ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"]
+.ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemName"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"]
 {
 	color: #333;
 }
@@ -859,7 +863,8 @@ html.client .apphub_background
 	color:#000;
 }
 
-.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"]
+.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopContainer"]
 {
 	background:none;
 }
