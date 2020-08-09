@@ -830,7 +830,7 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailssection_Highlight"],
 .ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemName"],
-.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"]
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"] div[class*="appdetailsworkshopsection_FeaturedItemLink"]
 {
 	color: #333;
 }
@@ -894,7 +894,8 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Container"],
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Title"],
-.ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"]
+.ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"],
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_AdditionalItem" div[class*="appdetailsadditionalcontentsection_Title"]
 {
 	color:#000;
 }
