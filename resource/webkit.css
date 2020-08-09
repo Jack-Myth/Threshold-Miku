@@ -630,7 +630,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailsprimarylinkssection_MenuButton"] svg,
 .ClientUIControls div[class^="infoicon_MoreInfoIcon"],
 .ClientUIControls div[class^="pageablecontainer_PageableCloseButton"] svg,
-.ClientUIControls div[class^="appdetailsreviewsection_CommentsGroup"]
+.ClientUIControls div[class^="appdetailsreviewsection_CommentsGroup"],
+.ClientUIControls div[class*="appdetailsplaysection_GameStat"] div[class*="appdetailsplaysection_GameStatIcon"]
 {
 	filter:invert(1);
 }
