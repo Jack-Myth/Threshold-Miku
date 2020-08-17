@@ -857,6 +857,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Title"],
 .ClientUIControls div[class*="appactivityday_PartnerEventMediumImage_Container"]:hover div[class^="appactivityday_PartnerEventMediumImage_Title"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Title"],
+.ClientUIControls div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class^="appactivityday_PartnerEventType"],
 .ClientUIControls button.TextButton
 {
@@ -864,6 +866,7 @@ html.client .apphub_background
 }
 
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Container"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopContainer"]
 {
 	background:none;
@@ -877,6 +880,7 @@ html.client .apphub_background
 }
 
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Summary"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Summary"],
 .ClientUIControls div[class^="spotlightgameplaysummary_GamePlaySummaryHeader"]
 {
 	color: #595c5d;
@@ -887,7 +891,8 @@ html.client .apphub_background
 	color: #0005;
 }
 
-.ClientUIControls div[class*="appactivityday_PartnerEvent_"]
+.ClientUIControls div[class*="appactivityday_PartnerEvent_"],
+.ClientUIControls div[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	background: radial-gradient(100% 80% at 64% 95%, rgba(148, 140, 128, 0.3) 0%, rgba(193, 185, 175, 0.5) 20%, rgba(219, 215, 208, 0.5) 100%);
 }
