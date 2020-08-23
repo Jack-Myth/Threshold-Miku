@@ -729,7 +729,8 @@ html.client .apphub_background
 
 
 .ClientUIControls div[class^="appactivityday_Event"] div[class^="appactivityday_EventBody"],
-.ClientUIControls div[class^="appdetailssection_AppDetailsSectionContainer"][class*="appdetailssection_RightColumnSection"]
+.ClientUIControls div[class^="appdetailssection_AppDetailsSectionContainer"][class*="appdetailssection_RightColumnSection"],
+.ClientUIControls div[class*="comment_thread_ActivityCommentThread"]
 {
 	background: linear-gradient(to right, rgba(209, 205, 197, 0.4) 0%, rgba(219, 215, 208, 0.4) 95%);
 }
@@ -801,7 +802,8 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"],
 .ClientUIControls div[class^="appactivityday_PlayedForTime"],
-.ClientUIControls div[class^="appactivityday_ReviewText_3ZTUR"]
+.ClientUIControls div[class^="appactivityday_ReviewText_3ZTUR"],
+.ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"]
 {
 	color:#3B3B3B;
 }
