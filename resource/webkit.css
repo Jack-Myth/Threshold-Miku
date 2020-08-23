@@ -629,7 +629,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="libraryhomeshowcases_ShowcaseHeader"] div[class^="libraryhomeshowcases_PageButtons"] div[class*="libraryhomeshowcases_PageRight"] svg,
 .ClientUIControls div[class^="appdetailsprimarylinkssection_MenuButton"] svg,
 .ClientUIControls div[class^="infoicon_MoreInfoIcon"],
-.ClientUIControls div[class^="appdetailsreviewsection_CommentsGroup"]
+.ClientUIControls div[class^="pageablecontainer_PageableCloseButton"] svg,
+.ClientUIControls div[class^="appdetailsreviewsection_CommentsGroup"],
+.ClientUIControls div[class*="appdetailsplaysection_GameStat"] div[class*="appdetailsplaysection_GameStatIcon"]
 {
 	filter:invert(1);
 }
@@ -689,12 +691,23 @@ html.client .apphub_background
 	background: linear-gradient(to bottom, rgba(216, 211, 202, 0.1) 0%, rgba(216, 211, 202, 0.7) 82px, rgba(216, 211, 202, 0.3) 80%, rgba(216, 211, 202, 0) 100%);
 }
 
+.ClientUIControls div[class*="spotlightgameplaysummary_SummaryCarouselContainer"]
+{
+	background:radial-gradient(100% 150% at 33% 45%, rgba(226, 221, 212, 0.3) 0%, rgba(245, 244, 241, 0.3) 100%)
+}
+
 .ClientUIControls div.LowPerfMode div[class^="appdetailsplaysection_StickyHeader"] div[class^="appdetailsplaysection_Glassy"]
 {
 	background-color:rgba(216, 211, 202, 0.96);
 }
 
-.ClientUIControls div[class^="appdetailssectionheader_Label"]
+.ClientUIControls div[class^="appdetailssectionheader_Label"],
+.ClientUIControls div[class^="spotlightgameplaysummary_EventHeaderBlock"],
+.ClientUIControls div[class^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivityDate"],
+.ClientUIControls div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"],
+.ClientUIControls button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"],
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
+.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
 {
 	color:#333333;
 }
@@ -703,14 +716,7 @@ html.client .apphub_background
 {
 	background-image:none;
 }
-.ClientUIControls div[class ^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivityDate"]
-{
-	color:#333333;
-}
-.ClientUIControls div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"]
-{
-	color: #333333;
-}
+
 .ClientUIControls .offline [class^="personanameandstatus_playerName"]
 {
 	color:#3c3c3c;
@@ -734,10 +740,7 @@ html.client .apphub_background
 {
 	background: linear-gradient(to right, rgba(209, 205, 197, 0.4) 0%, rgba(219, 215, 208, 0.4) 95%);
 }
-.ClientUIControls button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"]
-{
-	color:#333333;
-}
+
 .ClientUIControls button[class*="TextButton"][class*="appdetailsfriendssection_ShowMore"]
 {
 	color:#3c3c3c;
@@ -746,10 +749,7 @@ html.client .apphub_background
 {
 	background: linear-gradient(to right, #3b414a00 0%, #2c313855 95%);
 }
-.ClientUIControls div[class^="appdetailsspotlight_ReviewContainer"]
-{
-	background-color:#00000000;
-}
+.ClientUIControls div[class^="appdetailsspotlight_ReviewContainer"],
 .ClientUIControls div[class*="writereview_RatingContainer"]
 {
 	background-color:#00000000;
@@ -770,18 +770,10 @@ html.client .apphub_background
 	stroke:#333333;
 }
 
-.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
-.ClientUIControls div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
-{
-	color:#333333;
-}
+.ClientUIControls div[class^="appdetailstradingcardssection_CardsLeft"],
+.ClientUIControls div[class^="appdetailsreviewsection_PlayedForTime"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemDesc"]
 
-.ClientUIControls div[class^="appdetailstradingcardssection_CardsLeft"]
-{
-	color: #3c3c3c;
-}
-
-.ClientUIControls div[class^="appdetailsreviewsection_PlayedForTime"]
 {
 	color: #3c3c3c;
 }
@@ -809,8 +801,7 @@ html.client .apphub_background
 }
 
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] 
-[class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"] 
-[class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"],
+[class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_AlbumStats"],
 .ClientUIControls div[class^="collectionview_Container"],
 .ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnlockedLabelPercent"]
@@ -819,6 +810,9 @@ html.client .apphub_background
 }
 
 .ClientUIControls button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_MoreVisible"],
+.ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_AlbumName"],
+.ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_ParentGameLink"] [class^="appdetailssoundtrack_ParentAppName"],
+.ClientUIControls [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackName"],
 .ClientUIControls div[class*="appdetailsactivitysection_ActivityFeedContainer"] div[class^="appdetailsactivitysection_FetchMoreContainer"]
 {
 	color:#000;
@@ -836,7 +830,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="appdetailsfriendssection_Subsection"] div[class^="appdetailsfriendssection_SubsectionHeader"],
 .ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"],
 .ClientUIControls div[class^="appdetailssection_Highlight"],
-.ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"]
+.ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemName"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"] div[class*="appdetailsworkshopsection_FeaturedItemLink"]
 {
 	color: #333;
 }
@@ -863,13 +859,17 @@ html.client .apphub_background
 .ClientUIControls div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Title"],
 .ClientUIControls div[class*="appactivityday_PartnerEventMediumImage_Container"]:hover div[class^="appactivityday_PartnerEventMediumImage_Title"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Title"],
+.ClientUIControls div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class^="appactivityday_PartnerEventType"],
 .ClientUIControls button.TextButton
 {
 	color:#000;
 }
 
-.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"]
+.ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Container"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Container"],
+.ClientUIControls div[class*="appdetailsworkshopsection_WorkshopContainer"]
 {
 	background:none;
 }
@@ -882,6 +882,7 @@ html.client .apphub_background
 }
 
 .ClientUIControls div[class^="appactivityday_PartnerEventMediumImage_Summary"],
+.ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Summary"],
 .ClientUIControls div[class^="spotlightgameplaysummary_GamePlaySummaryHeader"]
 {
 	color: #595c5d;
@@ -892,14 +893,16 @@ html.client .apphub_background
 	color: #0005;
 }
 
-.ClientUIControls div[class*="appactivityday_PartnerEvent_"]
+.ClientUIControls div[class*="appactivityday_PartnerEvent_"],
+.ClientUIControls div[class*="appactivityday_PartnerEventLargeUpdate_"]
 {
 	background: radial-gradient(100% 80% at 64% 95%, rgba(148, 140, 128, 0.3) 0%, rgba(193, 185, 175, 0.5) 20%, rgba(219, 215, 208, 0.5) 100%);
 }
 
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Container"],
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Title"],
-.ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"]
+.ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"],
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_AdditionalItem" div[class*="appdetailsadditionalcontentsection_Title"]
 {
 	color:#000;
 }
