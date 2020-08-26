@@ -902,7 +902,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Container"],
 .ClientUIControls div[class^="appactivityday_PartnerEventTextOnly_Title"],
 .ClientUIControls span[class^="appactivityday_PartnerEventTextOnly_Summary"],
-.ClientUIControls div[class*="appdetailsadditionalcontentsection_AdditionalItem" div[class*="appdetailsadditionalcontentsection_Title"]
+.ClientUIControls div[class*="appdetailsadditionalcontentsection_AdditionalItem"] div[class*="appdetailsadditionalcontentsection_Title"],
+.ClientUIControls div[class*="appactivityday_PartnerEventTextOnly"]:hover div[class*="appactivityday_PartnerEventTextOnly_Title"]
 {
 	color:#000;
 }
