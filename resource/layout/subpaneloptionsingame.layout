@@ -58,10 +58,10 @@
 	{
 		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
 		region { name=top region=box margin-top=10 }
-		region { name=topleft region=top y=140 width=255 margin-right=20 }
-		region { name=topright region=top x=263 width=235 y=131}
+		region { name=topleft region=top y=150 width=255 margin-right=20 }
+		region { name=topright region=top x=263 width=235 y=141}
 		
-		region { name=bottom region=box y=320 }
+		region { name=bottom region=box y=360 }
 		region { name=bottomleft region=bottom width=255 margin-right=20 }
 		region { name=bottomright region=bottom x=263 width=255 }
 		
