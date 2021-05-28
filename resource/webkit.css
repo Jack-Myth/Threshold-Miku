@@ -671,9 +671,9 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="appdetailsplaysection_PlayBarDetailLabel"], 
 .ClientUIControls div[class^="appdetailsplaysection_LastPlayed"] div[class*="appdetailsplaysection_LastPlayedInfo"],
-.ClientUIControls div[class^="appdetailsprimarylinkssection_LinkInner"] a[class^="appdetailsprimarylinkssection_Text"]
+.ClientUIControls div[class^="appdetailsprimarylinkssection_LinkInner"] span[class^="appdetailsprimarylinkssection_Text"]
 {
-	color: rgba(0, 0, 0, 0.32);
+	color: rgba(0, 0, 0, 0.52);
 }
 
 .ClientUIControls div[class*="appdetailsprimarylinkssection_LinksSection"] > div
