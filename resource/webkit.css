@@ -54,6 +54,10 @@
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAYAAADAp4fuAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwNACYWLywH8wAAAGRJREFUCNctyqERgQEABtD3ub8KIk1TjCGI7pwBWMAyogWc7izxFzsQjfAp8nvantte2m6hrQmu+GDf9pBE/rrADiuMk7ZJ8sYLM2yGJP3PNb4Yh7ZTHLHEM8ltwAlz3JM82voBsvorxYBJxB4AAAAASUVORK5CYII=);
 }
 
+.emoticon_popup_ctn {
+    z-index: 1;
+}
+
 /*TMC2:BeginWebPageStyle*/
 
 /*.responsive_page_frame
