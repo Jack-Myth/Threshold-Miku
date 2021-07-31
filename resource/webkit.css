@@ -317,16 +317,27 @@ html.client .apphub_background
 	filter: brightness(0%);
 }
 
-.ClientUIControls div[class^="libraryhome_Container"]
+.ClientUIControls div[class*="libraryhome_Container"]
 {
-	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
+	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
+}
+
+.ClientUIControls div[class*="downloads_DownloadsPage"]
+{
+	background:transparent;
+}
+
+.ClientUIControls div[class*="downloads_SectionTitle"] span,
+div[class^="downloads_SectionTitle"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"], 
+div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"]
+{
+	color:#000;
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
 {
 	background-color: #36373800;
 }
-
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 {
@@ -423,7 +434,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="library_MainPanel"]
 {
-	background: #FFFFFF;
+	
 	z-index:1;
 }
 
@@ -441,7 +452,7 @@ html.client .apphub_background
 	background-size: calc(100% + 240px) calc(100% + 80px);
 	/*TMC2:EndCSide2*/
 	background-attachment: fixed;
-    /*TMC2:BeginMainContent*/filter: blur(10px) opacity(90%);/*TMC2:EndMainContent*/
+    /*TMC2:BeginMainContent*/filter: blur(10px);/*TMC2:EndMainContent*/
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
@@ -798,7 +809,8 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"],
 .ClientUIControls div[class^="appactivityday_PlayedForTime"],
-.ClientUIControls div[class^="appactivityday_ReviewText_3ZTUR"],
+.ClientUIControls div[class^="appactivityday_ReviewText"],
+.ClientUIControls [class^="downloads_AutoUpdateHours"],
 .ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"]
 {
 	color:#3B3B3B;
