@@ -332,6 +332,13 @@ html.client .apphub_background
 	background:none;
 }
 
+.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+{
+    background:#3d4450A0;
+}
+
 .ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]
 {
 	color: rgba(0, 0, 0, 1);
