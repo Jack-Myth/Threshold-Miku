@@ -322,7 +322,6 @@ html.client .apphub_background
 	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
 }
 
-.ClientUIControls div[class*="downloads_DownloadsPage"]
 .ClientUIControls div[class*="downloads_DownloadsPage"],
 .ClientUIControls div[class*="downloads_SectionItem"][class*="downloads_Active"],
 .ClientUIControls div[class*="downloadgraph_GraphAndStats"],
