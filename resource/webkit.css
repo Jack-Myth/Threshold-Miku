@@ -333,7 +333,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class*="downloads_SectionTitle"] span,
 .ClientUIControls div[class^="downloads_SectionTitle"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"], 
-.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Name"],
+.ClientUIControls div[class^="downloads_SectionItem_"] [class^="downloads_Name"],
 .ClientUIControls div[classs^="downloads_ProgressDetails"] [class^="downloads_Value"],
 .ClientUIControls div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"],
 .ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_StartTime"],
@@ -343,11 +343,22 @@ html.client .apphub_background
 	color:#000;
 }
 
-.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+.ClientUIControls div[class^="downloads_SectionItem_"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem_"][class*="downloads_Dragging"]
 {
     background:#CBCBCBA0;
+}
+
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] path[class^="downloadgraph_GraphLine"],
+{
+	stroke:#32ff00;
+}
+
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] g[class^="downloadgraph_GraphBarWrapper"],
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] g[class^="downloadgraph_GraphBar"],
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] g[class^="downloadgraph_GraphBarEmpty"]
+{
+	color:rgb(26, 159, 255);
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
@@ -857,7 +868,6 @@ html.client .apphub_background
 {
 	filter: invert(1);
 }
-
 
 .ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeName"],
 .ClientUIControls div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeLevel"],
