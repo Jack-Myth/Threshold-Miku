@@ -328,13 +328,12 @@ html.client .apphub_background
 .ClientUIControls div.NarrowWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"],
 .ClientUIControls div.ShortWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"]
 {
-	background:transparent;
 	background:none;
 }
 
-.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+.ClientUIControls div[class^="downloads_SectionItem_"] [class^="downloads_Button"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem_"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem_"][class*="downloads_Dragging"]
 {
     background:#3d4450A0;
 }
