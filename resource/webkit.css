@@ -322,16 +322,32 @@ html.client .apphub_background
 	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
 }
 
-.ClientUIControls div[class*="downloads_DownloadsPage"]
+.ClientUIControls div[class*="downloads_DownloadsPage"],
+.ClientUIControls div[class*="downloads_SectionItem"][class*="downloads_Active"],
+.ClientUIControls div[class*="downloadgraph_GraphAndStats"],
+.ClientUIControls div.NarrowWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"],
+.ClientUIControls div.ShortWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"]
 {
-	background:transparent;
+	background:none;
 }
 
 .ClientUIControls div[class*="downloads_SectionTitle"] span,
-div[class^="downloads_SectionTitle"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"], 
-div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"]
+.ClientUIControls div[class^="downloads_SectionTitle"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"], 
+.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Name"],
+.ClientUIControls div[classs^="downloads_ProgressDetails"] [class^="downloads_Value"],
+.ClientUIControls div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_StartTime"],
+.ClientUIControls div[class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Status"],
+.ClientUIControls div[class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Figure"]
 {
 	color:#000;
+}
+
+.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+{
+    background:#CBCBCBA0;
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
@@ -810,7 +826,10 @@ div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class
 .ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"],
 .ClientUIControls div[class^="appactivityday_PlayedForTime"],
 .ClientUIControls div[class^="appactivityday_ReviewText"],
-.ClientUIControls [class^="downloads_AutoUpdateHours"],
+.ClientUIControls [class*="downloads_AutoUpdateHours"],
+.ClientUIControls [class*="downloads_SectionItemStatus"],
+.ClientUIControls [class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Stat"],
+.ClientUIControls [class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"],
 .ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"]
 {
 	color:#3B3B3B;
@@ -847,6 +866,8 @@ div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class
 .ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"],
 .ClientUIControls div[class^="appdetailssection_Highlight"],
 .ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"],
+.ClientUIControls div[class^="downloads_ProgressDetails"] [class*="downloads_Value"][class*="downloads_InProgress"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_State"] [class*="downloads_InProgress"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemName"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"] div[class*="appdetailsworkshopsection_FeaturedItemLink"]
 {
@@ -878,6 +899,7 @@ div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class
 .ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class^="appactivityday_PartnerEventType"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
 .ClientUIControls button.TextButton
 {
 	color:#000;
