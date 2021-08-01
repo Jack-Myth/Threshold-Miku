@@ -54,6 +54,10 @@
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAYAAADAp4fuAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwNACYWLywH8wAAAGRJREFUCNctyqERgQEABtD3ub8KIk1TjCGI7pwBWMAyogWc7izxFzsQjfAp8nvantte2m6hrQmu+GDf9pBE/rrADiuMk7ZJ8sYLM2yGJP3PNb4Yh7ZTHLHEM8ltwAlz3JM82voBsvorxYBJxB4AAAAASUVORK5CYII=);
 }
 
+.emoticon_popup_ctn {
+    z-index: 1;
+}
+
 /*TMC2:BeginWebPageStyle*/
 
 /*.responsive_page_frame
@@ -313,16 +317,43 @@ html.client .apphub_background
 	filter: brightness(0%);
 }
 
-.ClientUIControls div[class^="libraryhome_Container"]
+.ClientUIControls div[class*="libraryhome_Container"]
 {
-	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
+	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
+}
+
+.ClientUIControls div[class*="downloads_DownloadsPage"],
+.ClientUIControls div[class*="downloads_SectionItem"][class*="downloads_Active"],
+.ClientUIControls div[class*="downloadgraph_GraphAndStats"],
+.ClientUIControls div.NarrowWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"],
+.ClientUIControls div.ShortWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"]
+{
+	background:none;
+}
+
+.ClientUIControls div[class*="downloads_SectionTitle"] span,
+.ClientUIControls div[class^="downloads_SectionTitle"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"], 
+.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Name"],
+.ClientUIControls div[classs^="downloads_ProgressDetails"] [class^="downloads_Value"],
+.ClientUIControls div[class^="downloads_SectionJumpBar"] [class^="downloads_TitleAndCount"] [class^="downloads_Title"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_StartTime"],
+.ClientUIControls div[class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Status"],
+.ClientUIControls div[class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Figure"]
+{
+	color:#000;
+}
+
+.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+{
+    background:#CBCBCBA0;
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
 {
 	background-color: #36373800;
 }
-
 
 .ClientUIControls div[class^="gamelistentry_Container"][class*="gamelistentry_Selected"]
 {
@@ -419,7 +450,7 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="library_MainPanel"]
 {
-	background: #FFFFFF;
+	
 	z-index:1;
 }
 
@@ -437,7 +468,7 @@ html.client .apphub_background
 	background-size: calc(100% + 240px) calc(100% + 80px);
 	/*TMC2:EndCSide2*/
 	background-attachment: fixed;
-    /*TMC2:BeginMainContent*/filter: blur(10px) opacity(90%);/*TMC2:EndMainContent*/
+    /*TMC2:BeginMainContentBlur*/filter: blur(10px);/*TMC2:EndMainContentBlur*/
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
@@ -671,9 +702,9 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="appdetailsplaysection_PlayBarDetailLabel"], 
 .ClientUIControls div[class^="appdetailsplaysection_LastPlayed"] div[class*="appdetailsplaysection_LastPlayedInfo"],
-.ClientUIControls div[class^="appdetailsprimarylinkssection_LinkInner"] a[class^="appdetailsprimarylinkssection_Text"]
+.ClientUIControls div[class^="appdetailsprimarylinkssection_LinkInner"] span[class^="appdetailsprimarylinkssection_Text"]
 {
-	color: rgba(0, 0, 0, 0.32);
+	color: rgba(0, 0, 0, 0.52);
 }
 
 .ClientUIControls div[class*="appdetailsprimarylinkssection_LinksSection"] > div
@@ -794,7 +825,11 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"],
 .ClientUIControls div[class^="appdetailsachievementssection_UnachievedSection"] div[class^="appdetailsachievementssection_Label"],
 .ClientUIControls div[class^="appactivityday_PlayedForTime"],
-.ClientUIControls div[class^="appactivityday_ReviewText_3ZTUR"],
+.ClientUIControls div[class^="appactivityday_ReviewText"],
+.ClientUIControls [class*="downloads_AutoUpdateHours"],
+.ClientUIControls [class*="downloads_SectionItemStatus"],
+.ClientUIControls [class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Stat"],
+.ClientUIControls [class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"],
 .ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"]
 {
 	color:#3B3B3B;
@@ -831,6 +866,8 @@ html.client .apphub_background
 .ClientUIControls div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeName"],
 .ClientUIControls div[class^="appdetailssection_Highlight"],
 .ClientUIControls div[class^="appdetailsreviewsection_ReviewTextContainer"],
+.ClientUIControls div[class^="downloads_ProgressDetails"] [class*="downloads_Value"][class*="downloads_InProgress"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_State"] [class*="downloads_InProgress"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedItemName"],
 .ClientUIControls div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailsworkshopsection_WorkshopHeader"] div[class*="appdetailsworkshopsection_FeaturedItem"] div[class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] div[class*="appdetailsworkshopsection_FeaturedLinks"] div[class*="appdetailsworkshopsection_FeaturedItemLink"]
 {
@@ -862,6 +899,7 @@ html.client .apphub_background
 .ClientUIControls div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
 .ClientUIControls div[class^="appactivityday_PartnerEventType"],
+.ClientUIControls div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
 .ClientUIControls button.TextButton
 {
 	color:#000;
@@ -911,4 +949,9 @@ html.client .apphub_background
 .ClientUIControls div[class^="appactivityday_ReviewDescriptionRecommended"]
 {
 	color:#0055ff;
+}
+
+.ClientUIControls div[class^="appdetailsspotlight_AppDetailsSpotlightDemo"] div[class^="appdetailsspotlight_Info"] div[class^="appdetailsspotlight_Title"]
+{
+	color:#000000;
 }

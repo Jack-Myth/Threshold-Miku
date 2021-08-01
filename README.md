@@ -1,22 +1,23 @@
 # Threshold Miku Skin for Steam
 From [Threshold Skin](https://github.com/Edgarware/Threshold-Skin)  
-Modified By JackMyth  
+Modified By JackMyth([Find me on Steam](https://steamcommunity.com/id/JackMyth/))  
 
 
 ![](Previews/Main.jpg)
 
 Want a dark version? [Try this!](https://github.com/Jack-Myth/Threshold-Miku/tree/master)
 
-## Installation
-1. Download the skin, extract the zip file, and copy the folder to:
+## How to Install
+ Download the skin, extract the zip file, and copy the folder to:
    * Windows - C:\Program Files (x86)\Steam\skins
    * Mac - /Users/\<username\>/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins/
    * Linux - ~/.steam/skins
 
-2. In Steam, go to Settings > Interface > and choose Threshold Miku from the list of skins.
+In Arch Linux(& Arch derivatives like Manjaro), you can use AUR packages [Dark](https://aur.archlinux.org/packages/threshold-miku-dark-steam-skin)/[Light](https://aur.archlinux.org/packages/threshold-miku-light-steam-skin)
 
-3. Restart Steam and enjoy!  
-
+## How to Use
+1. In Steam, go to Settings > Interface > and choose Threshold Miku from the list of skins.
+2. Restart Steam and enjoy!
 
 # Introduce the Threshold Miku Light For SteamUI
 ![](Previews/NewLibrary.jpg)  

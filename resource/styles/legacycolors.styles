@@ -49,7 +49,8 @@
     ButtonBorderFocus="137 137 137 255"
     ButtonBorderFocusSubtle="122 122 122 255"
     
-    Text="207 207 207 255"
+    //Text="207 207 207 255"
+    Text="55 55 55 255"
     Text2="180 180 180 255"
     TextDisabled="99 99 99 255"
     TextHover="226 226 226 255"
