@@ -331,7 +331,6 @@ html.client .apphub_background
 	background:none;
 }
 
-.ClientUIControls div[class^="downloads_SectionItem_"] [class^="downloads_Button"]:hover,
 .ClientUIControls div[class^="downloads_SectionItem_"]:hover,
 .ClientUIControls div[class^="downloads_SectionItem_"][class*="downloads_Dragging"]
 {
