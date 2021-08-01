@@ -468,7 +468,7 @@ html.client .apphub_background
 	background-size: calc(100% + 240px) calc(100% + 80px);
 	/*TMC2:EndCSide2*/
 	background-attachment: fixed;
-    /*TMC2:BeginMainContent*/filter: blur(10px);/*TMC2:EndMainContent*/
+    /*TMC2:BeginMainContentBlur*/filter: blur(10px);/*TMC2:EndMainContentBlur*/
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
