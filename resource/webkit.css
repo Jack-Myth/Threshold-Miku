@@ -343,9 +343,9 @@ html.client .apphub_background
 	color:#000;
 }
 
-.ClientUIControls div[class^="downloads_SectionItem"] [class^="downloads_Button"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"]:hover,
-.ClientUIControls div[class^="downloads_SectionItem"][class*="downloads_Dragging"]
+.ClientUIControls div[class^="downloads_SectionItem_"] [class^="downloads_Button"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem_"]:hover,
+.ClientUIControls div[class^="downloads_SectionItem_"][class*="downloads_Dragging"]
 {
     background:#CBCBCBA0;
 }
