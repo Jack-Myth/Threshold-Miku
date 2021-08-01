@@ -319,7 +319,18 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="libraryhome_Container"]
 {
-	background: radial-gradient(100% 100% at 45% 45%, #000000 0%, #00000000 100%);
+	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
+}
+
+.ClientUIControls div[class*="downloads_DownloadsPage"]
+.ClientUIControls div[class*="downloads_DownloadsPage"],
+.ClientUIControls div[class*="downloads_SectionItem"][class*="downloads_Active"],
+.ClientUIControls div[class*="downloadgraph_GraphAndStats"],
+.ClientUIControls div.NarrowWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"],
+.ClientUIControls div.ShortWindow div[class*="downloadgraph_DownloadGraph"] div[class*="downloadgraph_Gradient"]
+{
+	background:transparent;
+	background:none;
 }
 
 .ClientUIControls div[class^="gamelistsectionheader_SectionHeaderContent"]
@@ -420,7 +431,6 @@ html.client .apphub_background
 
 .ClientUIControls div[class^="library_MainPanel"]
 {
-	background: #000;
 	z-index:1;
 }
 
@@ -438,7 +448,7 @@ html.client .apphub_background
 	background-size: calc(100% + 240px) calc(100% + 80px);
 	/*TMC2:EndCSide2*/
 	background-attachment: fixed;
-    /*TMC2:BeginMainContent*/filter: blur(10px) opacity(90%);/*TMC2:EndMainContent*/
+    /*TMC2:BeginMainContentBlur*/filter: blur(10px);/*TMC2:EndMainContentBlur*/
 }
 
 .ClientUIControls div[class^="libraryhome_UpdatesContainer"]
