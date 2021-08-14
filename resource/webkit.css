@@ -819,7 +819,8 @@ html.client .apphub_background
 .ClientUIControls [class*="downloads_SectionItemStatus"],
 .ClientUIControls [class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Stat"],
 .ClientUIControls [class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"],
-.ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"]
+.ClientUIControls div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"],
+.ClientUIControls div[class^="appdetailsreviewsection_ChangedYourMind"]
 {
 	color:#3B3B3B;
 }
@@ -837,7 +838,8 @@ html.client .apphub_background
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_AlbumName"],
 .ClientUIControls [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_ParentGameLink"] [class^="appdetailssoundtrack_ParentAppName"],
 .ClientUIControls [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackName"],
-.ClientUIControls div[class*="appdetailsactivitysection_ActivityFeedContainer"] div[class^="appdetailsactivitysection_FetchMoreContainer"]
+.ClientUIControls div[class*="appdetailsactivitysection_ActivityFeedContainer"] div[class^="appdetailsactivitysection_FetchMoreContainer"],
+.ClientUIControls div[class^="appdetailsreviewsection_AdditionalPlaytimeReminder"]
 {
 	color:#000;
 }
