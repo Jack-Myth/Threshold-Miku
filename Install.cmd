@@ -21,9 +21,10 @@ if "%Override%"=="Y" goto Apply
 exit
 
 :Apply
-del /f "%SteamPath%\skins\%CurDirName%"
+del /f /q "%SteamPath%\skins\%CurDirName%"
 mkdir "%SteamPath%\skins"
-xcopy /e "..\%CurDirName%\" "%SteamPath%\skins\%CurDirName%\"
+xcopy /e /y "..\%CurDirName%\" "%SteamPath%\skins\%CurDirName%\"
 reg add HKCU\Software\Valve\Steam /v SkinV5 /t REG_SZ /d %CurDirName% /f
 echo Enjoy your new steam! :^)
-start explorer.exe "%SteamPath%\skins\%CurDirName%"
+cd /d "%SteamPath%\skins\%CurDirName%"
+start explorer.exe .
