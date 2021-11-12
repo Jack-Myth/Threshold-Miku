@@ -556,6 +556,7 @@ div[class^="gamelistdropdown_ScrollToTop"] .SVGIcon_Arrow
 }
 
 /*TMC2:BeginTransparentContent*/
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] div[class^="downloadgraph_Gradient"],
 .ClientUIControls div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
 {
 	background-image:none;
