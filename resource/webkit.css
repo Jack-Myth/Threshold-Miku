@@ -732,6 +732,7 @@ html.client .apphub_background
 	color:#333333;
 }
 
+.ClientUIControls div[class^="downloadgraph_DownloadGraph"] div[class^="downloadgraph_Gradient"],
 .ClientUIControls div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
 {
 	background-image:none;
