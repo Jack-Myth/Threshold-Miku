@@ -865,7 +865,8 @@ html.client .apphub_background
 	color: #333;
 }
 
-.ClientUIControls a[class^="appactivityday_WishlistLink"]
+.ClientUIControls a[class^="appactivityday_WishlistLink"],
+.ClientUIControls [class*="appactivityday_ActivityPublishedStatus"]
 {
 	color: #333!important;
 }
