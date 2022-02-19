@@ -302,7 +302,7 @@ div[class^="smartscrollcontainer"]
 
 div[class*="libraryhome_Container"]
 {
-	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
+	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #00000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
 }
 
 div[class*="downloads_DownloadsPage"],
@@ -576,8 +576,7 @@ div[class^="pageablecontainer_HeaderPageControls"]
 	color:#222222;
 }
 
-div[class^="libraryhomenewupdates_EventTime"],
-div[class*="libraryhome_InnerContainer"]
+div[class^="libraryhomenewupdates_EventTime"]
 {
 	color:#000000CC;
 }
@@ -669,16 +668,12 @@ div.LowPerfMode div[class*="appdetailsplaysection_Glassy"][class*="appdetailspla
 	background: linear-gradient(to top, rgba(219, 215, 208, 0) 0%, rgba(212, 198, 189, 0.82) calc( 100% - 2px), rgba(62, 53, 48, 0.1) calc( 100% - 1px), rgba(226, 226, 226, 0.3) 100%);
 }
 
-div[class^="appdetailsplaysection_PlayBarLabel"]
-{
-	color: rgba(0, 0, 0, 0.52);
-}
-
+div[class^="appdetailsplaysection_PlayBarLabel"],
 div[class^="appdetailsplaysection_PlayBarDetailLabel"], 
 div[class^="appdetailsplaysection_LastPlayed"] div[class*="appdetailsplaysection_LastPlayedInfo"],
 div[class^="appdetailsprimarylinkssection_LinkInner"] span[class^="appdetailsprimarylinkssection_Text"]
 {
-	color: rgba(0, 0, 0, 0.52);
+	color: rgba(0, 0, 0, 0.52) !important;
 }
 
 div[class*="appdetailsprimarylinkssection_LinksSection"] > div
@@ -932,4 +927,10 @@ div[class^="appactivityday_ReviewDescriptionRecommended"]
 div[class^="appdetailsspotlight_AppDetailsSpotlightDemo"] div[class^="appdetailsspotlight_Info"] div[class^="appdetailsspotlight_Title"]
 {
 	color:#000000;
+}
+
+div(class^="appdetailssectionnonsteam_Body"]
+{
+	color: rgb(0 0 0 / 50%);
+	border: 2px dashed rgb(0 135 255 / 0.5);
 }
