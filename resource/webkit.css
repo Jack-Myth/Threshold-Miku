@@ -295,6 +295,11 @@ div[class^="gamelistfilter_Icon"]
 	filter: brightness(0%);
 }
 
+div[class^="smartscrollcontainer"]
+{
+	background:#00000000;
+}
+
 div[class*="libraryhome_Container"]
 {
 	/*TMC2:BeginMainContentBrightness*/background: radial-gradient(closest-side, #000000 0%, #00000000 100%);/*TMC2:EndMainContentBrightness*/
@@ -481,11 +486,6 @@ div[class^="gamelistsectionheader_SectionCount"]
 }
 
 /*div[class^="smartscrollcontainer_Container"][class*="libraryhome_Container"]*/
-
-div[class^="smartscrollcontainer"]
-{
-	background:#00000000;
-}
 
 div[class^="library_LibraryWindowDivider"]
 {
