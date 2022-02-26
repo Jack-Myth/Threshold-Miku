@@ -929,7 +929,7 @@ div[class^="appdetailsspotlight_AppDetailsSpotlightDemo"] div[class^="appdetails
 	color:#000000;
 }
 
-div(class^="appdetailssectionnonsteam_Body"]
+div[class*="appdetailssectionnonsteam_Body"]
 {
 	color: rgb(0 0 0 / 50%);
 	border: 2px dashed rgb(0 135 255 / 0.5);
