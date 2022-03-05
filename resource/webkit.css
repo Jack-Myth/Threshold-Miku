@@ -707,9 +707,17 @@ div[class^="appactivityday_AppActivityDay"] div[class*="appactivityday_AppActivi
 div[class^="appactivityday_Event"] [class^="appactivityday_EventHeadline"],
 button[class*="DialogButton"][class*="appdetailsbutton_AppDetailsButton"],
 div[class^="comment_thread_RatingBar"] div[class^="comment_thread_LikeCount"], 
-div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"]
+div[class^="comment_thread_RatingBar"] div[class^="comment_thread_CommentCount"],
+.offline [class^="personanameandstatus_playerName"],
+[class*="appactivityday_Event"] [class*="appactivityday_EventHeadline"] [class*="appactivityday_HeadlineGameName"],
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_MoreVisible"],
+[class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_AlbumName"],
+[class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_ParentGameLink"] [class^="appdetailssoundtrack_ParentAppName"],
+[class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackName"],
+div[class*="appdetailsactivitysection_ActivityFeedContainer"] div[class^="appdetailsactivitysection_FetchMoreContainer"],
+div[class^="appdetailsreviewsection_AdditionalPlaytimeReminder"]
 {
-	color:#333333;
+	color:#333333 !important;
 }
 
 div.MediumWindow div[class^="downloadgraph_DownloadGraph"] div[class^="downloadgraph_Gradient"],
@@ -717,11 +725,6 @@ div[class^="downloadgraph_DownloadGraph"] div[class^="downloadgraph_Gradient"],
 div[class ^="smartscrollcontainer_Body"][class*="appdetails_ScrollContainer"][class*="appdetails_Glassy"]
 {
 	background-image:none;
-}
-
-.offline [class^="personanameandstatus_playerName"]
-{
-	color:#3c3c3c;
 }
 
 .online [class^="personanameandstatus_playerName"]
@@ -780,11 +783,6 @@ div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailswo
 	color: #3c3c3c;
 }
 
-[class*="appactivityday_Event"] [class*="appactivityday_EventHeadline"] [class*="appactivityday_HeadlineGameName"]
-{
-	color: #3c4d5f;
-}
-
 [class^="appdetailssoundtrack_SoundtrackPanel"]
 {
 	background: none;
@@ -814,16 +812,6 @@ div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"],
 div[class^="appdetailsachievementssection_UnlockedLabelPercent"]
 {
 	color: #4B4B4B;
-}
-
-button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_MoreVisible"],
-[class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_AlbumName"],
-[class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_StatsAndParent"] [class^="appdetailssoundtrack_ParentGameLink"] [class^="appdetailssoundtrack_ParentAppName"],
-[class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackName"],
-div[class*="appdetailsactivitysection_ActivityFeedContainer"] div[class^="appdetailsactivitysection_FetchMoreContainer"],
-div[class^="appdetailsreviewsection_AdditionalPlaytimeReminder"]
-{
-	color:#000;
 }
 
 button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_Center"] span
