@@ -564,7 +564,10 @@ div[class ^="libraryhome_LibraryHome"]
 	background-image:none;
 }
 
-div[class^="library_Container"]
+div[class^="library_Container"],
+div[class^="library_Container"] div[class*="appdetailssection_AppDetailsSection"],
+div[class^="library_Container"] .DialogTextInputBase, 
+div[class^="library_Container"] ._DialogInputContainer
 {
 	/*TMC2:BeginSTUIFontGlobal*/
 	/*TMC2:EndSTUIFontGlobal*/
