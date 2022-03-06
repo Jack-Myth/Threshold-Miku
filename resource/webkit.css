@@ -534,7 +534,7 @@ div[class ^="libraryhome_LibraryHome"]
 	background-image:none;
 }
 
-#root
+div[class^="library_Container"]
 {
 	/*TMC2:BeginSTUIFontGlobal*/
 	/*TMC2:EndSTUIFontGlobal*/
