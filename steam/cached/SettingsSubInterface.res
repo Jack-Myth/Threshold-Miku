@@ -5,7 +5,7 @@
 	}
 	
 	layout{
-		place { controls=Label4,LanguageCombo,TranslationLabel dir=down margin-top=20 margin-left=20 spacing=8}
+		place { controls=LanguageCombo,LanguageCombo,TranslationLabel dir=down margin-top=20 margin-left=20 spacing=8}
 		place { controls=Divider1 start=TranslationLabel dir=down margin-top=15 width=max margin-right=20}
 		
 		place { controls=Label1 start=Divider1 dir=down margin-top=15 width=max margin-right=20}
