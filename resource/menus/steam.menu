@@ -16,7 +16,7 @@
 		ViewPlayerList					{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers							{	text="#steam_menu_servers"				shellcmd="steam://open/servers" }
 		Screenshots						{	text="#steam_screenshots"				command="screenshots" }
-		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
+		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://open/downloads" }
 
 		Divider							{}
 		
