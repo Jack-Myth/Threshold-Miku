@@ -838,7 +838,15 @@ div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailswo
 }
 
 a[class^="appactivityday_WishlistLink"],
-[class*="appactivityday_ActivityPublishedStatus"]
+[class*="appactivityday_ActivityPublishedStatus"],
+div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
+div[class^="appactivityday_PartnerEventMediumImage_Title"],
+div[class*="appactivityday_PartnerEventMediumImage_Container"]:hover div[class^="appactivityday_PartnerEventMediumImage_Title"],
+div[class^="appactivityday_PartnerEventLargeImage_Title"],
+div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
+div[class^="appactivityday_PartnerEventType"],
+div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
+button.TextButton
 {
 	color: #333!important;
 }
@@ -855,18 +863,6 @@ div[class*="appdetailsadditionalcontentsection_Soundtracks"] div[class*="appdeta
 div[class*="appdetailsadditionalcontentsection_Soundtracks"] div[class*="appdetailsadditionalcontentsection_SoundtrackDetails"] div[class*="appdetailsadditionalcontentsection_TracksDetails"]
 {
 	color: #00000080;
-}
-
-div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
-div[class^="appactivityday_PartnerEventMediumImage_Title"],
-div[class*="appactivityday_PartnerEventMediumImage_Container"]:hover div[class^="appactivityday_PartnerEventMediumImage_Title"],
-div[class^="appactivityday_PartnerEventLargeImage_Title"],
-div[class*="appactivityday_PartnerEventLargeImage_Container"]:hover div[class^="appactivityday_PartnerEventLargeImage_Title"],
-div[class^="appactivityday_PartnerEventType"],
-div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
-button.TextButton
-{
-	color:#000;
 }
 
 div[class^="appactivityday_PartnerEventMediumImage_Container"],
