@@ -31,3 +31,9 @@ Use "Threshold Miku Customizer" to apply this Style.
 # New Threshold Miku Customizer is included!  
 [Source code here!](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2)  
 ![](https://github.com/Jack-Myth/Threshold-Miku-Customizer-2/raw/master/TMC2.jpg)  
+
+# Q/A  
+Q: Why my skin looks like this?  
+![](Previews/QA/1.jpg)  
+A: Make sure you have the same setting on both sides.  
+![](Previews/QA/2.jpg)
