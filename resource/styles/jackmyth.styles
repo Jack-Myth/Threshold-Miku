@@ -167,6 +167,16 @@ jackmyth.styles
 	  		0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
 	  	}
 	  }
+
+	// Use Offline Background
+	  CUseOfflineModeDialog
+	  {
+		minimum-height=344
+	  	render_bg
+	  	{
+	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\UseOffline)"
+	  	}
+	  }
 	  
 	  //CSystemInfoDialog
 	  CSystemInfoDialog
