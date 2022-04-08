@@ -796,7 +796,7 @@ div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailswo
 .ModalDialogPopup [class*="appproperties_AppProperties"] [class*="DialogContentTransition"],
 .ModalDialogPopup [class*="appproperties_AppProperties"] [class*="DialogContent"]
 {
-	background: none;
+	background: none !important;
 }
 
 [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackNumber"],
@@ -813,7 +813,12 @@ div[class^="appactivityday_ReviewText"],
 div[class^="comment_thread_ActivityCommentThread"] div[class^="comment_thread_Comment"],
 div[class^="appdetailsreviewsection_ChangedYourMind"]
 {
-	color:#3B3B3B;
+	color:#3B3B3B !important;
+}
+
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_Center"] span
+{
+	filter: invert(1);
 }
 
 [class^="appdetailssoundtrack_SoundtrackContainer"] 
@@ -822,12 +827,7 @@ div[class^="collectionview_Container"],
 div[class^="appactivityday_BadgeInfo"] div[class^="appactivityday_BadgeLevel"],
 div[class^="appdetailsachievementssection_UnlockedLabelPercent"]
 {
-	color: #4B4B4B;
-}
-
-button.DialogButton[class*="appdetailsbutton_AppDetailsButton"][class*="appdetailsbutton_Center"] span
-{
-	filter: invert(1);
+	color: #4B4B4B!important;
 }
 
 div[class^="appdetailstradingcardssection_BadgeInfo"] div[class^="appdetailstradingcardssection_BadgeName"],
