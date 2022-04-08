@@ -475,11 +475,6 @@ div[class^="gamelistdropdown_MenuHeader"][class*="gamelistdropdown_FiltersActive
 	background-color:#3e40478a;
 }
 
-div[class^="gamelistsearchbar_SearchInput"] input[class^="DialogInput"]
-{
-	background:rgba(67, 73, 83, 0.6) !important;
-}	
-
 div[class^="gamelistsectionheader_SectionCount"]
 {
 	color:rgba(0, 0, 0, 0.5);
@@ -572,6 +567,12 @@ div[class^="library_Container"] ._DialogInputContainer
 	/*TMC2:BeginSTUIFontGlobal*/
 	/*TMC2:EndSTUIFontGlobal*/
 	color: #5a5a5a;
+}
+
+div[class^="gamelistsearchbar_SearchInput"] input[class^="DialogInput"]
+{
+	background:rgba(67, 73, 83, 0.6) !important;
+	color:rgb(255,255,255,0.8) !important;
 }
 
 div[class^="pageablecontainer_HeaderPageControls"]
