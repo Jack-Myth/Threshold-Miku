@@ -641,7 +641,7 @@ div[class^="appdetailsreviewsection_PlayedForTime"]
 .ModalDialogPopup [class*="appproperties_AppProperties"] [class*="DialogContentTransition"],
 .ModalDialogPopup [class*="appproperties_AppProperties"] [class*="DialogContent"]
 {
-	background: none;
+	background: none!important;
 }
 
 [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackNumber"],
