@@ -23,8 +23,9 @@ exit
 :Apply
 del /f /q "%SteamPath%\skins\%CurDirName%"
 mkdir "%SteamPath%\skins"
-xcopy /e /y "..\%CurDirName%\" "%SteamPath%\skins\%CurDirName%\"
+xcopy /e /y /i "..\%CurDirName%" "%SteamPath%\skins\%CurDirName%"
 reg add HKCU\Software\Valve\Steam /v SkinV5 /t REG_SZ /d %CurDirName% /f
 echo Enjoy your new steam! :^)
 cd /d "%SteamPath%\skins\%CurDirName%"
 start explorer.exe .
+pause
