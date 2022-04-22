@@ -847,9 +847,16 @@ div[class*="appdetailsworkshopsection_WorkshopSection"] div[class*="appdetailswo
 }
 
 .ModalPosition_Content div[class*="appproperties_AppProperties"],
-div[class*="appproperties_AppProperties"] div[class*="pagedsettings_PagedSettingsDialog_PageListItem"]
+div[class*="appproperties_AppProperties"] div[class*="pagedsettings_PagedSettingsDialog_PageListItem"],
+div[class*="appproperties_AppProperties"] .DialogBody div[class^="appproperties_DlcGrid"] div[class^="appproperties_Name"]
 {
-	color:#333;
+	color:#333!important;
+}
+
+
+div[class*="appproperties_AppProperties"] .DialogBody div[class^="appproperties_DlcGrid"] div[class^="appproperties_DlcHeader"]
+{
+	background:#bdbdbd;
 }
 
 div[class*="appproperties_AppProperties"] div[class*="pagedsettings_PagedSettingsDialog_PageListItem"][class*="pagedsettings_Active"]
@@ -885,7 +892,7 @@ div[class^="appactivityday_PartnerEventType"],
 div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
 button.TextButton
 {
-	color: #333!important;
+	color: #333;
 }
 
 div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"],
