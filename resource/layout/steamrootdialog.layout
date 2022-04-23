@@ -334,18 +334,18 @@
 			padding-left=50
 			padding-right=50
 			padding-top=6
-			inset="-8 -3 8 0"
-			render {}
+			render {
+				0="image_scale( x0, y0, x1, y1, graphics/support_lock_ack )"
+			}
 			render_bg {
-				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack1 )"
-
+				0="fill( x0, y0, x1, y1, support_lock_ack1 )"
 			}
 		}
 
 		support_alert_ack:hover
 		{
 			render_bg {
-				0="fill( x0, y0 + 3, x1-1, y1, support_lock_ack2 )"
+				0="fill( x0, y0, x1, y1, support_lock_ack2 )"
 			}
 		}
 
