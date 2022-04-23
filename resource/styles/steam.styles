@@ -37,6 +37,9 @@ steam.styles
 	
 	DefaultBackground=Neutral
 
+	support_lock_ack1 "187 157 47 255"
+	support_lock_ack2 "193 166 67 255"
+
 	//DefaultText=white
 	DefaultText=black
 	DefaultText.Hover="102 102 102 255"
