@@ -892,7 +892,7 @@ div[class^="appactivityday_PartnerEventType"],
 div[class*="downloads_SectionItemStatus"] [class*="downloads_Progress"],
 button.TextButton
 {
-	color: #333;
+	color: #333!important;
 }
 
 div[class*="appdetailsachievementssection_Featured"] div[class^="appdetailsachievementssection_TextSection"] div[class^="appdetailsachievementssection_Name"],
