@@ -601,6 +601,7 @@ div[class^="appportrait_RecentGameFooter"]
 }
 
 div[class^="libraryhomenewupdates_Event_Title"] div[class^="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle"],
+div[class*="appportrait_PlaytimeDetails"][class*="appportrait_Header"],
 div[class*="appportrait_PlaytimeDetails"][class*="appportrait_PlayedTotal"], 
 div[class*="appportrait_PlaytimeDetails"][class*="appportrait_PlayedRecent"]
 {
