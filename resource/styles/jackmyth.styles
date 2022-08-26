@@ -376,6 +376,26 @@ jackmyth.styles
 		render_bg
 		{}
 	}
+	
+	//////////////////////////
+	// Begin LoginDialog
+	//////////////////////////
+	CReactSteamLoginDialog
+	{
+		minimum-width = 705
+		minimum-height = 570
+	}
+	
+	"CReactSteamLoginDialog HTML"
+	{
+		minimum-width = 705
+		minimum-height = 570
+	}
+	
+	//////////////////////////
+	// End LoginDialog
+	//////////////////////////
+
   }
   
 }
