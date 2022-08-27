@@ -882,6 +882,11 @@ div[class*="appproperties_AppProperties"] div[class*="pagedsettings_PagedSetting
 	color:#000;
 }
 
+#root div[class*="index_Container"][class*="index_PreloadThrobber"]
+{
+	background:none!important;
+}
+
 a[class^="appactivityday_WishlistLink"],
 [class*="appactivityday_ActivityPublishedStatus"],
 div[class^="writereview_RatingContainer"] div[class^="writereview_RecommendGame"],
