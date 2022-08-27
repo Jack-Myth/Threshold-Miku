@@ -644,6 +644,12 @@ div[class^="appdetailsreviewsection_PlayedForTime"]
 	background: none!important;
 }
 
+#root div[class*="index_Container"][class*="index_PreloadThrobber"]
+{
+	background:none!important;
+}
+
+
 [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackNumber"],
 [class^="appdetailssoundtrack_TrackListing"] [class^="appdetailssoundtrack_TrackLength"],
 [class^="appdetailssoundtrack_SoundtrackContainer"] [class^="appdetailssoundtrack_Header"] [class^="appdetailssoundtrack_ArtistName"]
