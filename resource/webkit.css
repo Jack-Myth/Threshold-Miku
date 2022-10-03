@@ -1065,7 +1065,9 @@ div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromEmail
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromEmailContainer"] div[class^="newlogindialog_EnterCodeFromEmail"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_FailureTitle_"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_FailureDescription_"],
-div[class^="newlogindialog_Login"] div[class^="newlogindialog_OfferOffline_"]
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_OfferOffline_"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_RefreshTitle_"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_RefreshReason_"]
 {
 	color:#000;
 }
