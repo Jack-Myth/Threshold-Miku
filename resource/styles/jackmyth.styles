@@ -399,7 +399,7 @@ jackmyth.styles
 		minimum-height = 570
 	}
 	
-	CReactRefreshLoginDialog HTML"
+	"CReactRefreshLoginDialog HTML"
 	{
 		minimum-width = 705
 		minimum-height = 570
