@@ -561,6 +561,9 @@ div[class ^="libraryhome_LibraryHome"]
 
 div[class^="library_Container"],
 div[class^="library_Container"] div[class*="appdetailssection_AppDetailsSection"],
+[class^="appactivitydlc_CarouselItem"] div[class*="appactivitydlc_CarouselDescription_"] div[class*="appactivitydlc_CarouselBody_"],
+div[class^="appactivitydlc_ViewAllRow_"] [class*="appactivitydlc_ViewAll_"],
+div[class^="appactivitydlc_ViewAllRow_"] [class*="appactivitydlc_ViewAll_"]:hover,
 div[class^="library_Container"] .DialogTextInputBase, 
 div[class^="library_Container"] ._DialogInputContainer
 {
@@ -944,7 +947,8 @@ div[class^="appactivityday_ScreenshotCarousel"] div[class^="appactivityday_Activ
 }
 
 div[class*="appactivityday_PartnerEvent_"],
-div[class*="appactivityday_PartnerEventLargeUpdate_"]
+div[class*="appactivityday_PartnerEventLargeUpdate_"],
+div[class*="appactivitydlc_Rollup_"] div[class*="appactivitydlc_Contents_"]
 {
 	background: radial-gradient(100% 80% at 64% 95%, rgba(148, 140, 128, 0.3) 0%, rgba(193, 185, 175, 0.5) 20%, rgba(219, 215, 208, 0.5) 100%);
 }
@@ -992,7 +996,7 @@ div[class^="newlogindialog_Login"] [class*="newlogindialog_StandardLayout"][clas
 	background:none;
 }
 
-div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot"]:NOT(IN_CLIENT)
+div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot_"]:NOT(IN_CLIENT)
 {
 	background:none;
 	padding-top:100px;
@@ -1028,8 +1032,7 @@ div[class^="newlogindialog_Login"] [class^="newlogindialog_CheckboxField"] [clas
 div[class^="newlogindialog_Login"] [class^="newlogindialog_FieldLabel_"],
 div[class^="newlogindialog_Login"] [class^="newlogindialog_TextLink_"],
 div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot"] [class^="newlogindialog_EmbeddedRootFooter"],
-div[class^="newlogindialog_Login"] [class*="newlogindialog_QRSection"] [class^="newlogindialog_BetaSubtitle"],
-div[class^="newlogindialog_Login"] [class*="newlogindialog_QRSection"] [class^="newlogindialog_ShowQRLink"]
+div[class^="newlogindialog_Login"] [class*="newlogindialog_QRSection_"] [class^="newlogindialog_UseMobileAppForQR"]
 {
 	color:#333;
 }
@@ -1063,6 +1066,11 @@ div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromMobil
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromMobileContainer"] div[class^="newlogindialog_EnterCodeFromEmail"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromEmailContainer"] div[class^="newlogindialog_EnterCodeFromMobile"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromEmailContainer"] div[class^="newlogindialog_EnterCodeFromEmail"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterBackupCodeContainer"] div[class^="newlogindialog_EnterCodeFromMobile"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterBackupCodeContainer"] div[class^="newlogindialog_EnterCodeFromEmail"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromMobileContainer"] div[class^="newlogindialog_Label"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterCodeFromEmailContainer"] div[class^="newlogindialog_Label"],
+div[class^="newlogindialog_Login"] div[class^="newlogindialog_EnterBackupCodeContainer"] div[class^="newlogindialog_Label"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_FailureTitle_"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_FailureDescription_"],
 div[class^="newlogindialog_Login"] div[class^="newlogindialog_OfferOffline_"],
