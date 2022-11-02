@@ -561,6 +561,7 @@ div[class ^="libraryhome_LibraryHome"]
 
 div[class^="library_Container"],
 div[class^="library_Container"] div[class*="appdetailssection_AppDetailsSection"],
+[class^="appactivitydlc_CarouselItem"] div[class*="appactivitydlc_CarouselDescription_"] div[class*="appactivitydlc_CarouselHeader_"],
 [class^="appactivitydlc_CarouselItem"] div[class*="appactivitydlc_CarouselDescription_"] div[class*="appactivitydlc_CarouselBody_"],
 div[class^="appactivitydlc_ViewAllRow_"] [class*="appactivitydlc_ViewAll_"],
 div[class^="appactivitydlc_ViewAllRow_"] [class*="appactivitydlc_ViewAll_"]:hover,
@@ -996,7 +997,7 @@ div[class^="newlogindialog_Login"] [class*="newlogindialog_StandardLayout"][clas
 	background:none;
 }
 
-div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot_"]:NOT(IN_CLIENT)
+div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot_"][class*="newlogindialog_InClient_"]:NOT(IN_CLIENT)
 {
 	background:none;
 	padding-top:100px;

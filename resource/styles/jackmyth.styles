@@ -15,6 +15,7 @@ jackmyth.styles
   	JackMyth.LittleTranslucent180Inverse="0 0 0 180"
 	JackMyth.DownloadProgress="0 120 255 100"
 	JackMyth.DownloadProgressBack="255 255 255 0"
+	JackMyth.Login.BGTop="200 200 200 255"
   }
   styles
   {
@@ -377,37 +378,6 @@ jackmyth.styles
 		render_bg
 		{}
 	}
-	
-	//////////////////////////
-	// Begin LoginDialog
-	//////////////////////////
-	CReactSteamLoginDialog
-	{
-		minimum-width = 705
-		minimum-height = 570
-	}
-	
-	"CReactSteamLoginDialog HTML"
-	{
-		minimum-width = 705
-		minimum-height = 570
-	}
-
-	CReactRefreshLoginDialog
-	{
-		minimum-width = 705
-		minimum-height = 570
-	}
-	
-	"CReactRefreshLoginDialog HTML"
-	{
-		minimum-width = 705
-		minimum-height = 570
-	}
-	
-	//////////////////////////
-	// End LoginDialog
-	//////////////////////////
 
   }
   
