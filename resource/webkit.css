@@ -677,7 +677,7 @@ div[class^="newlogindialog_Login"] [class*="newlogindialog_StandardLayout"][clas
 	background:none;
 }
 
-div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot_"]:NOT(IN_CLIENT)
+div[class^="newlogindialog_Login"] [class*="newlogindialog_EmbeddedRoot_"][class*="newlogindialog_InClient_"]:NOT(IN_CLIENT)
 {
 	background:none;
 	padding-top:100px;
