@@ -59,6 +59,7 @@
 }
 
 #root,
+div[class^="steamdesktop_Wrapper_"],
 div[class^="library_MainPanel"]:after,
 div[class^="gamelistbar_Container"]:after
 /*TMC2:BeginWebPageStyleBG*/,html.client .responsive_page_frame/*TMC2:EndWebPageStyleBG*/
@@ -245,7 +246,8 @@ html.client .apphub_background
 
 /*TMC2:EndWebPageStyle*/
 
-#root
+#root,
+div[class^="steamdesktop_Wrapper_"]
 {
 	/*TMC2:BeginCSide0*/
 	background-position: -240px -31px;
