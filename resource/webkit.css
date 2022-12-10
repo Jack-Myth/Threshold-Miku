@@ -1097,3 +1097,8 @@ div[class^="newlogindialog_Login"] [class^="newlogindialog_SegmentedCharacterInp
 	color:#000;
 	border-bottom:2px solid rgb(0 0 0 / 50%);
 }
+
+div[class^="steamdesktop_Wrapper_"]
+{
+	background-color: #0000;
+}
