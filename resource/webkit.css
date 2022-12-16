@@ -890,7 +890,7 @@ div[class*="appproperties_AppProperties"] div[class*="pagedsettings_PagedSetting
 	color:#000;
 }
 
-#root div[class*="index_Container"][class*="index_PreloadThrobber"]
+div[class*="index_Container"][class*="index_PreloadThrobber"]
 {
 	background:none!important;
 }
