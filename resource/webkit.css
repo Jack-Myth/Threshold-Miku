@@ -646,7 +646,7 @@ div[class^="appdetailsreviewsection_PlayedForTime"]
 	background: none!important;
 }
 
-#root div[class*="index_Container"][class*="index_PreloadThrobber"]
+div[class*="index_Container"][class*="index_PreloadThrobber"]
 {
 	background:none!important;
 }
