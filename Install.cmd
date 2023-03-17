@@ -25,6 +25,16 @@ del /f /q "%SteamPath%\skins\%CurDirName%"
 mkdir "%SteamPath%\skins"
 xcopy /e /y /i "..\%CurDirName%" "%SteamPath%\skins\%CurDirName%"
 reg add HKCU\Software\Valve\Steam /v SkinV5 /t REG_SZ /d %CurDirName% /f
+echo Set oWS = WScript.CreateObject("WScript.Shell") > CreateSteamLauncherShortcut.vbs
+echo sLinkFile = "%HOMEDRIVE%%HOMEPATH%\Desktop\Steam.lnk" >> CreateSteamLauncherShortcut.vbs
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> CreateSteamLauncherShortcut.vbs
+echo oLink.TargetPath = "%SteamPath%\skins\%CurDirName%\SteamLauncher.exe" >> CreateSteamLauncherShortcut.vbs
+echo oLink.IconLocation = "%SteamPath%\steam.exe, 1" >> CreateSteamLauncherShortcut.vbs
+echo oLink.Save >> CreateSteamLauncherShortcut.vbs
+cscript CreateSteamLauncherShortcut.vbs
+del CreateSteamLauncherShortcut.vbs
+cls
+echo Shortcut Created. Please use the shortcut on desktop to open Steam.
 echo Enjoy your new steam! :^)
 cd /d "%SteamPath%\skins\%CurDirName%"
 start explorer.exe .
